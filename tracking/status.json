@@ -1,0 +1,12 @@
+{
+ "items": {
+  "PUB-23": {
+   "kind": "finding",
+   "note": "",
+   "owner": "",
+   "status": "fixed",
+   "title": "Analytics page is entirely an error state",
+   "updated": "2026-11-25T09:18:44.270Z"
+  }
+ }
+}

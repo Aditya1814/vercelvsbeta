@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>CloudReel Beta Tracker</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f766e'/%3E%3Cpath d='m9 16.5 4.5 4.5L23 11.5' fill='none' stroke='%23fff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('cloudreel-tracker-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="app">
+  <div class="scrim" id="scrim" hidden></div>
+  <aside class="side" id="side" aria-label="Sidebar">
+    <a class="brand" href="#/">
+      <span class="logo" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m6 12.5 4 4 8-9"/></svg></span>
+      <span><b>Beta Tracker</b><small>CloudReel · Vercel vs Beta</small></span>
+    </a>
+    <nav id="nav" aria-label="Sections"></nav>
+    <div class="side-foot">
+      <div id="store" class="store" role="status"></div>
+      <div class="side-btns">
+        <button type="button" class="btn" id="exp" title="Download tracking data as JSON"></button>
+        <button type="button" class="btn" id="expcsv" title="Download tracking data as CSV"></button>
+        <button type="button" class="btn" id="imp" title="Load a JSON export"></button>
+        <input type="file" id="impf" accept="application/json" hidden>
+      </div>
+    </div>
+  </aside>
+  <div class="col">
+    <header class="top">
+      <button type="button" class="icon-btn menu" id="menu" aria-label="Open menu" aria-controls="side" aria-expanded="false"></button>
+      <div class="crumb" id="crumb"></div>
+      <button type="button" class="searchbtn" id="open-cmd" aria-label="Search everything"><span class="sb-i"></span><span class="sb-t">Search findings, defects, test cases…</span><kbd id="kbd"></kbd></button>
+      <button type="button" class="icon-btn" id="theme" aria-label="Switch colour theme"></button>
+    </header>
+    <main id="main" tabindex="-1"></main>
+  </div>
+</div>
+
+<div class="bulk" id="bulk" hidden role="region" aria-label="Bulk actions"></div>
+<div class="toasts" id="toasts" role="status" aria-live="polite"></div>
+
+<dialog id="dlg" class="dlg" aria-labelledby="dlg-h">
+  <div class="dlg-bar"><div id="dlg-t" class="dlg-t"></div><div class="dlg-actions" id="dlg-a"></div></div>
+  <div id="dlg-b" class="dlg-body"></div>
+</dialog>
+<dialog id="lb" class="lb" aria-label="Screenshot">
+  <div class="dlg-bar"><div id="lb-t" class="dlg-t"></div><div class="dlg-actions"><a class="btn" id="lb-o" target="_blank" rel="noopener">Open original</a><button type="button" class="btn" data-close>Close</button></div></div>
+  <div class="lb-w"><img id="lb-i" alt=""></div>
+</dialog>
+<dialog id="cmd" class="cmd" aria-label="Search everything">
+  <div class="cmd-in"><span class="sb-i"></span><input type="text" id="cmd-q" role="combobox" aria-expanded="true" aria-controls="cmd-list" aria-autocomplete="list" autocomplete="off" spellcheck="false" placeholder="Search by ID, title or module…" aria-label="Search by ID, title or module"><kbd>Esc</kbd></div>
+  <div class="cmd-list" id="cmd-list" role="listbox" aria-label="Results"></div>
+  <div class="cmd-foot"><span><kbd>↑</kbd><kbd>↓</kbd> to move</span><span><kbd>Enter</kbd> to open</span></div>
+</dialog>
+
+<script src="data/overview.js"></script>
+<script src="data/modules.js"></script>
+<script src="data/top.js"></script>
+<script src="data/coverage.js"></script>
+<script src="data/areas.js"></script>
+<script src="data/response.js"></script>
+<script src="data/findings.js"></script>
+<script src="data/better.js"></script>
+<script src="data/journeys.js"></script>
+<script src="data/flows.js"></script>
+<script src="data/qa.js"></script>
+<script src="data/defects.js"></script>
+<script src="data/suites.js"></script>
+<script src="data/cases.js"></script>
+<script src="data/jtbd.js"></script>
+<script src="app.js"></script>
+<noscript><p style="padding:24px">This tracker needs JavaScript. The same content is available as markdown in the docs/ folder.</p></noscript>
+</body>
+</html>
