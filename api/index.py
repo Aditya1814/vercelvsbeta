@@ -97,10 +97,18 @@ class handler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(data)
 
+    def _redirect(self, location):
+        self.send_response(302)
+        self.send_header("Location", location)
+        self.send_header("Content-Length", "0")
+        self.end_headers()
+
     def do_GET(self):
         if not self._authed():
             return self._require_auth()
         path = self.path.split("?", 1)[0]
+        if path in ("/", "/index.html"):
+            return self._redirect("/site/")
         if path == "/api/status":
             return self._json(load_state())
         return self._serve_static(path)
