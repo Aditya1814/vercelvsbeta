@@ -1,5 +1,733 @@
 {
  "items": {
+  "CRB-001": {
+   "kind": "live",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "Viveka",
+   "status": "verified",
+   "title": "Actual Issue: When both Start Date and End Date are cleared using the calendar's Clear option, clicking Create Event displays a...",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-002": {
+   "kind": "live",
+   "note": "Dev: NA",
+   "owner": "Viveka",
+   "status": "open",
+   "title": "Unable to Adjust the Images, in Studio, during LIVE.",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-003": {
+   "kind": "live",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "Praneeth",
+   "status": "verified",
+   "title": "When we select VOD and upload video content, applying a filter causes the filter to move to the file name.",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-004": {
+   "kind": "live",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "Praneeth",
+   "status": "verified",
+   "title": "When we select VOD and upload video content, the timer is displayed on the Start Over button.",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-005": {
+   "kind": "live",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "Praneeth",
+   "status": "verified",
+   "title": "In VOD content, the Preview button is displayed next to the Cancel button.",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-006": {
+   "kind": "live",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "Praneeth",
+   "status": "verified",
+   "title": "When we mute the audio, the Mute button is not displayed correctly and overlaps with the Preview button.",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-007": {
+   "kind": "live",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "Praneeth",
+   "status": "verified",
+   "title": "While linking to any social media like youtube it is not working",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-008": {
+   "kind": "live",
+   "note": "Dev: Instagram not availavle | QA: Done",
+   "owner": "Praneeth",
+   "status": "verified",
+   "title": "When the user clicks on the Social option in the Live section and selects Instagram, the application redirects the user to Face...",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-009": {
+   "kind": "live",
+   "note": "",
+   "owner": "Viveka",
+   "status": "open",
+   "title": "In Studio(Live)-Without enabling transition toggle, still the transitions are applying. when clicking on Radio button.",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-010": {
+   "kind": "live",
+   "note": "",
+   "owner": "Praneeth",
+   "status": "open",
+   "title": "While setting the background image in the layout, we are unable to adjust its height and width.",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-011": {
+   "kind": "live",
+   "note": "",
+   "owner": "Praneeth",
+   "status": "open",
+   "title": "After duplicating the source using the Ctrl + D shortcut, clicking the Delete option does not remove the duplicated source.",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-012": {
+   "kind": "live",
+   "note": "",
+   "owner": "Praneeth",
+   "status": "open",
+   "title": "A Back button is required on the Studio page. When users navigate from the Home page to the Studio page, they should be able to...",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-013": {
+   "kind": "live",
+   "note": "",
+   "owner": "Viveka",
+   "status": "open",
+   "title": "The \"Add One\" option is displayed in the Web application's Streams section when a device is connected for broadcasting, but it...",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-014": {
+   "kind": "live",
+   "note": "",
+   "owner": "Viveka",
+   "status": "open",
+   "title": "When a reporter exits the broadcast stream from the mobile app, the corresponding SRT stream continues to appear in the Studio'...",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-015": {
+   "kind": "live",
+   "note": "",
+   "owner": "Praneeth",
+   "status": "open",
+   "title": "when we click on the thumbnail while creating the meeting in studio there is one option like mam need to remove the option in t...",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-016": {
+   "kind": "live",
+   "note": "",
+   "owner": "Parneeth",
+   "status": "open",
+   "title": "After creating the meeting when we click on the delete the delete button is not wokring as expected",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-017": {
+   "kind": "live",
+   "note": "",
+   "owner": "Praneeth",
+   "status": "open",
+   "title": "Hide or disable the Delete option after a live stream is successfully started.",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-018": {
+   "kind": "live",
+   "note": "Dev: Fixed",
+   "owner": "Manikanta",
+   "status": "fixed",
+   "title": "1.In the SRT bonding app, we are facing an audio and video sync issue. The audio plays first, and the video appears after a delay.",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-019": {
+   "kind": "live",
+   "note": "Dev: Fixed",
+   "owner": "Manikanta",
+   "status": "fixed",
+   "title": "2.After starting the SRT live stream, we are still facing a reconnecting issue, even when the device is connected to Wi-Fi.",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-020": {
+   "kind": "live",
+   "note": "Dev: Fixed",
+   "owner": "",
+   "status": "fixed",
+   "title": "In IOS bonding app, last 5-6 minutes feed not recorded.",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-021": {
+   "kind": "live",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "Viveka",
+   "status": "verified",
+   "title": "Reporter participant audio is also audible in the recording despite the configuration being restricted to Host and Anchor voices.",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-022": {
+   "kind": "live",
+   "note": "Dev: Fixed | QA: Reopen",
+   "owner": "Viveka",
+   "status": "open",
+   "title": "In Iphone-Join as Reporter, Stay 10min, Phone is getting hot.",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-023": {
+   "kind": "live",
+   "note": "Dev: Fixed - button removed | QA: Done",
+   "owner": "Viveka",
+   "status": "verified",
+   "title": "In Iphone-Settings, +1 Hour is appearing-But there is Functioanlity at all for that.",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-024": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "Viveka",
+   "status": "verified",
+   "title": "In Iphone-Changing of Resolution is Effecting Live Session, Record Duration.",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-025": {
+   "kind": "live",
+   "note": "Dev: fixed",
+   "owner": "Viveka",
+   "status": "fixed",
+   "title": "In Iphone- Due to Network change in between the LIVE session, Live Session is Effecting.",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-026": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "Viveka",
+   "status": "verified",
+   "title": "Participant when joining from Ios, are not appearing in meeting participants list",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-027": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "Viveka",
+   "status": "verified",
+   "title": "When joining through streamer in IOS, Reporter is camera preview is taking more 10min duration.",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-028": {
+   "kind": "live",
+   "note": "",
+   "owner": "Viveka",
+   "status": "open",
+   "title": "Even when is ended, and participant as left, participant is still provided with rejoin meeting button.",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-029": {
+   "kind": "live",
+   "note": "",
+   "owner": "Viveka",
+   "status": "open",
+   "title": "After stopping a live broadcast in the iOS mobile app, the session continues running even after 10–60 seconds; it should pause...",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-030": {
+   "kind": "live",
+   "note": "QA: Need clarification",
+   "owner": "Viveka",
+   "status": "in-progress",
+   "title": "When the torch is enabled during a live broadcast, switching between the front and rear cameras automatically turns off the tor...",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-031": {
+   "kind": "live",
+   "note": "",
+   "owner": "Viveka",
+   "status": "open",
+   "title": "When the torch is enabled during a live broadcast, changing the video resolution (e.g., from 720p to 1080p) turns off the rear...",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-032": {
+   "kind": "live",
+   "note": "Dev: Wi-Fi was good during the test (fast enough for the stream’s bitrate), then mobile data at 0 Mbps in Wi-Fi first is by design. Wi-Fi can carry everything, so nothing spills over. The same goes for Wi-Fi at 0 in Cellular first when mobile data is strong. If you want we will change naming wifi first to wifi only please clarify this.",
+   "owner": "Viveka",
+   "status": "open",
+   "title": "In the iOS Bonding app, the Wi-Fi First and Cellular First connection modes are not functioning as expected. When Wi-Fi First i...",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-033": {
+   "kind": "live",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "(untitled)",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-034": {
+   "kind": "live",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "(untitled)",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-035": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "Praneeth",
+   "status": "verified",
+   "title": "When host suddenly stopped the meeting the video is still in the recording state and it should show as uploading state",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-036": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "Praneeth",
+   "status": "verified",
+   "title": "When the user starts streaming on an Android mobile device, the camera option is set to the front camera, but the video display...",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-037": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "Praneeth",
+   "status": "verified",
+   "title": "before and after started when we change the video option bitreate to 720,1080 ,720p60 and 1080p60 we are getting error message...",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-038": {
+   "kind": "live",
+   "note": "Dev: fixed",
+   "owner": "Praneeth",
+   "status": "fixed",
+   "title": "When switching between the front and back cameras and continuously changing the resolution (720p/1080p) and frame rate (30 FPS/...",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-039": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "Praneeth",
+   "status": "verified",
+   "title": "After the broaddcast ended or stopped the user click on the back button it is not working as expected it is not redirecting to...",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-040": {
+   "kind": "live",
+   "note": "Dev: fixed",
+   "owner": "Praneeth",
+   "status": "fixed",
+   "title": "When changing the resolution during a meeting, the following message appears: \"Quality changed. Requested quality is unsupporte...",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-041": {
+   "kind": "live",
+   "note": "Dev: need confirmation on this | QA: Need option to change the network while live broadcast",
+   "owner": "Praneeth",
+   "status": "in-progress",
+   "title": "When the user starts a live stream, they are unable to change the network preference in the settings, such as Balanced, Wi-Fi F...",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-042": {
+   "kind": "live",
+   "note": "Dev: fixed",
+   "owner": "Praneeth",
+   "status": "fixed",
+   "title": "When streaming for more than 10 minutes, the mobile device starts overheating and becomes unresponsive.",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-043": {
+   "kind": "live",
+   "note": "Dev: fixed",
+   "owner": "Praneeth",
+   "status": "fixed",
+   "title": "When connected to a mobile cellular network, after recording a video and changing the resolution settings, the audio is not rec...",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-044": {
+   "kind": "live",
+   "note": "",
+   "owner": "Praneeth",
+   "status": "open",
+   "title": "When changing the live broadcast resolution to 2160p or 4320p during an ongoing broadcast, the selected resolution is not retai...",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-045": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Reopen\nResoultions are disappearing",
+   "owner": "Praneeth",
+   "status": "open",
+   "title": "The video resolution does not change when the user selects a different resolution on the Go Live page before starting the live...",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-046": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "Praneeth",
+   "status": "verified",
+   "title": "while dubing the video to bengali language the video generation is not working throughing error like",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-047": {
+   "kind": "live",
+   "note": "Dev: Fixed",
+   "owner": "Viveka",
+   "status": "fixed",
+   "title": "When clicking on Export All for Tracks, Indivudual tracks are not downloading, instead Overall duration Video is Downloading.",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-048": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "Viveka",
+   "status": "verified",
+   "title": "Need Scroller for all the Bands Popup's, as they are adjusting within the Screen Resolution, Apply Changes Button is Hiding.",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-049": {
+   "kind": "live",
+   "note": "Dev: fixed",
+   "owner": "Praneeth",
+   "status": "fixed",
+   "title": "when we uploading 5 videos in the project after one video is uploaded and click on the view video and click back there is no re...",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-050": {
+   "kind": "live",
+   "note": "Dev: Fixed 13 Nov: a sideways trackpad swipe no longer goes Back while the editor is open. Retest after deploy. | QA: Done",
+   "owner": "Viveka",
+   "status": "verified",
+   "title": "In Editor Page, through Laptop cursor pad, if scrolling towards Right side-Page is redirecting to Back.",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-051": {
+   "kind": "live",
+   "note": "Dev: Fixed 18 Nov: Preview Volume only accepts 0 to 100; a minus sign and values over 100 are refused while typing. Retest after deploy. | QA: Reopen | Note: - sign, more than 2 decimals are accepting after point(.), also when removing overal speaker value. after closing. Random value is default setting.",
+   "owner": "Viveka",
+   "status": "open",
+   "title": "Preview Volumn Field is accepting more 100, and also less than 0 values.",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-052": {
+   "kind": "live",
+   "note": "Dev: Needs decision: AI-generated shorts already export one by one. Exporting each hand-split timeline part as its own video is a new option (one export job per part); please confirm before we add it.",
+   "owner": "Viveka",
+   "status": "in-progress",
+   "title": "When downloading video by clips with 9:16 Ratio. Shorts are not downloading individually.",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-053": {
+   "kind": "live",
+   "note": "Dev: Fixed 18 Nov: captions stay on the right words after cuts, including captions written by the Co-Creator and captions on a dub. Retest after deploy. | QA: Done",
+   "owner": "Praneeth",
+   "status": "verified",
+   "title": "CC missmatching for the video while playing",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-054": {
+   "kind": "live",
+   "note": "Dev: Fixed 18 Nov: the dub now follows every cut made after it was added, so it no longer overlaps the main audio. If an unedited video still overlaps, the dub file itself needs checking (backend). Retest after deploy. | QA: Done",
+   "owner": "Praneeth",
+   "status": "verified",
+   "title": "when we dub the video to telugu we are getting overlapping with main audio",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-055": {
+   "kind": "live",
+   "note": "Dev: Fixed 18 Nov: the dub stays in step with the edit and covers the whole video after cuts. If the dub file is shorter than the video, that is backend. Retest after deploy. | QA: Done",
+   "owner": "Praneeth",
+   "status": "verified",
+   "title": "After dubing the video to telugu we are not getting full video",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-056": {
+   "kind": "live",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "Praneeth",
+   "status": "verified",
+   "title": "After cloning I am not able to get the seperate person videos",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-057": {
+   "kind": "live",
+   "note": "Dev: Fixed 18 Nov: clip downloads now save as .mp4 files named after the clip. Retest after deploy. | QA: Done",
+   "owner": "Praneeth",
+   "status": "verified",
+   "title": "After downloading the video into clips we are getting the download file in file not in mp4 format",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-058": {
+   "kind": "live",
+   "note": "Dev: Partly fixed 18 Nov: names stay at the bottom of each window on 9:16, 1:1 and 4:5, in the preview and the export. Please retest the ticker position. Retest after deploy. | QA: Done",
+   "owner": "Praneeth",
+   "status": "verified",
+   "title": "when we switch the video to the 9:16 ,1:1 and 4:5 ratio the names of the person are dispalying in the middle of the screen",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-059": {
+   "kind": "live",
+   "note": "Dev: Fixed 18 Nov: the dub, music and captions now wait while the video is still loading, so they no longer start before the picture. Retest after deploy. | QA: Done",
+   "owner": "Viveka",
+   "status": "verified",
+   "title": "When the Original Video is Dubbed, added Captions--the Transcript and the Audio are going Initially 5-10sec, later the Video is...",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-060": {
+   "kind": "live",
+   "note": "Dev: Fixed 18 Nov: new text is no longer uppercase automatically; an All caps toggle is in the Text panel and the canvas toolbar. Retest after deploy. | QA: Done",
+   "owner": "Praneeth",
+   "status": "verified",
+   "title": "While editing the text in the video, the letters are automatically appearing in uppercase. However, when entering the title, th...",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-061": {
+   "kind": "live",
+   "note": "Dev: Fixed 13 Nov: the timeline now scrolls while a layer is dragged at its left or right edge, so a title can be dragged back to 0:00. Retest after deploy. | QA: Done",
+   "owner": "Praneeth",
+   "status": "verified",
+   "title": "When adding a title or rules to the content while editing in the video timeline, we are unable to move the title bar back to th...",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-062": {
+   "kind": "live",
+   "note": "Dev: Fixed: select the second frame and open its source picker; it lists the project's images and videos too (same fix as Issues #134). Retest after deploy. | QA: Done",
+   "owner": "Praneeth",
+   "status": "verified",
+   "title": "When we select a visual in the editor and choose the second layout option, we are unable to change the second visual to a diffe...",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-063": {
+   "kind": "live",
+   "note": "Dev: Fixed 13 Nov: Space now plays and pauses after clicking Forward 5s (it pressed the button again). Retest after deploy. | QA: Done",
+   "owner": "Praneeth",
+   "status": "verified",
+   "title": "In editor click on the forward button and click space bar the content getting forward and it should work as play and pause",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-064": {
+   "kind": "live",
+   "note": "Dev: Partly fixed 18 Nov: Regenerate now starts a real Magic Clips run instead of showing an earlier result. If a run still produces no clips, the clips service needs checking (backend). Retest after deploy. | QA: Reopen",
+   "owner": "Viveka",
+   "status": "open",
+   "title": "In Editor-AI tools-Magic Clips are not generating",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-065": {
+   "kind": "live",
+   "note": "Dev: Fixed 13 Nov: each video on the editor's start screen has a bin button with a Move to Bin confirmation; restore from the Bin in Projects. Retest after deploy. | QA: Done",
+   "owner": "Praneeth",
+   "status": "verified",
+   "title": "After clicking the editor there is not delete option for the edited videos",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-066": {
+   "kind": "live",
+   "note": "Dev: Fixed 18 Nov: a Cut range button now always shows next to Mark in/out and says which mark is missing (press I and O, then Cut range, or Alt+drag on a clip). Retest after deploy. | QA: Done",
+   "owner": "Praneeth",
+   "status": "verified",
+   "title": "While editing there is no cut for the video option",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-067": {
+   "kind": "live",
+   "note": "Dev: Fixed 18 Nov: the Stock tab now explains to type in Search above to find free stock photos and videos. Retest after deploy. | QA: Done",
+   "owner": "Praneeth",
+   "status": "verified",
+   "title": "In media section while uploading vidoe or image there is one option like stock the option is not working",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-068": {
+   "kind": "live",
+   "note": "",
+   "owner": "Praneeth",
+   "status": "open",
+   "title": "In media section while uploading audio there is one option like stock the option is not working",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-069": {
+   "kind": "live",
+   "note": "Dev: Fixed 18 Nov: Audio Enhance now explains it works on a selected clip and how to add a file through Audio > Library > Upload. Retest after deploy. | QA: Done",
+   "owner": "Praneeth",
+   "status": "verified",
+   "title": "In media section while upload audio there is enhance option there is no way to upload the file",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-070": {
+   "kind": "live",
+   "note": "",
+   "owner": "Praneeth",
+   "status": "open",
+   "title": "While clicking on download there is a post option click on the post and link the youtube account to post the edited video",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-071": {
+   "kind": "live",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "Praneeth",
+   "status": "verified",
+   "title": "In Home page the Growth button is not clickable",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-072": {
+   "kind": "live",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "Praneeth",
+   "status": "verified",
+   "title": "Beside profile name setting button is not working when we click the setting we are getting the profile selection option",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-073": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "Viveka",
+   "status": "verified",
+   "title": "When we navigate to the Home section on the left-side menu, the notification icon is missing, while it is visible in all the ot...",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-074": {
+   "kind": "live",
+   "note": "Dev: fixed",
+   "owner": "Viveka",
+   "status": "fixed",
+   "title": "In the Main Playground page, recently generated images are covering, more than Screen Resolution of Laptop, System. Need Scroll...",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-075": {
+   "kind": "live",
+   "note": "Dev: removed the feature after image generated | QA: Done",
+   "owner": "Praneeth",
+   "status": "verified",
+   "title": "After generating the image click on the use in the video option we are redirecting to the editor page and we are not able to se...",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-076": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "Praneeth",
+   "status": "verified",
+   "title": "After generating an image, there is no Back option to return to the Playground home page. Please add a Back button so users can...",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-077": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "Praneeth",
+   "status": "verified",
+   "title": "When scrolling in the Playground, the text field is not minimizing properly and overlaps the content.",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-078": {
+   "kind": "live",
+   "note": "Dev: this is a feature ,it is not a bug, will implement this in version 2",
+   "owner": "",
+   "status": "wontfix",
+   "title": "The text entered for the second generation is not being applied to the previously generated image.",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-079": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "Viveka",
+   "status": "verified",
+   "title": "When any condition is failed, w.r.t image, Validation is providing, but when clicking on arrow, the image generation process is...",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-080": {
+   "kind": "live",
+   "note": "Dev: this is a feature ,it is not a bug, will implement this in version 2",
+   "owner": "Viveka",
+   "status": "wontfix",
+   "title": "Unable to history chat if the Playground, If history is not maintained user will be dissatisfied.",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-081": {
+   "kind": "live",
+   "note": "Dev: this is a feature ,it is not a bug, will implement this in version 2",
+   "owner": "Viveka",
+   "status": "wontfix",
+   "title": "In Playground Chat level- generated img is provided with use in video, other that there, no other place of img is provided with...",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-082": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Reopen, Image file is not removing from the prompter.",
+   "owner": "Viveka",
+   "status": "open",
+   "title": "In Playground-Upload Media, Video are not removing from the Chat prompter, even after required response is generated.",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-083": {
+   "kind": "live",
+   "note": "",
+   "owner": "Viveka",
+   "status": "open",
+   "title": "Even when the image is less than 1MB, playground is restricting for me to Edit.",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-084": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "Viveka",
+   "status": "verified",
+   "title": "when Video, image is provided, for image creation, the given img is not appearing for the right hand side prompt, that we have...",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-085": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "Viveka",
+   "status": "verified",
+   "title": "Download Your Data Status Message Is Still appearing as \"Your data export has started downloading \", even after download is Com...",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-086": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "Viveka",
+   "status": "verified",
+   "title": "Downloaded File is in Json Format, Providing Json Form of Data doesn't add value to the Users. Please Do Check.",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-087": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "Viveka",
+   "status": "verified",
+   "title": "Unable to Invite New Members – Verified Email Address Validation Error",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-088": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "Viveka",
+   "status": "verified",
+   "title": "The Owner option is displayed in the Start From dropdown. Since the logged-in user is already the workspace owner, there is no...",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-089": {
+   "kind": "live",
+   "note": "",
+   "owner": "Viveka",
+   "status": "open",
+   "title": "When Clicking on Instagram-->+Add Account Page is redirecting to Facebook.",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-090": {
+   "kind": "live",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "Viveka",
+   "status": "verified",
+   "title": "For Youtube-Account is not Linking for the CloudReel.Getting 403 Error",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
+  "CRB-091": {
+   "kind": "live",
+   "note": "Dev: Under facebook review",
+   "owner": "Viveka",
+   "status": "in-progress",
+   "title": "For Facebook-It is saying like App is not accessible.",
+   "updated": "2026-11-28T06:21:41.000Z"
+  },
   "PUB-23": {
    "kind": "finding",
    "note": "",

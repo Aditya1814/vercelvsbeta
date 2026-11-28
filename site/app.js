@@ -28,6 +28,7 @@
     flows: '<path d="m3 17 2 2 4-4M3 7l2 2 4-4M13 6h8M13 12h8M13 18h8"/>',
     qa: '<path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/>',
     better: '<path d="M7 10v12M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13 0 0 1 3 3.88Z"/>',
+    live: '<circle cx="12" cy="12" r="10"/><path d="M12 7v5l3 3"/>',
     reference: '<path d="M22 12h-4l-3 9L9 3l-3 9H2"/>',
     search: '<circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>',
     menu: '<path d="M4 6h16M4 12h16M4 18h16"/>',
@@ -49,7 +50,7 @@
   D.jtbd.segments.forEach(function (s) { JOBS = JOBS.concat(s.jobs); });
   var ITEMS = {};
   function reg(list, kind) { list.forEach(function (d) { ITEMS[d.id] = { kind: kind, d: d }; }); }
-  reg(D.findings, 'finding'); reg(D.better, 'better'); reg(D.defects, 'defect'); reg(D.cases, 'case'); reg(JOBS, 'job');
+  reg(D.findings, 'finding'); reg(D.better, 'better'); reg(D.defects, 'defect'); reg(D.cases, 'case'); reg(JOBS, 'job'); reg(D.live || [], 'live');
 
   var BACK = {};
   function back(from, to) { if (ITEMS[to] && from !== to) { (BACK[to] = BACK[to] || []).push(from); } }
@@ -61,7 +62,8 @@
     finding: { label: 'Findings', one: 'Finding', items: D.findings, route: 'findings' },
     defect: { label: 'Defects', one: 'Defect', items: D.defects, route: 'defects' },
     case: { label: 'Failed test cases', one: 'Test case', items: D.cases.filter(function (c) { return c.status !== 'pass'; }), route: 'cases' },
-    job: { label: 'User jobs', one: 'Job', items: JOBS, route: 'segments' }
+    job: { label: 'User jobs', one: 'Job', items: JOBS, route: 'segments' },
+    live: { label: 'Live Issues', one: 'Live issue', items: D.live || [], route: 'live' }
   };
   function kindName(id) { var k = ITEMS[id].kind; return KINDS[k] ? KINDS[k].one : 'Beta is better'; }
   function trackable(id) {
@@ -129,7 +131,7 @@
   }
 
   /* ------------------------------------------------------------ small renderers */
-  var ID_RE = /\b(?:(?:SHA|LIVE|CREATE|PUB|X)-\d+|BUG-(?:FUNC|CA|NF)-\d+|TC-(?:FUNC|COMPAT|NF)-\d+|[A-Z]{2}-J\d+)\b/g;
+  var ID_RE = /\b(?:(?:SHA|LIVE|CREATE|PUB|X)-\d+|BUG-(?:FUNC|CA|NF)-\d+|TC-(?:FUNC|COMPAT|NF)-\d+|CRB-\d+|[A-Z]{2}-J\d+)\b/g;
   function ref(id) {
     if (!ITEMS[id]) return h(id);
     var t = ITEMS[id].d.title || ITEMS[id].d.statement;
@@ -237,6 +239,11 @@
         '<div class="tbl" tabindex="0" role="region" aria-label="Steps: reference vs beta"><table><thead><tr><th scope="col">#</th><th scope="col">Step</th><th scope="col">Reference</th><th scope="col">Beta</th></tr></thead><tbody>' + d.steps.map(function (s) {
           return '<tr><td class="num">' + h(s.n) + '</td><td><b>' + h(s.step) + '</b><div class="muted">' + h(s.where) + '</div></td><td>' + pill(s.ref.res) + ' ' + link(s.ref.text) + '</td><td>' + pill(s.beta.res) + ' ' + link(s.beta.text) + '</td></tr>';
         }).join('') + '</tbody></table></div>' + shots(d.shots);
+    } else if (it.kind === 'live') {
+      out = '<pre tabindex="0">' + h(d.summary) + '</pre>' +
+        (d.steps && d.steps.length ? '<div class="lbl">Steps to reproduce</div><ol class="steps">' + d.steps.map(function (s) { return '<li>' + link(s) + '</li>'; }).join('') + '</ol>' : '') +
+        (d.expected || d.actual ? cmp('Expected', d.expected, 'Actual', d.actual) : '') +
+        kv([['Reported by', d.reporter], ['Date', d.date], ['Dev status', d.devStatus], ['QA status', d.qaStatus], ['QA note', d.qaNote]]);
     }
     return out + track(id);
   }
@@ -245,6 +252,7 @@
     if (it.kind === 'finding' || it.kind === 'better') return { pill: pill(d.sev), title: d.title, sub: d.module + ' · ' + d.typeLabel };
     if (it.kind === 'defect') return { pill: pill(d.sev) + pill(d.pri), title: d.title, sub: d.module + ' · ' + d.repro };
     if (it.kind === 'case') return { pill: pill(d.statusLabel), title: d.title, sub: d.suite + ' · ' + d.pri };
+    if (it.kind === 'live') return { pill: pill(d.sev), title: d.title, sub: d.module + (d.reporter ? ' · ' + d.reporter : '') };
     return { pill: pill(d.outcomeLabel), title: d.statement, sub: d.segment + ' · ' + d.priority };
   }
   var OPEN = {}, SELECTED = {}, SHOWN = [];
@@ -421,6 +429,16 @@
       ]
     });
   };
+  V.live = function () {
+    listView({
+      key: 'live', title: 'Live Issues', items: D.live || [],
+      lede: (D.live || []).length + ' bugs tracked in the team’s live issue sheet. Status starts from the sheet’s Dev/QA status (Verified = QA marked Done, Fixed = developer-fixed but not yet QA-verified) and can be updated here.',
+      filters: [
+        { name: 'sev', label: 'Any severity', options: ['Critical', 'Major', 'Medium', 'Low'], get: function (d) { return d.sev; } },
+        { name: 'module', label: 'Any module', get: function (d) { return d.module; } }
+      ]
+    });
+  };
   V.better = function () {
     listView({
       key: 'better', title: 'Where the beta is better', items: D.better, noStatus: true,
@@ -510,7 +528,7 @@
 
   /* ------------------------------------------------------------ nav + routing */
   var NAV = [
-    ['Track'], ['dashboard', 'Dashboard'], ['findings', 'Findings', 'finding'], ['defects', 'Defect log', 'defect'], ['cases', 'Test cases', 'case'], ['segments', 'User segments', 'job'],
+    ['Track'], ['dashboard', 'Dashboard'], ['live', 'Live Issues', 'live'], ['findings', 'Findings', 'finding'], ['defects', 'Defect log', 'defect'], ['cases', 'Test cases', 'case'], ['segments', 'User segments', 'job'],
     ['Report'], ['modules', 'Module status'], ['journeys', 'Key journeys'], ['flows', 'Tested flows'], ['qa', 'QA report'], ['better', 'Beta is better'], ['reference', 'Reference data']
   ];
   var TITLES = {}; NAV.forEach(function (n) { if (n.length > 1) TITLES[n[0]] = n[1]; });
