@@ -42,16 +42,19 @@
     download: '<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>',
     upload: '<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/>',
     alert: '<path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3M12 9v4M12 17h.01"/>',
-    check: '<path d="M20 6 9 17l-5-5"/>'
+    check: '<path d="M20 6 9 17l-5-5"/>',
+    plus: '<path d="M12 5v14M5 12h14"/>',
+    trash: '<path d="M3 6h18M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>'
   };
   function icon(n) { return '<svg class="i" viewBox="0 0 24 24" aria-hidden="true">' + IC[n] + '</svg>'; }
 
   /* ------------------------------------------------------------ items */
   var JOBS = [];
   D.jtbd.segments.forEach(function (s) { JOBS = JOBS.concat(s.jobs); });
+  D.live = D.live || [];
   var ITEMS = {};
   function reg(list, kind) { list.forEach(function (d) { ITEMS[d.id] = { kind: kind, d: d }; }); }
-  reg(D.findings, 'finding'); reg(D.better, 'better'); reg(D.defects, 'defect'); reg(D.cases, 'case'); reg(JOBS, 'job'); reg(D.live || [], 'live');
+  reg(D.findings, 'finding'); reg(D.better, 'better'); reg(D.defects, 'defect'); reg(D.cases, 'case'); reg(JOBS, 'job'); reg(D.live, 'live');
 
   var BACK = {};
   function back(from, to) { if (ITEMS[to] && from !== to) { (BACK[to] = BACK[to] || []).push(from); } }
@@ -64,8 +67,9 @@
     defect: { label: 'Defects', one: 'Defect', items: D.defects, route: 'defects' },
     case: { label: 'Failed test cases', one: 'Test case', items: D.cases.filter(function (c) { return c.status !== 'pass'; }), route: 'cases' },
     job: { label: 'User jobs', one: 'Job', items: JOBS, route: 'segments' },
-    live: { label: 'Live Issues', one: 'Live issue', items: D.live || [], route: 'live' }
+    live: { label: 'Live Issues', one: 'Live issue', items: D.live, route: 'live' }
   };
+  function refreshCaseItems() { KINDS.case.items = D.cases.filter(function (c) { return c.status !== 'pass'; }); }
   function kindName(id) { var k = ITEMS[id].kind; return KINDS[k] ? KINDS[k].one : 'Beta is better'; }
   function trackable(id) {
     var it = ITEMS[id];
@@ -132,7 +136,7 @@
   }
 
   /* ------------------------------------------------------------ small renderers */
-  var ID_RE = /\b(?:(?:SHA|LIVE|CREATE|PUB|X)-\d+|BUG-(?:FUNC|CA|NF)-\d+|TC-(?:FUNC|COMPAT|NF)-\d+|CRB-\d+|[A-Z]{2}-J\d+)\b/g;
+  var ID_RE = /\b(?:(?:SHA|LIVE|CREATE|PUB|X)-\d+|BUG-(?:FUNC|CA|NF)-\d+|TC-(?:FUNC|COMPAT|NF)-\d+|CRB-\d+|NEWBUG-[0-9A-Z]+|NEWTC-[0-9A-Z]+|[A-Z]{2}-J\d+)\b/g;
   function ref(id) {
     if (!ITEMS[id]) return h(id);
     var t = ITEMS[id].d.title || ITEMS[id].d.statement;
@@ -167,7 +171,8 @@
   }
   function ul(items) { return '<ul class="tight">' + items.map(function (i) { return '<li>' + link(i) + '</li>'; }).join('') + '</ul>'; }
   function shotBtn(img, cap) {
-    return '<button type="button" class="shot" data-full="' + h(IMG + img) + '" data-cap="' + h(cap) + '" aria-label="Enlarge screenshot: ' + h(cap) + '"><img loading="lazy" decoding="async" src="' + h(IMG + img) + '" alt="' + h(cap) + '"></button>';
+    var src = img.indexOf('data:') === 0 ? img : IMG + img;
+    return '<button type="button" class="shot" data-full="' + h(src) + '" data-cap="' + h(cap) + '" aria-label="Enlarge screenshot: ' + h(cap) + '"><img loading="lazy" decoding="async" src="' + h(src) + '" alt="' + h(cap) + '"></button>';
   }
   function shots(list) {
     if (!list || !list.length) return '';
@@ -233,7 +238,7 @@
         kv([['Environment', d.env], ['Preconditions', d.pre], ['Reproducibility', d.repro], ['Related', d.related]]) + related(id) + shots(d.shots);
     } else if (it.kind === 'case') {
       out = kv([['Preconditions', d.pre], ['Steps', d.steps]]) + cmp('Expected', d.expected, 'Actual', d.actual) +
-        kv([['Notes', d.notes], ['Environment', d.env], ['Defects', d.defects.length ? refs(d.defects) : '', true]]);
+        kv([['Notes', d.notes], ['Environment', d.env], ['Defects', d.defects.length ? refs(d.defects) : '', true]]) + shots(d.shots);
     } else if (it.kind === 'job') {
       out = '<p>' + link(d.note) + '</p><div class="lbl">Success looks like</div>' + ul(d.success) + '<div style="height:12px"></div>' +
         kv([['Related', d.refs.length ? refs(d.refs) : '', true]]) +
@@ -244,7 +249,7 @@
       out = '<pre tabindex="0">' + h(d.summary) + '</pre>' +
         (d.steps && d.steps.length ? '<div class="lbl">Steps to reproduce</div><ol class="steps">' + d.steps.map(function (s) { return '<li>' + link(s) + '</li>'; }).join('') + '</ol>' : '') +
         (d.expected || d.actual ? cmp('Expected', d.expected, 'Actual', d.actual) : '') +
-        kv([['Reported by', d.reporter], ['Date', d.date], ['Dev status', d.devStatus], ['QA status', d.qaStatus], ['QA note', d.qaNote]]);
+        kv([['Reported by', d.reporter], ['Date', d.date], ['Dev status', d.devStatus], ['QA status', d.qaStatus], ['QA note', d.qaNote]]) + shots(d.shots);
     }
     return out + track(id);
   }
@@ -294,8 +299,11 @@
           STATUSES.map(function (s) { return '<option value="' + s[0] + '"' + (fs.status === s[0] ? ' selected' : '') + '>' + s[1] + '</option>'; }).join('') + '</select>') +
         '<button type="button" class="btn ghost" data-clear hidden>Clear filters</button><span class="count" id="count" aria-live="polite"></span>';
     }
-    $('#main').innerHTML = head(o.title, o.lede) + '<div class="filters" role="search" aria-label="Filter ' + o.title + '">' + filterBar() + '</div>' +
+    $('#main').innerHTML = head(o.title, o.lede) +
+      (o.addBtn ? '<button type="button" class="btn" id="addbtn" style="margin-bottom:12px">' + icon('plus') + h(o.addBtn.label) + '</button>' : '') +
+      '<div class="filters" role="search" aria-label="Filter ' + o.title + '">' + filterBar() + '</div>' +
       (bulk ? '<div class="listhead"><label><input type="checkbox" id="pickall"> Select all shown</label></div>' : '') + '<div class="rows" id="list"></div>';
+    if (o.addBtn) $('#addbtn').addEventListener('click', o.addBtn.run);
     function active() { return Object.keys(fs).some(function (k) { return fs[k]; }); }
     function draw() {
       var q = fs.q.trim().toLowerCase();
@@ -424,6 +432,7 @@
     listView({
       key: 'cases', title: 'Test cases', items: D.cases,
       lede: D.cases.length + ' test cases, showing failures first. Passing cases are for reference; failed, blocked and not-run cases can be tracked for re-test.',
+      addBtn: { label: 'Add test case', run: function () { openNewItemDialog('case'); } },
       filters: [
         { name: 'result', label: 'Any result', options: ['fail', 'blocked', 'not-run', 'pass'], get: function (d) { return d.status; } },
         { name: 'suite', label: 'Any suite', get: function (d) { return d.suite; } },
@@ -435,6 +444,7 @@
     listView({
       key: 'live', title: 'Live Issues', items: D.live || [],
       lede: (D.live || []).length + ' bugs tracked in the team’s live issue sheet. Status starts from the sheet’s Dev/QA status (Verified = QA marked Done, Fixed = developer-fixed but not yet QA-verified) and can be updated here.',
+      addBtn: { label: 'Report a bug', run: function () { openNewItemDialog('live'); } },
       filters: [
         { name: 'sev', label: 'Any severity', options: ['Critical', 'Major', 'Medium', 'Low'], get: function (d) { return d.sev; } },
         { name: 'module', label: 'Any module', get: function (d) { return d.module; } }
@@ -623,6 +633,127 @@
     window.scrollTo(0, y);
   });
 
+  /* ------------------------------------------------------------ report a bug / add a test case */
+  var NEWFORM_FIELDS = {
+    live: [
+      { k: 'summary', label: 'What’s the bug?', type: 'textarea', required: true },
+      { k: 'module', label: 'Module / page', type: 'text' },
+      { k: 'sev', label: 'Severity', type: 'select', options: ['Critical', 'Major', 'Medium', 'Low'], def: 'Medium' },
+      { k: 'steps', label: 'Steps to reproduce (one per line)', type: 'textarea' },
+      { k: 'expected', label: 'Expected', type: 'text' },
+      { k: 'actual', label: 'Actual', type: 'text' },
+      { k: 'reporter', label: 'Your name', type: 'text' }
+    ],
+    case: [
+      { k: 'title', label: 'Title', type: 'text', required: true },
+      { k: 'suite', label: 'Suite', type: 'text' },
+      { k: 'pri', label: 'Priority', type: 'select', options: ['P1', 'P2', 'P3'], def: 'P2' },
+      { k: 'pre', label: 'Preconditions', type: 'textarea' },
+      { k: 'steps', label: 'Steps (one per line)', type: 'textarea' },
+      { k: 'expected', label: 'Expected result', type: 'textarea' },
+      { k: 'actual', label: 'Actual result (if already run)', type: 'textarea' },
+      { k: 'result', label: 'Result', type: 'select', options: ['fail', 'blocked', 'not-run'], def: 'fail' },
+      { k: 'notes', label: 'Notes', type: 'textarea' },
+      { k: 'reporter', label: 'Your name', type: 'text' }
+    ]
+  };
+  var pendingShots = [];
+  function fieldHtml(f) {
+    var id = 'nf-' + f.k;
+    if (f.type === 'select') {
+      return '<div><label for="' + id + '">' + h(f.label) + '</label><select id="' + id + '">' + f.options.map(function (o) { return '<option' + (o === f.def ? ' selected' : '') + '>' + h(o) + '</option>'; }).join('') + '</select></div>';
+    }
+    if (f.type === 'textarea') {
+      return '<div><label for="' + id + '">' + h(f.label) + (f.required ? ' *' : '') + '</label><textarea id="' + id + '" rows="3"' + (f.required ? ' required' : '') + '></textarea></div>';
+    }
+    return '<div><label for="' + id + '">' + h(f.label) + (f.required ? ' *' : '') + '</label><input type="text" id="' + id + '"' + (f.required ? ' required' : '') + '></div>';
+  }
+  function renderShotPreview() {
+    var el = $('#nf-shots-preview');
+    if (!el) return;
+    el.innerHTML = pendingShots.map(function (s, i) {
+      return '<figure><img src="' + h(s.img) + '" alt="' + h(s.caption) + '"><button type="button" data-rmshot="' + i + '" aria-label="Remove screenshot">' + icon('x') + '</button></figure>';
+    }).join('');
+  }
+  function compressImage(file) {
+    return new Promise(function (resolve) {
+      var reader = new FileReader();
+      reader.onload = function () {
+        var img = new Image();
+        img.onload = function () {
+          var maxW = 1280, scale = Math.min(1, maxW / img.width);
+          var w = Math.max(1, Math.round(img.width * scale)), hgt = Math.max(1, Math.round(img.height * scale));
+          var c = document.createElement('canvas'); c.width = w; c.height = hgt;
+          c.getContext('2d').drawImage(img, 0, 0, w, hgt);
+          resolve({ img: c.toDataURL('image/jpeg', 0.72), caption: file.name });
+        };
+        img.onerror = function () { resolve(null); };
+        img.src = reader.result;
+      };
+      reader.onerror = function () { resolve(null); };
+      reader.readAsDataURL(file);
+    });
+  }
+  function createItem(kind, data, track) {
+    if (kind === 'live') D.live.push(data);
+    else if (kind === 'case') { D.cases.push(data); refreshCaseItems(); }
+    reg([data], kind);
+    var entry = { custom: true, kind: kind, status: track.status, owner: track.owner || '', note: track.note || '', title: data.title, updated: new Date().toISOString(), data: data };
+    state.items[data.id] = entry;
+    saveLocal();
+    if (mode === 'server') post('/api/item', { id: data.id, entry: entry }).catch(serverLost);
+    renderNav(); renderStore();
+  }
+  function hydrateCustom() {
+    Object.keys(state.items).forEach(function (id) {
+      var e = state.items[id];
+      if (!e || !e.custom || ITEMS[id]) return;
+      var d = Object.assign({ id: id }, e.data || {});
+      if (e.kind === 'live') D.live.push(d);
+      else if (e.kind === 'case') D.cases.push(d);
+      else return;
+      reg([d], e.kind);
+    });
+    refreshCaseItems();
+  }
+  function submitNewItem(kind, fields) {
+    var data = {};
+    fields.forEach(function (f) {
+      var v = $('#nf-' + f.k).value.trim();
+      if (f.k === 'steps' && kind === 'live') data.steps = v ? v.split('\n').map(function (s) { return s.trim(); }).filter(Boolean) : [];
+      else data[f.k] = v;
+    });
+    if (kind === 'live') {
+      if (!data.summary) return;
+      data.title = data.summary.split('\n')[0].slice(0, 130);
+      data.date = new Date().toISOString().slice(0, 10);
+      data.devStatus = ''; data.qaStatus = ''; data.qaNote = '';
+    } else {
+      if (!data.title) return;
+      data.statusLabel = { fail: 'Fail', blocked: 'Blocked', 'not-run': 'Not run' }[data.result] || data.result;
+      data.status = data.result; delete data.result;
+      data.defects = []; data.env = '';
+    }
+    data.shots = pendingShots.slice();
+    data.id = (kind === 'live' ? 'NEWBUG-' : 'NEWTC-') + Date.now().toString(36).toUpperCase();
+    createItem(kind, data, { status: 'open', owner: data.reporter || '', note: '' });
+    $('#newdlg').close();
+    toast((kind === 'live' ? 'Bug reported: ' : 'Test case added: ') + data.id);
+    V[kind === 'live' ? 'live' : 'cases']();
+  }
+  function openNewItemDialog(kind) {
+    pendingShots = [];
+    var fields = NEWFORM_FIELDS[kind];
+    $('#newdlg-h').textContent = kind === 'live' ? 'Report a bug' : 'Add a test case';
+    $('#newform').innerHTML = fields.map(fieldHtml).join('') +
+      '<div><label for="nf-shots">Screenshots</label><input type="file" id="nf-shots" accept="image/*" multiple></div>' +
+      '<div class="shotprev" id="nf-shots-preview"></div>' +
+      '<div class="newform-actions"><button type="button" class="btn ghost" data-close>Cancel</button><button type="submit" class="btn primary">' + (kind === 'live' ? 'Report bug' : 'Add test case') + '</button></div>';
+    $('#newform').onsubmit = function (ev) { ev.preventDefault(); submitNewItem(kind, fields); };
+    if (!$('#newdlg').open) $('#newdlg').showModal();
+    $('#nf-' + fields[0].k).focus();
+  }
+
   /* ------------------------------------------------------------ command palette */
   var cmdIdx = 0, cmdRes = [];
   function cmdSearch(q) {
@@ -714,6 +845,7 @@
     }
     if ((el = t.closest('[data-close]'))) { el.closest('dialog').close(); return; }
     if (t.tagName === 'DIALOG') { t.close(); return; }
+    if ((el = t.closest('[data-rmshot]'))) { pendingShots.splice(+el.getAttribute('data-rmshot'), 1); renderShotPreview(); return; }
     if ((el = t.closest('[data-step]'))) {
       var next = SHOWN[SHOWN.indexOf(current) + (+el.getAttribute('data-step'))];
       if (next) history.replaceState(null, '', '#/' + route() + '?item=' + next), showItem(next);
@@ -748,6 +880,12 @@
       SHOWN.filter(trackable).forEach(function (i) { SELECTED[i] = t.checked; });
       $$('[data-pick]').forEach(function (c) { c.checked = t.checked; c.closest('.row').classList.toggle('sel', t.checked); });
       renderBulk();
+    } else if (t.id === 'nf-shots') {
+      Promise.all([].slice.call(t.files).map(compressImage)).then(function (res) {
+        res.forEach(function (r) { if (r) pendingShots.push(r); });
+        renderShotPreview();
+      });
+      t.value = '';
     } else if (t.id === 'bulk-s' && t.value) {
       var ids = picked(), st = t.value;
       ids.forEach(function (i) { apply(i, { status: st }); });
@@ -819,5 +957,5 @@
   paintTheme();
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', paintTheme);
   window.addEventListener('hashchange', render);
-  loadState().then(function () { render(); renderStore(); });
+  loadState().then(function () { hydrateCustom(); render(); renderStore(); });
 })();

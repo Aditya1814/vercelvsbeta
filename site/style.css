@@ -222,6 +222,20 @@ figcaption{font-size:11.5px;color:var(--ink3);margin-top:4px;overflow-wrap:anywh
 .track{display:grid;grid-template-columns:auto minmax(130px,200px) minmax(0,1fr);gap:10px;align-items:end;background:var(--surface-2);border:1px solid var(--line);border-radius:var(--r-m);padding:12px;margin-top:6px}
 .track label{display:block;font-size:11px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--ink3);margin-bottom:4px}
 .track textarea{display:block;width:100%;min-height:33px;resize:vertical}
+
+#newform{display:block}
+#newform>div{margin-bottom:12px}
+#newform label{display:block;font-size:12.5px;font-weight:600;color:var(--ink2);margin-bottom:4px}
+#newform input,#newform select,#newform textarea{width:100%}
+#newform textarea{resize:vertical;min-height:60px}
+.shotprev{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 12px}
+.shotprev:empty{display:none}
+.shotprev figure{margin:0;position:relative;width:110px}
+.shotprev img{width:110px;height:78px;object-fit:cover;border-radius:var(--r-s);border:1px solid var(--line);display:block;background:var(--surface-2)}
+.shotprev button{position:absolute;top:-7px;right:-7px;background:var(--surface);border:1px solid var(--line);border-radius:999px;width:22px;height:22px;display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0;color:var(--ink2)}
+.shotprev button:hover{border-color:var(--line-strong);color:var(--ink)}
+.shotprev .i{width:13px;height:13px}
+.newform-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:4px}
 .track input{width:100%}
 .track .meta{grid-column:1/-1;color:var(--ink3);font-size:12px}
 
