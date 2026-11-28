@@ -540,6 +540,30 @@
     ['Prod Issues'], ['prod', 'Prod Issues']
   ];
   var TITLES = {}; NAV.forEach(function (n) { if (n.length > 1) TITLES[n[0]] = n[1]; });
+
+  /* organizations: NAV's group headers split the flat list into switchable orgs */
+  var ORGS = [];
+  NAV.forEach(function (n) {
+    if (n.length === 1) ORGS.push({ id: n[0].toLowerCase().replace(/[^a-z0-9]+/g, '-'), label: n[0], items: [] });
+    else ORGS[ORGS.length - 1].items.push(n);
+  });
+  function orgOf(id) { return ORGS.filter(function (o) { return o.id === id; })[0] || ORGS[0]; }
+  function routeOrg(r) { return (ORGS.filter(function (o) { return o.items.some(function (it) { return it[0] === r; }); })[0] || ORGS[0]).id; }
+  var ORG_KEY = 'cloudreel-tracker-org';
+  var curOrg = routeOrg((function () { var raw = location.hash.replace(/^#\/?/, '').split('?')[0]; return V[raw] ? raw : 'dashboard'; })());
+  try { var savedOrg = localStorage.getItem(ORG_KEY); if (savedOrg && orgOf(savedOrg).id === savedOrg) curOrg = savedOrg; } catch (e) { /* storage unavailable */ }
+  function renderOrgSwitch() {
+    $('#orgswitch').innerHTML = '<label class="sr" for="orgsel">Organization</label><select id="orgsel" aria-label="Organization">' +
+      ORGS.map(function (o) { return '<option value="' + o.id + '"' + (o.id === curOrg ? ' selected' : '') + '>' + h(o.label) + '</option>'; }).join('') + '</select>';
+  }
+  function setOrg(id) {
+    if (id === curOrg || !orgOf(id)) return;
+    curOrg = id;
+    try { localStorage.setItem(ORG_KEY, id); } catch (e) { /* storage unavailable */ }
+    renderNav();
+    var first = orgOf(id).items[0][0];
+    location.hash = '#/' + (first === 'dashboard' ? '' : first);
+  }
   function parse() {
     var raw = location.hash.replace(/^#\/?/, ''), parts = raw.split('?');
     var m = /(?:^|&)item=([^&]+)/.exec(parts[1] || '');
@@ -547,9 +571,10 @@
   }
   function route() { return parse().route; }
   function renderNav() {
-    var cur = route();
-    $('#nav').innerHTML = NAV.map(function (n) {
-      if (n.length === 1) return '<div class="grp">' + n[0] + '</div>';
+    var cur = route(), ro = routeOrg(cur);
+    if (ro !== curOrg) { curOrg = ro; try { localStorage.setItem(ORG_KEY, ro); } catch (e) { /* storage unavailable */ } }
+    renderOrgSwitch();
+    $('#nav').innerHTML = orgOf(curOrg).items.map(function (n) {
       var cnt = '';
       if (n[2]) { var c = counts(KINDS[n[2]].items); cnt = '<em aria-label="' + c.closed + ' of ' + c.total + ' closed">' + c.closed + '/' + c.total + '</em>'; }
       return '<a href="#/' + (n[0] === 'dashboard' ? '' : n[0]) + '"' + (cur === n[0] ? ' aria-current="page"' : '') + '>' + icon(n[0]) + '<span>' + n[1] + '</span>' + cnt + '</a>';
@@ -676,6 +701,7 @@
   }
   $('#menu').addEventListener('click', function () { drawer(!$('#side').classList.contains('open')); });
   $('#scrim').addEventListener('click', function () { drawer(false); });
+  $('#orgswitch').addEventListener('change', function (ev) { if (ev.target.id === 'orgsel') setOrg(ev.target.value); });
 
   /* ------------------------------------------------------------ events */
   document.addEventListener('click', function (ev) {
