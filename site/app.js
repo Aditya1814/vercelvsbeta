@@ -534,8 +534,8 @@
 
   /* ------------------------------------------------------------ nav + routing */
   var NAV = [
-    ['Vercel vs Beta'], ['dashboard', 'Dashboard'], ['findings', 'Findings', 'finding'], ['defects', 'Defect log', 'defect'], ['cases', 'Test cases', 'case'], ['segments', 'User segments', 'job'],
-    ['modules', 'Module status'], ['journeys', 'Key journeys'], ['flows', 'Tested flows'], ['qa', 'QA report'], ['better', 'Beta is better'], ['reference', 'Reference data'],
+    ['Vercel vs Beta'], ['dashboard', 'Dashboard'], ['findings', 'Findings', 'finding'], ['cases', 'Test cases', 'case'],
+    ['journeys', 'Key journeys'], ['flows', 'Tested flows'], ['qa', 'QA report'], ['better', 'Beta is better'],
     ['Beta Issues'], ['live', 'Live Issues', 'live'],
     ['Prod Issues'], ['prod', 'Prod Issues']
   ];
