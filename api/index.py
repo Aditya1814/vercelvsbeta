@@ -151,12 +151,39 @@ def parse_source(src):
     return items
 
 
+def _fingerprint(title):
+    return re.sub(r"\s+", " ", title.strip().lower())
+
+
 def sync_source(src, state):
+    """Match sheet rows to tracker entries by a title fingerprint, not row
+    position - the team edits these sheets in place (reorders, deletes,
+    inserts rows), so position drifts and silently mismatches content."""
     rows = parse_source(src)
+    prefix = src["prefix"]
+    items = state["items"]
+
+    by_fp, max_num = {}, 0
+    id_re = re.compile(r"^%s-(\d+)$" % prefix)
+    for iid, e in items.items():
+        m = id_re.match(iid)
+        if not m:
+            continue
+        max_num = max(max_num, int(m.group(1)))
+        t = (e.get("data") or {}).get("title") or e.get("title") or ""
+        fp = _fingerprint(t)
+        if fp and fp not in by_fp:
+            by_fp[fp] = iid
+
     added = updated = unchanged = 0
     now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.000Z")
-    for i, r in enumerate(rows, 1):
-        iid = "%s-%03d" % (src["prefix"], i)
+    seen_fp = set()
+    for r in rows:
+        fp = _fingerprint(r["title"])
+        if fp in seen_fp:
+            fp = fp + "#" + r["module"]  # de-dupe identical titles within this run
+        seen_fp.add(fp)
+
         note_parts = []
         if r["bugType"]:
             note_parts.append("Type: " + r["bugType"])
@@ -166,36 +193,47 @@ def sync_source(src, state):
             note_parts.append("QA: " + r["qaStatus"])
         if r["qaNote"]:
             note_parts.append("Comments: " + r["qaNote"])
-        data = {
+
+        iid = by_fp.get(fp)
+        if iid is None:
+            max_num += 1
+            iid = "%s-%03d" % (prefix, max_num)
+            data = {
+                "id": iid, "module": r["module"], "sev": r["sev"], "title": r["title"],
+                "summary": r["title"], "steps": r["steps"], "actual": r["actual"],
+                "expected": r["expected"], "reporter": "", "date": r["date"],
+                "devStatus": r["devStatus"], "qaStatus": r["qaStatus"], "qaNote": r["qaNote"],
+                "sheetId": r["sheetId"],
+            }
+            items[iid] = {
+                "custom": True, "kind": src["kind"], "status": _derive_status(r["devStatus"], r["qaStatus"]),
+                "owner": "", "note": " | ".join(note_parts), "title": r["title"], "updated": now, "data": data,
+            }
+            by_fp[fp] = iid
+            added += 1
+            continue
+
+        existing = items[iid]
+        old_data = existing.get("data") or {}
+        changed = (not existing.get("custom") or old_data.get("devStatus") != r["devStatus"]
+                   or old_data.get("qaStatus") != r["qaStatus"] or old_data.get("steps") != r["steps"]
+                   or old_data.get("module") != r["module"])
+        if not changed:
+            unchanged += 1
+            continue
+        entry = dict(existing)
+        entry["custom"] = True
+        entry["data"] = {
             "id": iid, "module": r["module"], "sev": r["sev"], "title": r["title"],
             "summary": r["title"], "steps": r["steps"], "actual": r["actual"],
             "expected": r["expected"], "reporter": "", "date": r["date"],
             "devStatus": r["devStatus"], "qaStatus": r["qaStatus"], "qaNote": r["qaNote"],
             "sheetId": r["sheetId"],
         }
-        existing = state["items"].get(iid)
-        if existing is None:
-            state["items"][iid] = {
-                "custom": True, "kind": src["kind"], "status": _derive_status(r["devStatus"], r["qaStatus"]),
-                "owner": "", "note": " | ".join(note_parts), "title": r["title"], "updated": now, "data": data,
-            }
-            added += 1
-            continue
-        old_data = existing.get("data") or {}
-        changed = (not existing.get("custom") or old_data.get("devStatus") != r["devStatus"]
-                   or old_data.get("qaStatus") != r["qaStatus"] or old_data.get("title") != r["title"]
-                   or old_data.get("steps") != r["steps"])
-        if not changed:
-            unchanged += 1
-            continue
-        entry = dict(existing)
-        entry["custom"] = True
-        entry["data"] = data
-        entry["title"] = r["title"]
         if old_data.get("devStatus") != r["devStatus"] or old_data.get("qaStatus") != r["qaStatus"]:
             entry["status"] = _derive_status(r["devStatus"], r["qaStatus"])
             entry["updated"] = now
-        state["items"][iid] = entry
+        items[iid] = entry
         updated += 1
     return {"total": len(rows), "added": added, "updated": updated, "unchanged": unchanged}
 
