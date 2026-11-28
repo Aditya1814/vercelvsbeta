@@ -44,6 +44,7 @@
     alert: '<path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3M12 9v4M12 17h.01"/>',
     check: '<path d="M20 6 9 17l-5-5"/>',
     plus: '<path d="M12 5v14M5 12h14"/>',
+    chev: '<path d="m6 9 6 6 6-6"/>',
     trash: '<path d="M3 6h18M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>'
   };
   function icon(n) { return '<svg class="i" viewBox="0 0 24 24" aria-hidden="true">' + IC[n] + '</svg>'; }
@@ -285,15 +286,29 @@
   }
   function head(title, lede) { return '<h1>' + title + '</h1><p class="lede">' + lede + '</p>'; }
 
+  function msHtml(f, opts, sel) {
+    var label = !sel.length ? f.label : (sel.length === 1 ? sel[0] : sel.length + ' selected');
+    return '<div class="multisel' + (sel.length ? ' on' : '') + '" data-ms="' + f.name + '">' +
+      '<button type="button" class="btn ms-btn" data-ms-toggle="' + f.name + '" aria-haspopup="true" aria-expanded="false">' + h(label) + icon('chev') + '</button>' +
+      '<div class="ms-panel" hidden role="listbox" aria-label="' + h(f.label) + '" aria-multiselectable="true">' +
+      (opts.length > 8 ? '<input type="text" class="ms-search" placeholder="Search…" data-ms-search="' + f.name + '" aria-label="Search ' + h(f.label) + '">' : '') +
+      '<div class="ms-opts">' + (opts.length ? opts.map(function (v) {
+        return '<label class="ms-opt"><input type="checkbox" data-ms-opt="' + f.name + '" value="' + h(v) + '"' + (sel.indexOf(v) >= 0 ? ' checked' : '') + '><span>' + h(v) + '</span></label>';
+      }).join('') : '<p class="ms-empty">No options</p>') + '</div>' +
+      (sel.length ? '<button type="button" class="btn ghost ms-clear" data-ms-clear="' + f.name + '">Clear</button>' : '') +
+      '</div></div>';
+  }
   function listView(o) {
-    var fs = FS[o.key] = FS[o.key] || { q: '', status: '' };
+    var fs = FS[o.key] = FS[o.key] || (function () {
+      var init = { q: '', status: '' };
+      o.filters.forEach(function (f) { init[f.name] = []; });
+      return init;
+    })();
     var bulk = !o.noStatus;
     function filterBar() {
       return searchField(fs.q, 'Filter this list…') + o.filters.map(function (f) {
         var opts = f.options || uniq(o.items, f.get).sort();
-        return '<select data-f="' + f.name + '" aria-label="' + f.label + '"' + (fs[f.name] ? ' class="on"' : '') + '><option value="">' + f.label + '</option>' + opts.map(function (v) {
-          return '<option' + (fs[f.name] === v ? ' selected' : '') + '>' + h(v) + '</option>';
-        }).join('') + '</select>';
+        return msHtml(f, opts, fs[f.name] || []);
       }).join('') +
         (o.noStatus ? '' : '<select data-f="status" aria-label="Tracking status"' + (fs.status ? ' class="on"' : '') + '><option value="">Any status</option><option value="!closed"' + (fs.status === '!closed' ? ' selected' : '') + '>Not closed yet</option>' +
           STATUSES.map(function (s) { return '<option value="' + s[0] + '"' + (fs.status === s[0] ? ' selected' : '') + '>' + s[1] + '</option>'; }).join('') + '</select>') +
@@ -304,13 +319,13 @@
       '<div class="filters" role="search" aria-label="Filter ' + o.title + '">' + filterBar() + '</div>' +
       (bulk ? '<div class="listhead"><label><input type="checkbox" id="pickall"> Select all shown</label></div>' : '') + '<div class="rows" id="list"></div>';
     if (o.addBtn) $('#addbtn').addEventListener('click', o.addBtn.run);
-    function active() { return Object.keys(fs).some(function (k) { return fs[k]; }); }
+    function active() { return Object.keys(fs).some(function (k) { var v = fs[k]; return Array.isArray(v) ? v.length : v; }); }
     function draw() {
       var q = fs.q.trim().toLowerCase();
       var list = o.items.filter(function (d) {
         if (q && hay(d).indexOf(q) < 0) return false;
         if (fs.status === '!closed' ? CLOSED[statusOf(d.id)] : fs.status && statusOf(d.id) !== fs.status) return false;
-        return o.filters.every(function (f) { return !fs[f.name] || f.get(d) === fs[f.name]; });
+        return o.filters.every(function (f) { var sel = fs[f.name]; return !sel || !sel.length || sel.indexOf(f.get(d)) >= 0; });
       });
       SHOWN = list.map(function (d) { return d.id; });
       $('#count').textContent = list.length === o.items.length ? list.length + ' items' : list.length + ' of ' + o.items.length;
@@ -319,16 +334,65 @@
         '<div class="empty"><b>Nothing matches these filters</b>Try a different search term or remove a filter.<br><button type="button" class="btn" data-clear>Clear filters</button></div>';
       if (bulk) syncPickAll();
     }
+    function updateMsButton(name) {
+      var wrap = $('.multisel[data-ms="' + name + '"]');
+      if (!wrap) return;
+      var f = o.filters.filter(function (x) { return x.name === name; })[0];
+      var sel = fs[name] || [];
+      wrap.classList.toggle('on', !!sel.length);
+      wrap.querySelector('.ms-btn').firstChild.textContent = !sel.length ? f.label : (sel.length === 1 ? sel[0] : sel.length + ' selected');
+      var panel = wrap.querySelector('.ms-panel'), clearBtn = panel.querySelector('.ms-clear');
+      if (sel.length && !clearBtn) {
+        clearBtn = document.createElement('button');
+        clearBtn.type = 'button'; clearBtn.className = 'btn ghost ms-clear'; clearBtn.setAttribute('data-ms-clear', name); clearBtn.textContent = 'Clear';
+        panel.appendChild(clearBtn);
+      } else if (!sel.length && clearBtn) { clearBtn.remove(); }
+    }
     var slow = debounce(draw, 120);
     $('.filters').addEventListener('input', function (ev) {
+      var msOpt = ev.target.getAttribute('data-ms-opt');
+      if (msOpt) {
+        var cur = (fs[msOpt] || []).slice(), v = ev.target.value;
+        if (ev.target.checked) { if (cur.indexOf(v) < 0) cur.push(v); } else { cur = cur.filter(function (x) { return x !== v; }); }
+        fs[msOpt] = cur;
+        updateMsButton(msOpt); draw();
+        return;
+      }
+      var msSearch = ev.target.getAttribute('data-ms-search');
+      if (msSearch) {
+        var q2 = ev.target.value.trim().toLowerCase();
+        $$('.ms-opt', ev.target.closest('.ms-panel')).forEach(function (lab) { lab.hidden = !!q2 && lab.textContent.toLowerCase().indexOf(q2) < 0; });
+        return;
+      }
       var f = ev.target.getAttribute('data-f');
       if (!f) return;
       fs[f] = ev.target.value;
       if (ev.target.tagName === 'SELECT') { ev.target.classList.toggle('on', !!ev.target.value); draw(); } else slow();
     });
+    $('.filters').addEventListener('click', function (ev) {
+      var el;
+      if ((el = ev.target.closest('[data-ms-toggle]'))) {
+        var panel = el.nextElementSibling, willOpen = panel.hidden;
+        $$('.ms-panel', $('.filters')).forEach(function (p) { p.hidden = true; });
+        $$('.ms-btn', $('.filters')).forEach(function (b) { b.setAttribute('aria-expanded', 'false'); });
+        if (willOpen) { panel.hidden = false; el.setAttribute('aria-expanded', 'true'); var s = panel.querySelector('.ms-search'); if (s) s.focus(); }
+        ev.stopPropagation();
+        return;
+      }
+      if ((el = ev.target.closest('[data-ms-clear]'))) {
+        var name = el.getAttribute('data-ms-clear');
+        fs[name] = [];
+        var panel2 = el.closest('.ms-panel');
+        $$('input[data-ms-opt="' + name + '"]', panel2).forEach(function (c) { c.checked = false; });
+        updateMsButton(name); draw();
+        ev.stopPropagation();
+        return;
+      }
+      if (ev.target.closest('.ms-panel')) ev.stopPropagation();
+    });
     $('#main').addEventListener('click', function (ev) {
       if (!ev.target.closest('[data-clear]')) return;
-      Object.keys(fs).forEach(function (k) { fs[k] = ''; });
+      Object.keys(fs).forEach(function (k) { fs[k] = Array.isArray(fs[k]) ? [] : ''; });
       $('.filters').innerHTML = filterBar(); draw();
       $('.filters input').focus();
     });
@@ -839,6 +903,7 @@
   /* ------------------------------------------------------------ events */
   document.addEventListener('click', function (ev) {
     var t = ev.target, el;
+    if (!t.closest('.multisel')) { $$('.ms-panel:not([hidden])').forEach(function (p) { p.hidden = true; }); $$('.ms-btn[aria-expanded=true]').forEach(function (b) { b.setAttribute('aria-expanded', 'false'); }); }
     if ((el = t.closest('[data-ref]'))) { ev.preventDefault(); openItem(el.getAttribute('data-ref')); return; }
     if ((el = t.closest('.shot'))) {
       $('#lb-i').src = el.getAttribute('data-full'); $('#lb-i').alt = el.getAttribute('data-cap'); $('#lb-t').textContent = el.getAttribute('data-cap');
@@ -867,7 +932,7 @@
       return;
     }
     if ((el = t.closest('[data-seg]'))) { FS.seg = el.getAttribute('data-seg'); V.segments(); $('#tab-' + FS.seg).focus(); return; }
-    if ((el = t.closest('[data-go]'))) { var f = { q: '', status: '' }; f[el.getAttribute('data-fk')] = el.getAttribute('data-fv'); FS[el.getAttribute('data-go')] = f; return; }
+    if ((el = t.closest('[data-go]'))) { var f = { q: '', status: '' }; f[el.getAttribute('data-fk')] = [el.getAttribute('data-fv')]; FS[el.getAttribute('data-go')] = f; return; }
     if (t.closest('#bulk-x')) { clearPicks(); return; }
     if (t.closest('#open-cmd')) openCmd();
   });
@@ -902,6 +967,7 @@
   document.addEventListener('keydown', function (ev) {
     var typing = /^(INPUT|TEXTAREA|SELECT)$/.test(ev.target.tagName);
     if ((ev.metaKey || ev.ctrlKey) && ev.key.toLowerCase() === 'k') { ev.preventDefault(); openCmd(); return; }
+    if (ev.key === 'Escape' && $('.ms-panel:not([hidden])')) { $$('.ms-panel:not([hidden])').forEach(function (p) { p.hidden = true; }); $$('.ms-btn[aria-expanded=true]').forEach(function (b) { b.setAttribute('aria-expanded', 'false'); b.focus(); }); return; }
     if (typing || ev.metaKey || ev.ctrlKey || ev.altKey) return;
     if (ev.key === '/') { var f = $('.filters input'); ev.preventDefault(); if (f) f.focus(); else openCmd(); }
     else if (current && ev.key === 'ArrowRight') { var n = $('[data-step="1"]'); if (n && !n.disabled) n.click(); }

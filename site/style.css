@@ -181,6 +181,20 @@ input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px soli
 .filters select{max-width:200px;cursor:pointer}
 .filters select.on{border-color:var(--primary);background:var(--primary-soft);color:var(--primary);font-weight:600}
 .filters .count{color:var(--ink3);font-size:12.5px;margin-left:auto;font-variant-numeric:tabular-nums;white-space:nowrap}
+.multisel{position:relative}
+.ms-btn{max-width:220px}
+.ms-btn span,.ms-btn{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ms-btn .i{flex:none;width:14px;height:14px;margin-left:auto}
+.multisel.on .ms-btn{border-color:var(--primary);background:var(--primary-soft);color:var(--primary);font-weight:600}
+.ms-panel{position:absolute;top:calc(100% + 6px);left:0;z-index:20;width:max(220px,100%);max-width:320px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-m);box-shadow:var(--shadow-2);padding:8px}
+.ms-search{width:100%;margin-bottom:6px}
+.ms-opts{max-height:240px;overflow-y:auto;display:flex;flex-direction:column;gap:1px}
+.ms-opt{display:flex;align-items:flex-start;gap:8px;padding:6px 6px;border-radius:var(--r-s);cursor:pointer;font-size:13px;line-height:1.35}
+.ms-opt:hover{background:var(--surface-2)}
+.ms-opt input{margin-top:3px;flex:none}
+.ms-opt span{overflow-wrap:anywhere}
+.ms-empty{color:var(--ink3);font-size:12.5px;padding:6px;margin:0}
+.ms-clear{width:100%;justify-content:center;margin-top:6px}
 .listhead{display:flex;align-items:center;gap:10px;padding:0 12px 8px;font-size:12.5px;color:var(--ink3)}
 .listhead label{display:inline-flex;align-items:center;gap:8px;cursor:pointer}
 input[type=checkbox]{width:16px;height:16px;accent-color:var(--primary);cursor:pointer;margin:0;flex:none}
