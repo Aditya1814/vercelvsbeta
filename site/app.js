@@ -29,6 +29,7 @@
     qa: '<path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/>',
     better: '<path d="M7 10v12M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13 0 0 1 3 3.88Z"/>',
     live: '<circle cx="12" cy="12" r="10"/><path d="M12 7v5l3 3"/>',
+    studio: '<path d="m22 8-6 4 6 4V8Z"/><rect width="14" height="12" x="2" y="6" rx="2"/>',
     prod: '<path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/>',
     reference: '<path d="M22 12h-4l-3 9L9 3l-3 9H2"/>',
     search: '<circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>',
@@ -54,9 +55,10 @@
   var JOBS = [];
   D.jtbd.segments.forEach(function (s) { JOBS = JOBS.concat(s.jobs); });
   D.live = D.live || [];
+  D.studio = D.studio || [];
   var ITEMS = {};
   function reg(list, kind) { list.forEach(function (d) { ITEMS[d.id] = { kind: kind, d: d }; }); }
-  reg(D.findings, 'finding'); reg(D.better, 'better'); reg(D.defects, 'defect'); reg(D.cases, 'case'); reg(JOBS, 'job'); reg(D.live, 'live');
+  reg(D.findings, 'finding'); reg(D.better, 'better'); reg(D.defects, 'defect'); reg(D.cases, 'case'); reg(JOBS, 'job'); reg(D.live, 'live'); reg(D.studio, 'studio');
 
   var BACK = {};
   function back(from, to) { if (ITEMS[to] && from !== to) { (BACK[to] = BACK[to] || []).push(from); } }
@@ -69,7 +71,8 @@
     defect: { label: 'Defects', one: 'Defect', items: D.defects, route: 'defects' },
     case: { label: 'Failed test cases', one: 'Test case', items: D.cases.filter(function (c) { return c.status !== 'pass'; }), route: 'cases' },
     job: { label: 'User jobs', one: 'Job', items: JOBS, route: 'segments' },
-    live: { label: 'Live Issues', one: 'Live issue', items: D.live, route: 'live' }
+    live: { label: 'Live Issues', one: 'Live issue', items: D.live, route: 'live' },
+    studio: { label: 'Studio Issues', one: 'Studio issue', items: D.studio, route: 'studio' }
   };
   function refreshCaseItems() { KINDS.case.items = D.cases.filter(function (c) { return c.status !== 'pass'; }); }
   function kindName(id) { var k = ITEMS[id].kind; return KINDS[k] ? KINDS[k].one : 'Beta is better'; }
@@ -138,7 +141,7 @@
   }
 
   /* ------------------------------------------------------------ small renderers */
-  var ID_RE = /\b(?:(?:SHA|LIVE|CREATE|PUB|X)-\d+|BUG-(?:FUNC|CA|NF)-\d+|TC-(?:FUNC|COMPAT|NF)-\d+|CRB-\d+|NEWBUG-[0-9A-Z]+|NEWTC-[0-9A-Z]+|[A-Z]{2}-J\d+)\b/g;
+  var ID_RE = /\b(?:(?:SHA|LIVE|CREATE|PUB|X)-\d+|BUG-(?:FUNC|CA|NF)-\d+|TC-(?:FUNC|COMPAT|NF)-\d+|CRB-\d+|ISS-\d+|STU-\d+|NEWBUG-[0-9A-Z]+|NEWTC-[0-9A-Z]+|[A-Z]{2}-J\d+)\b/g;
   function ref(id) {
     if (!ITEMS[id]) return h(id);
     var t = ITEMS[id].d.title || ITEMS[id].d.statement;
@@ -247,7 +250,7 @@
         '<div class="tbl" tabindex="0" role="region" aria-label="Steps: reference vs beta"><table><thead><tr><th scope="col">#</th><th scope="col">Step</th><th scope="col">Reference</th><th scope="col">Beta</th></tr></thead><tbody>' + d.steps.map(function (s) {
           return '<tr><td class="num">' + h(s.n) + '</td><td><b>' + h(s.step) + '</b><div class="muted">' + h(s.where) + '</div></td><td>' + pill(s.ref.res) + ' ' + link(s.ref.text) + '</td><td>' + pill(s.beta.res) + ' ' + link(s.beta.text) + '</td></tr>';
         }).join('') + '</tbody></table></div>' + shots(d.shots);
-    } else if (it.kind === 'live') {
+    } else if (it.kind === 'live' || it.kind === 'studio') {
       out = (d.summary && d.summary !== d.title ? '<pre tabindex="0">' + h(d.summary) + '</pre>' : '') +
         (d.steps && d.steps.length ? '<div class="lbl">Steps to reproduce</div><ol class="steps">' + d.steps.map(function (s) { return '<li>' + link(s) + '</li>'; }).join('') + '</ol>' : '') +
         (d.expected || d.actual ? cmp('Expected', d.expected, 'Actual', d.actual) : '') +
@@ -260,7 +263,7 @@
     if (it.kind === 'finding' || it.kind === 'better') return { pill: pill(d.sev), title: d.title, sub: d.module + ' · ' + d.typeLabel };
     if (it.kind === 'defect') return { pill: pill(d.sev) + pill(d.pri), title: d.title, sub: d.module + ' · ' + d.repro };
     if (it.kind === 'case') return { pill: pill(d.statusLabel), title: d.title, sub: d.suite + ' · ' + d.pri };
-    if (it.kind === 'live') return { pill: pill(d.sev) + (d.qaStatus ? pill(d.qaStatus) : ''), title: d.title, sub: d.module + (d.reporter ? ' · ' + d.reporter : '') };
+    if (it.kind === 'live' || it.kind === 'studio') return { pill: pill(d.sev) + (d.qaStatus ? pill(d.qaStatus) : ''), title: d.title, sub: d.module + (d.reporter ? ' · ' + d.reporter : '') };
     return { pill: pill(d.outcomeLabel), title: d.statement, sub: d.segment + ' · ' + d.priority };
   }
   var OPEN = {}, SELECTED = {}, SHOWN = [];
@@ -423,7 +426,7 @@
 
   V.dashboard = function () {
     var o = D.overview, q = D.qa.summary;
-    var dashKinds = Object.keys(KINDS).filter(function (k) { return k !== 'live'; });
+    var dashKinds = Object.keys(KINDS).filter(function (k) { return k !== 'live' && k !== 'studio'; });
     var all = []; dashKinds.forEach(function (k) { all = all.concat(KINDS[k].items); });
     var tot = counts(all), pct = Math.round(100 * tot.closed / (tot.total || 1));
     var prog = dashKinds.map(function (k) {
@@ -438,7 +441,7 @@
         return '<a href="#/' + routeName + '" data-go="' + routeName + '" data-fk="' + fkey + '" data-fv="' + k + '" style="text-decoration:none">' + pill(k) + '</a>' + bar(c) + '<span class="n">' + c.closed + ' / ' + c.total + '</span>';
       }).join('') + '</div></div>';
     }
-    var recent = Object.keys(state.items).filter(function (id) { return ITEMS[id] && ITEMS[id].kind !== 'live'; }).sort(function (a, b) { return (state.items[b].updated || '').localeCompare(state.items[a].updated || ''); }).slice(0, 6);
+    var recent = Object.keys(state.items).filter(function (id) { return ITEMS[id] && ITEMS[id].kind !== 'live' && ITEMS[id].kind !== 'studio'; }).sort(function (a, b) { return (state.items[b].updated || '').localeCompare(state.items[a].updated || ''); }).slice(0, 6);
     var activity = '<div class="card"><h3>Recent activity</h3>' + (recent.length ? '<ul class="act">' + recent.map(function (id) {
       var e = state.items[id];
       return '<li>' + ref(id) + '<span class="t">' + pill(SLABEL[e.status] || e.status, { verified: 'ok', fixed: 'med', 'in-progress': 'high' }[e.status]) + ' ' + h(e.owner ? e.owner + ' · ' : '') + h(e.title) + '</span><time datetime="' + h(e.updated) + '">' + h(ago(e.updated)) + '</time></li>';
@@ -510,6 +513,19 @@
       key: 'live', title: 'Live Issues', items: D.live || [],
       lede: (D.live || []).length + ' bugs tracked in the team’s live issue sheet. Status starts from the sheet’s Dev/QA status (Verified = QA marked Done, Fixed = developer-fixed but not yet QA-verified) and can be updated here.',
       addBtn: { label: 'Report a bug', run: function () { openNewItemDialog('live'); } },
+      filters: [
+        { name: 'sev', label: 'Any severity', options: ['High', 'Medium', 'Low'], get: function (d) { return d.sev; } },
+        { name: 'module', label: 'Any module', get: function (d) { return d.module; } },
+        { name: 'qaStatus', label: 'Any QA status', options: ['Done', 'Reopen'], get: function (d) { return d.qaStatus; } },
+        { name: 'devStatus', label: 'Any dev status', get: function (d) { return d.devStatus; } }
+      ]
+    });
+  };
+  V.studio = function () {
+    listView({
+      key: 'studio', title: 'Studio Issues', items: D.studio || [],
+      lede: (D.studio || []).length + ' bugs tracked for the Studio module, from the team’s Studio New UI sheet. Status starts from the sheet’s Dev/QA status and can be updated here.',
+      addBtn: { label: 'Report a bug', run: function () { openNewItemDialog('studio'); } },
       filters: [
         { name: 'sev', label: 'Any severity', options: ['High', 'Medium', 'Low'], get: function (d) { return d.sev; } },
         { name: 'module', label: 'Any module', get: function (d) { return d.module; } },
@@ -614,6 +630,7 @@
     ['Vercel vs Beta'], ['dashboard', 'Dashboard'], ['findings', 'Findings', 'finding'], ['cases', 'Test cases', 'case'],
     ['journeys', 'Key journeys'], ['flows', 'Tested flows'], ['qa', 'QA report'], ['better', 'Beta is better'],
     ['Beta Issues'], ['live', 'Live Issues', 'live'],
+    ['Studio Issues'], ['studio', 'Studio Issues', 'studio'],
     ['Prod Issues'], ['prod', 'Prod Issues']
   ];
   var TITLES = {}; NAV.forEach(function (n) { if (n.length > 1) TITLES[n[0]] = n[1]; });
@@ -724,6 +741,8 @@
       { k: 'reporter', label: 'Your name', type: 'text' }
     ]
   };
+  NEWFORM_FIELDS.studio = NEWFORM_FIELDS.live;
+  var BUG_KINDS = { live: 1, studio: 1 };
   var pendingShots = [];
   function fieldHtml(f) {
     var id = 'nf-' + f.k;
@@ -763,6 +782,7 @@
   }
   function createItem(kind, data, track) {
     if (kind === 'live') D.live.push(data);
+    else if (kind === 'studio') D.studio.push(data);
     else if (kind === 'case') { D.cases.push(data); refreshCaseItems(); }
     reg([data], kind);
     var entry = { custom: true, kind: kind, status: track.status, owner: track.owner || '', note: track.note || '', title: data.title, updated: new Date().toISOString(), data: data };
@@ -777,6 +797,7 @@
       if (!e || !e.custom || ITEMS[id]) return;
       var d = Object.assign({ id: id }, e.data || {});
       if (e.kind === 'live') D.live.push(d);
+      else if (e.kind === 'studio') D.studio.push(d);
       else if (e.kind === 'case') D.cases.push(d);
       else return;
       reg([d], e.kind);
@@ -787,10 +808,10 @@
     var data = {};
     fields.forEach(function (f) {
       var v = $('#nf-' + f.k).value.trim();
-      if (f.k === 'steps' && kind === 'live') data.steps = v ? v.split('\n').map(function (s) { return s.trim(); }).filter(Boolean) : [];
+      if (f.k === 'steps' && BUG_KINDS[kind]) data.steps = v ? v.split('\n').map(function (s) { return s.trim(); }).filter(Boolean) : [];
       else data[f.k] = v;
     });
-    if (kind === 'live') {
+    if (BUG_KINDS[kind]) {
       if (!data.summary) return;
       data.title = data.summary.split('\n')[0].slice(0, 130);
       data.date = new Date().toISOString().slice(0, 10);
@@ -802,20 +823,20 @@
       data.defects = []; data.env = '';
     }
     data.shots = pendingShots.slice();
-    data.id = (kind === 'live' ? 'NEWBUG-' : 'NEWTC-') + Date.now().toString(36).toUpperCase();
+    data.id = (BUG_KINDS[kind] ? 'NEWBUG-' : 'NEWTC-') + Date.now().toString(36).toUpperCase();
     createItem(kind, data, { status: 'open', owner: data.reporter || '', note: '' });
     $('#newdlg').close();
-    toast((kind === 'live' ? 'Bug reported: ' : 'Test case added: ') + data.id);
-    V[kind === 'live' ? 'live' : 'cases']();
+    toast((BUG_KINDS[kind] ? 'Bug reported: ' : 'Test case added: ') + data.id);
+    V[kind === 'case' ? 'cases' : kind]();
   }
   function openNewItemDialog(kind) {
     pendingShots = [];
     var fields = NEWFORM_FIELDS[kind];
-    $('#newdlg-h').textContent = kind === 'live' ? 'Report a bug' : 'Add a test case';
+    $('#newdlg-h').textContent = BUG_KINDS[kind] ? 'Report a bug' : 'Add a test case';
     $('#newform').innerHTML = fields.map(fieldHtml).join('') +
       '<div><label for="nf-shots">Screenshots</label><input type="file" id="nf-shots" accept="image/*" multiple></div>' +
       '<div class="shotprev" id="nf-shots-preview"></div>' +
-      '<div class="newform-actions"><button type="button" class="btn ghost" data-close>Cancel</button><button type="submit" class="btn primary">' + (kind === 'live' ? 'Report bug' : 'Add test case') + '</button></div>';
+      '<div class="newform-actions"><button type="button" class="btn ghost" data-close>Cancel</button><button type="submit" class="btn primary">' + (BUG_KINDS[kind] ? 'Report bug' : 'Add test case') + '</button></div>';
     $('#newform').onsubmit = function (ev) { ev.preventDefault(); submitNewItem(kind, fields); };
     if (!$('#newdlg').open) $('#newdlg').showModal();
     $('#nf-' + fields[0].k).focus();

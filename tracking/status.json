@@ -2271,6 +2271,1358 @@
    "status": "fixed",
    "title": "Analytics page is entirely an error state",
    "updated": "2026-11-25T09:18:44.270Z"
+  },
+  "STU-001": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Top Band Properties Panel Closes When Using Keyboard Undo",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-002": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Size Adjustment Text Fields Do Not Clear When Pressing Backspace",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-003": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Camera and Microphone Off Message Displayed When Producer Skips Video Setup",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-004": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Camera Requesting Message Displayed Repeatedly During Microphone Setup",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-005": {
+   "kind": "studio",
+   "note": "Dev: Functionality | QA: Done | Comments: Here the host only send links of Anchor ,Audio & particpant",
+   "owner": "",
+   "status": "verified",
+   "title": "Host Can Change Their Own Role Using the Role Selection Dropdown",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-006": {
+   "kind": "studio",
+   "note": "Dev: Ux design | QA: Need discusion | Comments: Here in schedule we have an option while joing to show or hide in other ways it always visible",
+   "owner": "",
+   "status": "in-progress",
+   "title": "Watermark Status Incorrectly Displayed as On in Host-Side Brand Kit",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-007": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Producer Options Remain Visible After Switching to Casual Mode",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-008": {
+   "kind": "studio",
+   "note": "Comments: When Anchor reading time if we edit it will not close once we click on update and again start then only it will re-appear then only new change will update other wise will not reflect",
+   "owner": "",
+   "status": "open",
+   "title": "Teleprompter Script Closes When Host Clicks Edit from Preview",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-009": {
+   "kind": "studio",
+   "note": "Dev: As per design | QA: Done | Comments: need one discussion about this host not able to see the content clearly",
+   "owner": "",
+   "status": "verified",
+   "title": "Host Unable to View Screen Shares Shared by Participants or Anchor",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-010": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "\"Invited As\" Label Displayed Beside Role Selection Dropdown",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-011": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done | Comments: If came with Go-live then we have 4 hours duartion as we allow 4 hours live recording and pls confirm is it shows 3:30 minutes or 5:30",
+   "owner": "",
+   "status": "verified",
+   "title": "Meeting Displays an Incorrect End-Time Countdown Despite Having No Scheduled End Time",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-012": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Previously Generated Invitation Link Sent to Multiple Recipients After Updating Email Address",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-013": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Participant Left Meeting Notification Displayed Multiple Times to Host",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-014": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done | Comments: As per ui design it will show as guest",
+   "owner": "",
+   "status": "verified",
+   "title": "Invite People Popup Displays Guest Instead of Participant",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-015": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Disconnected Participants Remain Selectable in Producer Meeting Room",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-016": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Host Can Remove Participant from Pool While Participant Is Still in Preview",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-017": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Left Participant Incorrectly Displayed in Pool with On Air Status",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-018": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Teleprompter Is Displayed to Anchor After Rejoining the Meeting",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-019": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Repeated Toast Notifications Displayed While Functionality Is in Progress",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-020": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Anchor Rejoin Notification Displayed Despite Out of Call Status",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-021": {
+   "kind": "studio",
+   "note": "Dev: As Expected | QA: Done | Comments: For all participants has to show video along with duartion",
+   "owner": "",
+   "status": "verified",
+   "title": "Video Duration Timer Incorrectly Displayed for Audio-Only User in Producer Meeting Room",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-022": {
+   "kind": "studio",
+   "note": "Dev: Fixed",
+   "owner": "",
+   "status": "fixed",
+   "title": "Guest Name Prompt Displayed When Open Room Is Already Enabled",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-023": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Frame Size and Position Change Unexpectedly When Adjusting Position",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-024": {
+   "kind": "studio",
+   "note": "Dev: As per UX-design | Comments: if Enlarge Host unable to do operations as it covers most of the screen",
+   "owner": "",
+   "status": "wontfix",
+   "title": "Unable to Enlarge Teleprompter in Host Screen",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-025": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Unable to Select Subtitle Language for Display",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-026": {
+   "kind": "studio",
+   "note": "Dev: Functionality | QA: Done | Comments: When schedule meeting time we give checkoption to show or not other cases It was default on untill users has to off manually",
+   "owner": "",
+   "status": "verified",
+   "title": "By default brandkit is getting applied",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-027": {
+   "kind": "studio",
+   "note": "Dev: Functionality | Comments: Here the Sources mic shows related to Master output,if host turn on and off is related to meeting one and for the sources shows will effect in master ie youtube,rtmp platforms to get audio or not is decided here",
+   "owner": "",
+   "status": "wontfix",
+   "title": "when host mute and unmute the mic the mic option in the source is not updating as per the changes",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-028": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Keyboard shortcuts are not working\n\nStandard layouts 1–5 (Casual view)\r\n1–5\r\nMute mic\r\nM\r\nRecord\r\nR\r\nTAKE - Preview and staged graphics on air (Producer view)\r\nT / Enter\r\nCUT - selection straight to Master (Producer view)\r\nC\r\nPublish the staged layout (Casual view)\r\nEnter\r\nLower third on/off in Preview\r\nL\r\nTicker on/off in Preview\r\nK\r\nBreaking News on/off in Preview\r\nB\r\nAll graphics off air now\r\nShift+G\r\nNext rundown story (Teleprompter panel open)\r\nN\r\nClose panel\r\nEsc",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-029": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Reopen | Comments: Not working as expected",
+   "owner": "",
+   "status": "open",
+   "title": "Live subtitles are not wokring as expecetd",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-030": {
+   "kind": "studio",
+   "note": "Dev: As per design | Comments: In an Open Room, the open link is for participants. Invite the anchor individually (Invite people > Anchor creates their own link), then send the script from the Teleprompter panel. The host's own teleprompter (Me) works in any meeting.",
+   "owner": "",
+   "status": "wontfix",
+   "title": "Teleprompter is displayed to the host when joining a meeting through an Open Room.",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-031": {
+   "kind": "studio",
+   "note": "Dev: Functionality | QA: Done | Comments: Only public has to see and send videos ,as the participants dont need as per the requirement",
+   "owner": "",
+   "status": "verified",
+   "title": "Scanner Enabled on Host Side Is Not Visible to Meeting Participants",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-032": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Video Continues Playing for Other Participants When Paused by Host",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-033": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Reopen | Comments: Timmer start from begin for the second recording need to continue from last timer(need to discuss with dev team)",
+   "owner": "",
+   "status": "open",
+   "title": "Recording Restarts from Zero When Host or Participant Navigates Away from the Meeting",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-034": {
+   "kind": "studio",
+   "note": "Dev: Sent for the Approval",
+   "owner": "",
+   "status": "in-progress",
+   "title": "Unable to Add YouTube as a Streaming Destination – Developer Connection Required",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-035": {
+   "kind": "studio",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "Live Dubbing Not Working During Meeting",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-036": {
+   "kind": "studio",
+   "note": "Dev: As per design | Comments: Brand Kit font applies to on-air name plates (output), not the meeting app.",
+   "owner": "",
+   "status": "wontfix",
+   "title": "Participant Name Font Changes Not Reflected in Meeting",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-037": {
+   "kind": "studio",
+   "note": "Dev: Need in Detail",
+   "owner": "",
+   "status": "in-progress",
+   "title": "Joining Room Still Displayed After Joining Meeting with Background Image",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-038": {
+   "kind": "studio",
+   "note": "Dev: Need In detail",
+   "owner": "",
+   "status": "in-progress",
+   "title": "Error Message Displayed When Changing Background After Joining Meeting",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-039": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Newly Joined Participants Not Displayed on Host Meeting Page",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-040": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Toast Notification Displayed Before Participant Joins Meeting",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-041": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "No Clear Back or Close Option on Background Selection Screen in Mobile Web",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-042": {
+   "kind": "studio",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "iOS Mobile Web User Automatically Disconnected After Some Time",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-043": {
+   "kind": "studio",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "Background Change Option Missing After Rejoining Meeting on iOS Mobile Web",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-044": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Video Not Restored After Enabling Camera for Audio-Only Participant",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-045": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Slow Background and Blur Processing Prevents Background Changes",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-046": {
+   "kind": "studio",
+   "note": "Dev: Functionality | Comments: When in same browser like it will goes to same logined one if another browser if we open it will ask to enter as new participant",
+   "owner": "",
+   "status": "wontfix",
+   "title": "Previous Participant Name Retained When Rejoining Through Meeting Link",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-047": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Recording Started Toast Notification Not Displayed",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-048": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Participant Name Overlaps with Recording Timer",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-049": {
+   "kind": "studio",
+   "note": "Dev: New requirement | Comments: Join limit for the open link is a new feature (API + Room access + 'meeting full' screen). Today the stage holds 10 and the open link can be replaced (Make a new link).",
+   "owner": "",
+   "status": "wontfix",
+   "title": "No Participant Join Limit for Open Meeting Link",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-050": {
+   "kind": "studio",
+   "note": "Dev: Functionality | Comments: If need to change the name has to leave the old one and has to rejoin with a new name",
+   "owner": "",
+   "status": "wontfix",
+   "title": "Name Change Option Missing on Meeting Joining Page",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-051": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Participants Who Leave Meeting Remain Visible on Host Screen",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-052": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Take Out of Call Status Not Updated After Participant Rejoins",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-053": {
+   "kind": "studio",
+   "note": "Dev: As per the Ux design | Comments: But fixed in participant side will reflect in participant side",
+   "owner": "",
+   "status": "wontfix",
+   "title": "Recording Timer Displayed in Two Places",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-054": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "User ID Displayed Instead of Participant Name After Screen Sharing",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-055": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "User IDs Displayed Instead of Names in Internal Check Popup",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-056": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Drag Option Missing in Internal Check Popup",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-057": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Camera-Disabled Participants Missing from Internal Check Screenshot Section",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-058": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Participant Camera Status Not Updated When Camera Option Changes",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-059": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Not fixed | Comments: minimum 5 minutes maximum 4 hours without overlaping for the next event",
+   "owner": "",
+   "status": "open",
+   "title": "Meeting Automatically Assigned 30-Minute Duration When End Time Is Not Provided",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-060": {
+   "kind": "studio",
+   "note": "Dev: AS per UX design",
+   "owner": "",
+   "status": "wontfix",
+   "title": "Upcoming Events Displayed Under Recording Tab",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-061": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done | Comments: As the Name is Ediatble but the Host make it as a readble",
+   "owner": "",
+   "status": "verified",
+   "title": "Host Can Change Name and Role in Scheduled Live",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-062": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Skip Functionality Not Working on How Is Your Video Screen",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-063": {
+   "kind": "studio",
+   "note": "Dev: As per design | Comments: Top-bar Go live opens the Go Live dialog; its Go Live button confirms (no accidental start).",
+   "owner": "",
+   "status": "wontfix",
+   "title": "Go Live Option Displayed in Two Locations",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-064": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Invite People Popup Occupies Full Screen Instead of Compact Popup",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-065": {
+   "kind": "studio",
+   "note": "Dev: As per design | Comments: The guest's name comes from the invite; the host can rename them in the Studio.",
+   "owner": "",
+   "status": "wontfix",
+   "title": "Unable to Change Name for Guest, Participant, and Anchor Roles",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-066": {
+   "kind": "studio",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "Duplicate Title Displayed After Scanning Audience Poll QR Code",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-067": {
+   "kind": "studio",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "Audio Not Playing During Audience Video Preview After Recording",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-068": {
+   "kind": "studio",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "Upload Button Remains Enabled During Recording",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-069": {
+   "kind": "studio",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "Audience Video Playback Stuck During Host Playback",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-070": {
+   "kind": "studio",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "Duplicate Timer Displayed in Audience Poll Recording",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-071": {
+   "kind": "studio",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "Audience Video Preview Not Playing During Upload",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-072": {
+   "kind": "studio",
+   "note": "Dev: Need more detail | Comments: Casual or Producer? Was TAKE pressed after playing the video?",
+   "owner": "",
+   "status": "in-progress",
+   "title": "QR Code Reappears After Host Plays Audience Video",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-073": {
+   "kind": "studio",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "Video Rotation Option Missing for Host-Received Audience Videos",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-074": {
+   "kind": "studio",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "Unable to Adjust QR Code Position in Live Screen",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-075": {
+   "kind": "studio",
+   "note": "Dev: As per design | Comments: Audio panel mic icon = on-air (Master) mute; the host's own mic shows as the 'Mic muted' badge.",
+   "owner": "",
+   "status": "wontfix",
+   "title": "Microphone Status Not Updated in Audio Field When Host Mutes Microphone",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-076": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Sound Effects Altered in Recorded Content When Previewed in Editor",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-077": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done | Comments: Enable Follow voice in the teleprompter to follow (the word being read is highlighted).",
+   "owner": "",
+   "status": "verified",
+   "title": "Teleprompter Text Not Highlighted While Host Is Reading",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-078": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Caption Display Language Option Missing in Live Subtitles Tab",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-079": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Unable to set a background image for the layout. It still displays the message \"Not Yet Available.\"",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-080": {
+   "kind": "studio",
+   "note": "Dev: Fixed",
+   "owner": "",
+   "status": "fixed",
+   "title": "When we create a 9:16 layout and save it to a folder, reopening the saved layout displays both 16:9 and 9:16 layouts on the Layout Edit page.",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-081": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "When we change the layout name in the Computer Library and import the same layout into the same or different Layout Folder, throughing an error occurs.",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-082": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "By default, the layout name is set to \"Untitled Layout.\" The layout name should be mandatory, and users should be required to enter a name before saving.",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-083": {
+   "kind": "studio",
+   "note": "Dev: As per design | Comments: Deleting a folder moves its layouts back to Custom Layouts (the confirm dialog says so); delete the layouts themselves to send them to the Recycle bin.",
+   "owner": "",
+   "status": "wontfix",
+   "title": "When we delete a layout folder from the Layout page, the folder gets deleted, but the layouts inside the folder are displayed separately. The layouts should also be deleted along with the folder.",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-084": {
+   "kind": "studio",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "On the Custom Layout page, when we click on \"Teams and Broadcasters\" and then select \"Talk to Us,\" we are redirected to another page, but there is no back button to return to the previous page.",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-085": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Extra folder names are displayed in the Folder Filter on the Layout Editor page.",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-086": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "No Limit on Adding Sources While Editing a Layout",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-087": {
+   "kind": "studio",
+   "note": "Dev: Need more detail | QA: Done | Comments: Which control? The schedule uses the browser time picker (minutes stop at 59). Screenshot please.",
+   "owner": "",
+   "status": "verified",
+   "title": "Time Selection Controls Do Not Have Proper Limits When Starting a Meeting.",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-088": {
+   "kind": "studio",
+   "note": "Dev: As per design | Comments: Headphones stop the room's sound (guests, videos, music) going back into your mic: echo for viewers and Follow voice confusion. A recommendation, not a requirement.",
+   "owner": "",
+   "status": "wontfix",
+   "title": "what is the feature use \nUsing headphones before meeting join for the host ?",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-089": {
+   "kind": "studio",
+   "note": "Type: Functional / UI | Dev: Need more detail | Comments: Screen shares are spotlighted for participants. Which role and device (anchor with Teleprompter / Live Commentary open?) - screenshot please.",
+   "owner": "",
+   "status": "in-progress",
+   "title": "Shared Screen Is Not Highlighted or Pinned on the Main Meeting Screen for Joined Participants",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-090": {
+   "kind": "studio",
+   "note": "Type: Functional / Compatibility | Dev: As per design | Comments: Phone browsers do not support screen capture; the app says so. Share from a computer browser.",
+   "owner": "",
+   "status": "wontfix",
+   "title": "Screen Sharing Is Not Supported for Participants Joining Through Mobile Devices",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-091": {
+   "kind": "studio",
+   "note": "Type: Functional / Participant Synchronization | Dev: Fixed | QA: Reopen | Comments: When we disable the host-to-anchor option, we are still able to see the host in the meeting",
+   "owner": "",
+   "status": "open",
+   "title": "Participants Who Have Left the Meeting Are Still Displayed in Matrix Control",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-092": {
+   "kind": "studio",
+   "note": "Type: Functional / Chat Access Control | Dev: As per design | Comments: Late joiners see the meeting chat so far, so they can catch up.",
+   "owner": "",
+   "status": "wontfix",
+   "title": "Late-Joining Participants Can View Previous Meeting Chat Messages",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-093": {
+   "kind": "studio",
+   "note": "Type: Functional / Playback Synchronization | Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Media Submission Playback Is Not Synchronized Between Host and Participants",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-094": {
+   "kind": "studio",
+   "note": "Type: Functional / Download | Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Download Current Submission Opens Video Instead of Downloading It",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-095": {
+   "kind": "studio",
+   "note": "Type: Functional / Synchronization | Dev: Need to discuss | Comments: Reconnect during join on a weak network; please share the browser console log ([ConnState] lines).",
+   "owner": "",
+   "status": "open",
+   "title": "Participant Joining Status Is Not Synchronized Between Host and Participant",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-096": {
+   "kind": "studio",
+   "note": "Type: Functional / UI / Data Management | Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Deleted Graphics Template Is Not Moved to Recycle Bin and Confirmation Message Is Incorrect",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-097": {
+   "kind": "studio",
+   "note": "Type: Functional / Input Validation | Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Missing Numeric Field Validations in Graphics Module",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-098": {
+   "kind": "studio",
+   "note": "Type: Functional / Selection | Dev: Need more detail | Comments: Which screen is the Preview page? Graphics has no Preview page; the only search is the Layout behind dropdown. Screenshot please.",
+   "owner": "",
+   "status": "in-progress",
+   "title": "Unable to Select Graphics Sources from Preview Page",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-099": {
+   "kind": "studio",
+   "note": "Type: Functional / Configuration | Dev: As per design | Comments: In Both view one canvas is edited at a time; editing both at once is planned as a follow-up.",
+   "owner": "",
+   "status": "wontfix",
+   "title": "Landscape and Portrait Layouts Do Not Support Applying Sources Simultaneously",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-100": {
+   "kind": "studio",
+   "note": "Type: Functional / Media Selection | Dev: As per design | Comments: Several images play as a slideshow (set Slideshow seconds / image). To use one file, remove the others.",
+   "owner": "",
+   "status": "wontfix",
+   "title": "Background Media Selection Is Not Available When Multiple Media Files Are Added",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-101": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Unable to Change User Name on Check Your Camera Screen",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-102": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Unable to Upload Brand Logo in Casual Mode",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-103": {
+   "kind": "studio",
+   "note": "Dev: Fixed",
+   "owner": "",
+   "status": "fixed",
+   "title": "Teleprompter Timer Starts Running Even When the Script Is Not Enabled by the Host.",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-104": {
+   "kind": "studio",
+   "note": "Type: Functional / Recording Synchronization | Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Studio Meeting Recordings Are Not Uploaded to the Recording Section",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-105": {
+   "kind": "studio",
+   "note": "Dev: Fixed",
+   "owner": "",
+   "status": "fixed",
+   "title": "Screen Mirroring is not working and displays \"Waiting for the Anchor's Prompter\" message in meeting",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-106": {
+   "kind": "studio",
+   "note": "Dev: Working fine | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Play and Pause button status is not updating in the script file.",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-107": {
+   "kind": "studio",
+   "note": "Dev: As per UX",
+   "owner": "",
+   "status": "wontfix",
+   "title": "Screen share image remains visible in Studio after the anchor stops screen sharing from an Android mobile device.",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-108": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Not working as excepted",
+   "owner": "",
+   "status": "open",
+   "title": "ALL clinets Teleprompter – Following Your Voice feature is not working as expected.",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-109": {
+   "kind": "studio",
+   "note": "Dev: Need more detail",
+   "owner": "",
+   "status": "in-progress",
+   "title": "Studio Module Automatically Refreshes Every Minute",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-110": {
+   "kind": "studio",
+   "note": "Type: Functional / Chat Synchronization",
+   "owner": "",
+   "status": "open",
+   "title": "New Chat Messages Are Displayed in Inconsistent Order Between iOS and Studio Host",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-111": {
+   "kind": "studio",
+   "note": "Type: Functional / Screen Sharing | Dev: Fixed | QA: Done | Comments: One share at a time; the host can take over after a confirm.",
+   "owner": "",
+   "status": "verified",
+   "title": "Simultaneous Screen Sharing Is Allowed from iOS Participant and Studio Host",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-112": {
+   "kind": "studio",
+   "note": "Dev: Fixed | Comments: Remove invite now revokes the link; Rejoin shows the invalid-link page.",
+   "owner": "",
+   "status": "fixed",
+   "title": "Removed Invitee Can Still Join Meeting Using Previously Sent Invitation Link",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-113": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done | Comments: Resume keeps the setup choice (Skip = cam/mic off).",
+   "owner": "",
+   "status": "verified",
+   "title": "Camera and Microphone Status Changes Unexpectedly After Resuming Meeting",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-114": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done | Comments: The room's video menu lists the Custom inputs to switch to.",
+   "owner": "",
+   "status": "verified",
+   "title": "Custom Inputs Not Displayed After host Joins in meeting",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-115": {
+   "kind": "studio",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "Studio Page Opens in a New Tab and Redirects to Choose Your Video Input When Clicking Record or Go Live",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-116": {
+   "kind": "studio",
+   "note": "Dev: Fixed",
+   "owner": "",
+   "status": "fixed",
+   "title": "Anchor Can Still Access Teleprompter Script After Host Stops Teleprompter",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-117": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Teleprompter Play and Pause Controls Not Working on Anchor Side",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-118": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done | Comments: Please retest; share exact steps if it repeats.",
+   "owner": "",
+   "status": "verified",
+   "title": "Host Unable to Access Teleprompter After Using Up/Down Arrow Controls",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-119": {
+   "kind": "studio",
+   "note": "Dev: Fixed",
+   "owner": "",
+   "status": "fixed",
+   "title": "Brand Logo Not Available for Banner Selection on Host Side",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-120": {
+   "kind": "studio",
+   "note": "Dev: Duplicate | Comments: Same as row 33 (marked Fixed). If it happens again, reopen row 33 with the build and steps.",
+   "owner": "",
+   "status": "open",
+   "title": "Pausing the video in Casual Mode also pauses video playback for the Anchor.",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-121": {
+   "kind": "studio",
+   "note": "Dev: Fixed",
+   "owner": "",
+   "status": "fixed",
+   "title": "Video starts from the current playback position when the Anchor joins the meeting midway.",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-122": {
+   "kind": "studio",
+   "note": "Dev: Fixed",
+   "owner": "",
+   "status": "fixed",
+   "title": "Verify that the forwarded video is not visible to the Anchor and Participant during the meeting.",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-123": {
+   "kind": "studio",
+   "note": "Dev: Fixed | Comments: Back to top added.",
+   "owner": "",
+   "status": "fixed",
+   "title": "Verify that the Host cant navigate back to the first line in the Teleprompter",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-124": {
+   "kind": "studio",
+   "note": "Dev: Fixed | Comments: Updates within 15 s for web; native apps must save the image via the API.",
+   "owner": "",
+   "status": "fixed",
+   "title": "Verify that the updated thumbnail/profile image is not visible to all other participants when an Audio User changes their profile image during the meeting.",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-125": {
+   "kind": "studio",
+   "note": "Type: Functional / Audio-Subtitle Synchronization | Dev: Known gap | Comments: Live subtitles are recognised from speech, so they show slightly after the audio.",
+   "owner": "",
+   "status": "open",
+   "title": "Audio and Subtitles Are Not Synchronized During the Meeting",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-126": {
+   "kind": "studio",
+   "note": "Type: Functional / Session Management | Dev: Fixed | Comments: Another device needs the host's Allow to take over.",
+   "owner": "",
+   "status": "fixed",
+   "title": "Invited User Can Take Over an Active Meeting Using the Resume Option",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-127": {
+   "kind": "studio",
+   "note": "Type: Functional / Audio Synchronization | Dev: Need more detail | Comments: No code path found: self-mute stops the mic, host mute mutes the output. Likely the host's own mic picking up the room; retest with the host on headphones / host mic muted.",
+   "owner": "",
+   "status": "in-progress",
+   "title": "Muted Participants' Voices Are Still Audible on the YouTube Live Stream",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-128": {
+   "kind": "studio",
+   "note": "Type: Functional / RTMP Connection Stability | Dev: In progress | Comments: Custom RTMP destination output; under investigation.",
+   "owner": "",
+   "status": "open",
+   "title": "RTMP Connection Fails Intermittently During a Scheduled Casual Mode Meeting",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-129": {
+   "kind": "studio",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Confirmation Popup Missing When Skipping Recording Setup",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-130": {
+   "kind": "studio",
+   "note": "Type: Functional / Third-Party Integration",
+   "owner": "",
+   "status": "open",
+   "title": "Unable to Change YouTube Stream Privacy or Destination Settings from Private to Public",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-131": {
+   "kind": "studio",
+   "note": "Type: Functional / Date-Time Validation | Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Session Start and Stop Timers Allow Past Date and Time Selection",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-132": {
+   "kind": "studio",
+   "note": "Type: Functional / On-Air Selection | Dev: Functionality",
+   "owner": "",
+   "status": "wontfix",
+   "title": "Host Automatically Appears On Air Without Being Selected from the Pool",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-133": {
+   "kind": "studio",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "Project Duration Does Not Match Total Recorded Content in Editor",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-134": {
+   "kind": "studio",
+   "note": "Type: Functional / Video Preview",
+   "owner": "",
+   "status": "open",
+   "title": "Reporter Preview Is Empty in the Pool When Joining from the iOS App",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-135": {
+   "kind": "studio",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "Processing Tag Not Displayed on Video While Live Session Is Ongoing",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-136": {
+   "kind": "studio",
+   "note": "Type: Fixed | Dev: Done",
+   "owner": "",
+   "status": "open",
+   "title": "Audience Poll QR Code Adjustment Popup Is Not Displayed Properly.",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-137": {
+   "kind": "studio",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "Popup Close Icon Alignment Needs Adjustment",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-138": {
+   "kind": "studio",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "Casual Mode Layouts Not Working",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-139": {
+   "kind": "studio",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "Video and Host Subtitles Overlap During Paused Video Playback",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-140": {
+   "kind": "studio",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "Subtitles Display in Another Language When No One Is Speaking",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-141": {
+   "kind": "studio",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "Show Sticker Button Not Highlighted in Brand Kit",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-142": {
+   "kind": "studio",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "AI Features Display Errors After Meeting Completion",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-143": {
+   "kind": "studio",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "Video Dubbing Fails With 503 Server Error",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-144": {
+   "kind": "studio",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "Source File Panel Is Expanded by Default in Editor",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-145": {
+   "kind": "studio",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "HLS Thumbnail Not Displayed After Processing",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-146": {
+   "kind": "studio",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "Live Audio Dubbing Intermittently Fails",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-147": {
+   "kind": "studio",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "Graphics Transition Not Displayed When Switching Sources in Producer Meeting",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-148": {
+   "kind": "studio",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "Host Audio Continues Transmitting in the Background When Sending VOD or Image Files to the Master",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-149": {
+   "kind": "studio",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "Subtitle Language Changes Automatically When Changing Transcript Language",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-150": {
+   "kind": "studio",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "Language Changes Automatically in AI Live Clips",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-151": {
+   "kind": "studio",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "Transcript Is Not Generated in the Selected Language",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-152": {
+   "kind": "studio",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "Subtitle Displays in Two Lines Instead of a Single Line",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-153": {
+   "kind": "studio",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "Video Does Not Play Completely on Master in Casual Mode",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-154": {
+   "kind": "studio",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "In custom layouts watermark text message selected particular position,but in studio its not shwing correct position.",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-155": {
+   "kind": "studio",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "Watermark text is not displayed in the selected position in Studio",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-156": {
+   "kind": "studio",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "Disabled participant is still visible to another participant after saving Matrix Control settings",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-157": {
+   "kind": "studio",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "Edit Script option should be hidden when opening Teleprompter in Host Preview",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-158": {
+   "kind": "studio",
+   "note": "Dev: Requirement",
+   "owner": "",
+   "status": "open",
+   "title": "Anchor Preview status is not synchronized with Host-side Live Commentary and Teleprompter controls",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-159": {
+   "kind": "studio",
+   "note": "Type: Functional / Session Management | Dev: Issue fixed Build is not released yet.Will release it after completion of testing | Comments: Server side done (Studio API): 409 account_active_on_web on reporter join + GET mobile/account-status.",
+   "owner": "",
+   "status": "open",
+   "title": "Same Host Account Can Log In and Join Meetings Through Web and iOS Bonding App Simultaneously",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-160": {
+   "kind": "studio",
+   "note": "Type: Functional / Message Synchronization | Dev: Issue fixed Build is not released yet.Will release it after completion of testing.",
+   "owner": "",
+   "status": "open",
+   "title": "Private Messages Sent from iOS Participants Are Not Received by the Studio Host",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-161": {
+   "kind": "studio",
+   "note": "Type: Functional / Session Management / Audio Connection | Dev: As discussed earlier with Mani it is a feature not a bug.Please confirm with Mani.",
+   "owner": "",
+   "status": "wontfix",
+   "title": "iOS User Is Added to Studio Participants and Can Hear the Host Before Clicking Go Live",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-162": {
+   "kind": "studio",
+   "note": "Dev: Shell team",
+   "owner": "",
+   "status": "in-progress",
+   "title": "Sign Out Other Devices functionality is not working in Login & Security settings.",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-163": {
+   "kind": "studio",
+   "note": "Dev: fixed",
+   "owner": "",
+   "status": "fixed",
+   "title": "Duplicate camera options are displayed in Camera Settings when joining a session in samsung mobile",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-164": {
+   "kind": "studio",
+   "note": "Dev: fixed",
+   "owner": "",
+   "status": "fixed",
+   "title": "In teleprompter Text zoom button is very small need to increase the size",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-165": {
+   "kind": "studio",
+   "note": "Dev: fixed",
+   "owner": "",
+   "status": "fixed",
+   "title": "Close option is missing in the Teleprompter screen.",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-166": {
+   "kind": "studio",
+   "note": "Dev: fixed",
+   "owner": "",
+   "status": "fixed",
+   "title": "No validation error message is displayed when clicking Continue without entering a meeting link or code.",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-167": {
+   "kind": "studio",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "Application crashes when continuously changing the resolution during a live broadcast.",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-168": {
+   "kind": "studio",
+   "note": "Dev: Shell team",
+   "owner": "",
+   "status": "in-progress",
+   "title": "Sign Out Other Devices functionality is not working in Login & Security settings.",
+   "updated": "2026-11-28T08:40:48.000Z"
+  },
+  "STU-169": {
+   "kind": "studio",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "Video Continues Playing for Other Participants When Paused by Host",
+   "updated": "2026-11-28T08:40:48.000Z"
   }
  }
 }
