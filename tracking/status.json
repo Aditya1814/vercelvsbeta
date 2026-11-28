@@ -6,7 +6,7 @@
    "owner": "",
    "status": "verified",
    "title": "Command Palette does not open with Ctrl+K",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-002": {
    "kind": "live",
@@ -14,7 +14,7 @@
    "owner": "",
    "status": "verified",
    "title": "Start Smart Clip Analysis button remains visible while analysis runs",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-003": {
    "kind": "live",
@@ -22,7 +22,7 @@
    "owner": "",
    "status": "verified",
    "title": "New Project menu differs from design reference",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-004": {
    "kind": "live",
@@ -30,7 +30,7 @@
    "owner": "",
    "status": "verified",
    "title": "Undo missing after reopening editor",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-005": {
    "kind": "live",
@@ -38,7 +38,7 @@
    "owner": "",
    "status": "verified",
    "title": "Edited clip not found in Library after Download",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-006": {
    "kind": "live",
@@ -46,7 +46,7 @@
    "owner": "",
    "status": "verified",
    "title": "Long to Shorts does not create clips",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-007": {
    "kind": "live",
@@ -54,7 +54,7 @@
    "owner": "",
    "status": "verified",
    "title": "Not all speakers appear in Recording tab",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-008": {
    "kind": "live",
@@ -62,7 +62,7 @@
    "owner": "",
    "status": "verified",
    "title": "Creations are not generated/displayed in Creations tab",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-009": {
    "kind": "live",
@@ -70,7 +70,7 @@
    "owner": "",
    "status": "verified",
    "title": "Normal content does not appear after removing Favorites filter",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-010": {
    "kind": "live",
@@ -78,7 +78,7 @@
    "owner": "",
    "status": "verified",
    "title": "Projects list includes content assigned to folders",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-011": {
    "kind": "live",
@@ -86,7 +86,7 @@
    "owner": "",
    "status": "verified",
    "title": "Content-upload screen UI is not displayed properly",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-012": {
    "kind": "live",
@@ -94,7 +94,7 @@
    "owner": "",
    "status": "verified",
    "title": "Co-Creator search does not show clips by content name",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-013": {
    "kind": "live",
@@ -102,7 +102,7 @@
    "owner": "",
    "status": "verified",
    "title": "Selected best-clip details missing in Co-Creator",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-014": {
    "kind": "live",
@@ -110,7 +110,7 @@
    "owner": "",
    "status": "verified",
    "title": "New Folder button displayed twice",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-015": {
    "kind": "live",
@@ -118,7 +118,7 @@
    "owner": "",
    "status": "verified",
    "title": "1 GB Custom Edit upload remains Processing for over five minutes",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-016": {
    "kind": "live",
@@ -126,7 +126,7 @@
    "owner": "",
    "status": "verified",
    "title": "Credits do not update after successful payment until refresh",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-017": {
    "kind": "live",
@@ -134,7 +134,7 @@
    "owner": "",
    "status": "verified",
    "title": "Back from Content Details redirects to Projects instead of Home",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-018": {
    "kind": "live",
@@ -142,7 +142,7 @@
    "owner": "",
    "status": "verified",
    "title": "Properties panel has no close option",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-019": {
    "kind": "live",
@@ -150,7 +150,7 @@
    "owner": "",
    "status": "verified",
    "title": "Split option does not enable until video is selected",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-020": {
    "kind": "live",
@@ -158,7 +158,7 @@
    "owner": "",
    "status": "verified",
    "title": "Clip creation settings missing during upload-based clip creation",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-021": {
    "kind": "live",
@@ -166,7 +166,7 @@
    "owner": "",
    "status": "wontfix",
    "title": "AI Captions content details missing Recording, Clips and Captions tabs",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-022": {
    "kind": "live",
@@ -174,7 +174,7 @@
    "owner": "",
    "status": "verified",
    "title": "Selected caption style not displayed after content becomes Ready",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-023": {
    "kind": "live",
@@ -182,7 +182,7 @@
    "owner": "",
    "status": "verified",
    "title": "Target-language captions not shown when content is Ready",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-024": {
    "kind": "live",
@@ -190,7 +190,7 @@
    "owner": "",
    "status": "verified",
    "title": "AI dubbing fails during video validation",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-025": {
    "kind": "live",
@@ -198,7 +198,7 @@
    "owner": "",
    "status": "verified",
    "title": "Recording, Clips and Download missing for dubbed content",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-026": {
    "kind": "live",
@@ -206,7 +206,7 @@
    "owner": "",
    "status": "verified",
    "title": "Portrait Pro shows Finished despite portrait derivative error",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-027": {
    "kind": "live",
@@ -214,7 +214,7 @@
    "owner": "",
    "status": "verified",
    "title": "Options remain editable while content is processing",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-028": {
    "kind": "live",
@@ -222,7 +222,7 @@
    "owner": "",
    "status": "verified",
    "title": "Portrait Pro processing options and caption template not visible",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-029": {
    "kind": "live",
@@ -230,7 +230,7 @@
    "owner": "",
    "status": "verified",
    "title": "Portrait Pro output ratio is 1:1 instead of selected 9:16",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-030": {
    "kind": "live",
@@ -238,7 +238,7 @@
    "owner": "",
    "status": "verified",
    "title": "AI Writer language selection missing during generation",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-031": {
    "kind": "live",
@@ -246,7 +246,7 @@
    "owner": "",
    "status": "verified",
    "title": "Content Details tab inventory needs complete design comparison",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-032": {
    "kind": "live",
@@ -254,7 +254,7 @@
    "owner": "",
    "status": "verified",
    "title": "Generated portrait content opens in editor with incorrect aspect ratio",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-033": {
    "kind": "live",
@@ -262,7 +262,7 @@
    "owner": "",
    "status": "verified",
    "title": "Long to Shorts clip switches to 16:9 in full-screen mode",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-034": {
    "kind": "live",
@@ -270,7 +270,7 @@
    "owner": "",
    "status": "verified",
    "title": "Growth Plan Subscriber Is Incorrectly Prompted to Upgrade",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-035": {
    "kind": "live",
@@ -278,7 +278,7 @@
    "owner": "",
    "status": "verified",
    "title": "Credits Balance Does Not Update Automatically After Successful Payment",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-036": {
    "kind": "live",
@@ -286,7 +286,7 @@
    "owner": "",
    "status": "verified",
    "title": "Video Upload Accepts Only MP4 Format",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-037": {
    "kind": "live",
@@ -294,7 +294,7 @@
    "owner": "",
    "status": "verified",
    "title": "Incorrect Transcript Language Generated for Hindi Content",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-038": {
    "kind": "live",
@@ -302,7 +302,7 @@
    "owner": "",
    "status": "verified",
    "title": "Clips Are Generated for Dubbed Content Unexpectedly",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-039": {
    "kind": "live",
@@ -310,7 +310,7 @@
    "owner": "",
    "status": "verified",
    "title": "Run Button Remains Enabled Without Selecting a Target Language",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-040": {
    "kind": "live",
@@ -318,7 +318,7 @@
    "owner": "",
    "status": "verified",
    "title": "Back Option Missing on AI Dubbing Screen When Navigated from Content Details",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-041": {
    "kind": "live",
@@ -326,7 +326,7 @@
    "owner": "",
    "status": "verified",
    "title": "Download Functionality Not Working from Content Details Page",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-042": {
    "kind": "live",
@@ -334,7 +334,7 @@
    "owner": "",
    "status": "verified",
    "title": "Source and Dubbed Languages Are Displayed During Dubbing from Content Details",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-043": {
    "kind": "live",
@@ -342,7 +342,7 @@
    "owner": "",
    "status": "verified",
    "title": "Not All Indian Languages Are Available During AI Captions Content Upload",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-044": {
    "kind": "live",
@@ -350,7 +350,7 @@
    "owner": "",
    "status": "verified",
    "title": "Sign-Out Confirmation Popup Is Missing",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-045": {
    "kind": "live",
@@ -358,7 +358,7 @@
    "owner": "",
    "status": "verified",
    "title": "Settings from the Choose Your Plan Popup Redirects to Accounts Instead of Billing & Plans",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-046": {
    "kind": "live",
@@ -366,7 +366,7 @@
    "owner": "",
    "status": "verified",
    "title": "Cancel Plan Option Still Displayed After Subscription Cancellation",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-047": {
    "kind": "live",
@@ -374,7 +374,7 @@
    "owner": "",
    "status": "verified",
    "title": "Previously Generated Dubbed Content Is Not Displayed After Switching the Target Language",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-048": {
    "kind": "live",
@@ -382,7 +382,7 @@
    "owner": "",
    "status": "verified",
    "title": "SRT File Upload Rejected as Unsupported in AI Writer",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-049": {
    "kind": "live",
@@ -390,7 +390,7 @@
    "owner": "",
    "status": "verified",
    "title": "Sidebar Displays Available Credits Instead of Used and Available Credit Breakdown",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-050": {
    "kind": "live",
@@ -398,7 +398,7 @@
    "owner": "",
    "status": "verified",
    "title": "Credit Usage Percentage Indicator Missing from Sidebar",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-051": {
    "kind": "live",
@@ -406,7 +406,7 @@
    "owner": "",
    "status": "verified",
    "title": "Sidebar Navigation Is Non-Functional on from Content Upload Screen",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-052": {
    "kind": "live",
@@ -414,7 +414,7 @@
    "owner": "",
    "status": "verified",
    "title": "Incorrect iOS Version Requirement Message Displayed During Apple Pay Subscription",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-053": {
    "kind": "live",
@@ -422,7 +422,7 @@
    "owner": "",
    "status": "verified",
    "title": "Sign-In Button Remains Disabled When Credentials Are Autofilled by the Browser",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-054": {
    "kind": "live",
@@ -430,7 +430,7 @@
    "owner": "",
    "status": "verified",
    "title": "404 Page Not Found Error After Closing the Plans Popup from the Welcome Email Redirect",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-055": {
    "kind": "live",
@@ -438,7 +438,7 @@
    "owner": "",
    "status": "verified",
    "title": "Updated Email Address Displayed in Settings Despite Logging In with the Old Email Address",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-056": {
    "kind": "live",
@@ -446,7 +446,7 @@
    "owner": "",
    "status": "verified",
    "title": "Change Password Popup Closes When Clicking Outside the Modal",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-057": {
    "kind": "live",
@@ -454,7 +454,7 @@
    "owner": "",
    "status": "verified",
    "title": "Incorrect Error Message Displayed for Invalid Current Password",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-058": {
    "kind": "live",
@@ -462,7 +462,7 @@
    "owner": "",
    "status": "verified",
    "title": "Validation Error Message Does Not Clear When User Starts Editing Fields in Change Password Popup",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-059": {
    "kind": "live",
@@ -470,7 +470,7 @@
    "owner": "",
    "status": "verified",
    "title": "Change Password Accepts the Same Current and New Password Without Validation",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-060": {
    "kind": "live",
@@ -478,7 +478,7 @@
    "owner": "",
    "status": "verified",
    "title": "Delete Account Confirmation Popup Closes When Clicking Outside the Modal",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-061": {
    "kind": "live",
@@ -486,7 +486,7 @@
    "owner": "",
    "status": "verified",
    "title": "Multiple Content Upload Functionality Is Not Available",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-062": {
    "kind": "live",
@@ -494,7 +494,7 @@
    "owner": "",
    "status": "verified",
    "title": "Deleted Account Email Address Can Still Not Be Used to Log In",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-063": {
    "kind": "live",
@@ -502,7 +502,7 @@
    "owner": "",
    "status": "verified",
    "title": "Incorrect or Unclear Error Message Displayed When Logging In with a Deleted Account",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-064": {
    "kind": "live",
@@ -510,7 +510,7 @@
    "owner": "",
    "status": "verified",
    "title": "Create Role Popup Closes When Clicking Outside the Modal",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-065": {
    "kind": "live",
@@ -518,15 +518,15 @@
    "owner": "",
    "status": "verified",
    "title": "Workspace Invitation Link Fails When User Clicks Join Workspace in Invitation Email",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-066": {
    "kind": "live",
-   "note": "Dev: fixed | QA: done",
+   "note": "Dev: fixed | QA: Done",
    "owner": "",
    "status": "verified",
    "title": "Back Navigation Does Not Return to the Previous Page When Opening the Editor from Command Palette",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-067": {
    "kind": "live",
@@ -534,7 +534,7 @@
    "owner": "",
    "status": "verified",
    "title": "AI Dubbing Is Accessible Despite View-Only Role Permissions",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-068": {
    "kind": "live",
@@ -542,7 +542,7 @@
    "owner": "",
    "status": "verified",
    "title": "Back Navigation Redirects to Home Instead of Projects When AI Tools Are Inaccessible",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-069": {
    "kind": "live",
@@ -550,7 +550,7 @@
    "owner": "",
    "status": "verified",
    "title": "Workspace and Team Page Does Not Refresh Automatically After Role or Invitation Changes",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-070": {
    "kind": "live",
@@ -558,7 +558,7 @@
    "owner": "",
    "status": "verified",
    "title": "Workspace and Billing Screens Are Accessible in the Editor Despite Missing Role Permissions",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-071": {
    "kind": "live",
@@ -566,7 +566,7 @@
    "owner": "",
    "status": "verified",
    "title": "AI Writer Is Missing from Command Palette Search Results",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-072": {
    "kind": "live",
@@ -574,7 +574,7 @@
    "owner": "",
    "status": "verified",
    "title": "Rename Popup Closes When Clicking Outside the Modal",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-073": {
    "kind": "live",
@@ -582,7 +582,7 @@
    "owner": "",
    "status": "verified",
    "title": "Notifications Are Not Displayed on the Home Screen",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-074": {
    "kind": "live",
@@ -590,7 +590,7 @@
    "owner": "",
    "status": "verified",
    "title": "Caption Language Search Does Not Display Matching Results When Typing on the Keyboard",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-075": {
    "kind": "live",
@@ -598,7 +598,7 @@
    "owner": "",
    "status": "verified",
    "title": "Content Details Are Not Displayed in Co-Creator Search Results",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-076": {
    "kind": "live",
@@ -606,7 +606,7 @@
    "owner": "",
    "status": "verified",
    "title": "Credits Balance Does Not Update Automatically After Thumbnail or Snap Shorts Creation",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-077": {
    "kind": "live",
@@ -614,7 +614,7 @@
    "owner": "",
    "status": "verified",
    "title": "Source Language Captions Are Generated Again Instead of the Selected Language",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-078": {
    "kind": "live",
@@ -622,7 +622,7 @@
    "owner": "",
    "status": "verified",
    "title": "Add Workspace Option in the Sidebar Is Not Functional",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-079": {
    "kind": "live",
@@ -630,7 +630,7 @@
    "owner": "",
    "status": "verified",
    "title": "Move to Folder Popup Closes When Clicking Outside the Modal",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-080": {
    "kind": "live",
@@ -638,7 +638,7 @@
    "owner": "",
    "status": "verified",
    "title": "Existing Folder Name Is Displayed in the Move to Folder Popup",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-081": {
    "kind": "live",
@@ -646,7 +646,7 @@
    "owner": "",
    "status": "verified",
    "title": "Clip Content Playback Is Cropped at the Edges Depending on Screen Resolution",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-082": {
    "kind": "live",
@@ -654,7 +654,7 @@
    "owner": "",
    "status": "verified",
    "title": "Content Title Is Not Displayed in the Selected Language During Download Processing",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-083": {
    "kind": "live",
@@ -662,7 +662,7 @@
    "owner": "",
    "status": "verified",
    "title": "Save and Cancel Options Are Missing When Renaming a Folder",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-084": {
    "kind": "live",
@@ -670,7 +670,7 @@
    "owner": "",
    "status": "verified",
    "title": "Source Language Is Displayed as the Target Language When Starting a Second Dubbing Operation",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-085": {
    "kind": "live",
@@ -678,7 +678,7 @@
    "owner": "",
    "status": "verified",
    "title": "Delete Project Confirmation Popup Closes When Clicking Outside the Modal",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-086": {
    "kind": "live",
@@ -686,7 +686,7 @@
    "owner": "",
    "status": "verified",
    "title": "Browser Back Navigation Does Not Return to the Previous Page from the Getting Started Screen",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-087": {
    "kind": "live",
@@ -694,7 +694,7 @@
    "owner": "",
    "status": "verified",
    "title": "Content Thumbnails Are Not Displayed in the Bin Tab",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-088": {
    "kind": "live",
@@ -702,7 +702,7 @@
    "owner": "",
    "status": "verified",
    "title": "Transcript Search Fails to Return Matching Results for Keywords Containing Spaces",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-089": {
    "kind": "live",
@@ -710,7 +710,7 @@
    "owner": "",
    "status": "verified",
    "title": "Previously Searched Keywords Persist in the Transcript Search Bar When Opening Different Content in the Editor",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-090": {
    "kind": "live",
@@ -718,7 +718,7 @@
    "owner": "",
    "status": "verified",
    "title": "Source and Dubbed Languages Are Incorrectly Displayed as Languages to Dub in Editor Properties",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-091": {
    "kind": "live",
@@ -726,7 +726,7 @@
    "owner": "",
    "status": "verified",
    "title": "Unable to Mute the Second Content Track in the Editor",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-092": {
    "kind": "live",
@@ -734,7 +734,7 @@
    "owner": "",
    "status": "verified",
    "title": "Scene, Logo, and Elements Are Not Saved in the Template from the Editor",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-093": {
    "kind": "live",
@@ -742,7 +742,7 @@
    "owner": "",
    "status": "verified",
    "title": "Transcript Does Not Automatically Scroll to the Active Segment During Editor Preview Playback",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-094": {
    "kind": "live",
@@ -750,7 +750,7 @@
    "owner": "",
    "status": "verified",
    "title": "Text Position Changes Unexpectedly When Adjusting Text Field Dimensions in the Editor",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-095": {
    "kind": "live",
@@ -758,7 +758,7 @@
    "owner": "",
    "status": "open",
    "title": "Logo, Content Positions, and Elements Are Not Saved in the Editor Template",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-096": {
    "kind": "live",
@@ -766,7 +766,7 @@
    "owner": "",
    "status": "verified",
    "title": "Exported Content Cannot Be Played from the Downloaded Tab in Projects",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-097": {
    "kind": "live",
@@ -774,7 +774,7 @@
    "owner": "",
    "status": "verified",
    "title": "Text and Elements Are Missing from Exported Content After Applying Editor Changes",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-098": {
    "kind": "live",
@@ -782,7 +782,7 @@
    "owner": "",
    "status": "verified",
    "title": "Exported Content Displays the Original Source Name Instead of the Updated Content Name in downloads tab",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-099": {
    "kind": "live",
@@ -790,7 +790,7 @@
    "owner": "",
    "status": "verified",
    "title": "Theme Colors Do Not Update When Changed in the Editor",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-100": {
    "kind": "live",
@@ -798,7 +798,7 @@
    "owner": "",
    "status": "wontfix",
    "title": "Corresponding AI Feature Tags Are Not Displayed on Content in Home and Projects Screens",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-101": {
    "kind": "live",
@@ -806,7 +806,7 @@
    "owner": "",
    "status": "verified",
    "title": "Processed Content Does Not Appear Automatically in Projects After Returning from an AI Feature",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-102": {
    "kind": "live",
@@ -814,7 +814,7 @@
    "owner": "",
    "status": "verified",
    "title": "Keyboard Shortcuts Are Not Available for Common Editing Actions in the Editor",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-103": {
    "kind": "live",
@@ -822,7 +822,7 @@
    "owner": "",
    "status": "verified",
    "title": "No Action Is Performed When Clicking the “Fit the Whole Edit in View” Option",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-104": {
    "kind": "live",
@@ -830,7 +830,7 @@
    "owner": "",
    "status": "verified",
    "title": "Content Title Is Not Displayed Below the Clip When Opened from the Clips Tab",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-105": {
    "kind": "live",
@@ -838,7 +838,7 @@
    "owner": "",
    "status": "verified",
    "title": "Clip Preview Does Not Adjust According to the Clip Aspect Ratio",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-106": {
    "kind": "live",
@@ -846,7 +846,7 @@
    "owner": "",
    "status": "verified",
    "title": "AI Dub Popup Closes When Clicking Outside the Modal from the Clips Tab",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-107": {
    "kind": "live",
@@ -854,7 +854,7 @@
    "owner": "",
    "status": "verified",
    "title": "Clip Selection Checkboxes Are Displayed in the AI Dub Popup from the Clips Tab",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-108": {
    "kind": "live",
@@ -862,7 +862,7 @@
    "owner": "",
    "status": "verified",
    "title": "Clip Playback Seekbar Is Not Functional",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-109": {
    "kind": "live",
@@ -870,7 +870,7 @@
    "owner": "",
    "status": "verified",
    "title": "Previously Dubbed Languages Are Incorrectly Displayed as Available Target Languages",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-110": {
    "kind": "live",
@@ -878,7 +878,7 @@
    "owner": "",
    "status": "verified",
    "title": "AI Dubbing Fails to Generate Dubbed Content for Any Input",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-111": {
    "kind": "live",
@@ -886,7 +886,7 @@
    "owner": "",
    "status": "verified",
    "title": "Co-Creator Does Not Respond to User Queries on the Content Upload Screen",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-112": {
    "kind": "live",
@@ -894,7 +894,7 @@
    "owner": "",
    "status": "verified",
    "title": "Video Details Popup Closes When Clicking Outside the Modal",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-113": {
    "kind": "live",
@@ -902,7 +902,7 @@
    "owner": "",
    "status": "wontfix",
    "title": "Category Information Is Missing from the Video Details Popup",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-114": {
    "kind": "live",
@@ -910,7 +910,7 @@
    "owner": "",
    "status": "verified",
    "title": "Rename Validation Message Is Missing When the file Name Exceeds 64 Characters",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-115": {
    "kind": "live",
@@ -918,7 +918,7 @@
    "owner": "",
    "status": "verified",
    "title": "Overlay Template Upload Fails in the Brand Kits Module",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-116": {
    "kind": "live",
@@ -926,7 +926,7 @@
    "owner": "",
    "status": "verified",
    "title": "Sticker Upload Fails in the Brand Kits Module",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-117": {
    "kind": "live",
@@ -934,7 +934,7 @@
    "owner": "",
    "status": "verified",
    "title": "Audio Feature Incorrectly Prompts for a Paid Plan Despite an Active Subscription, and Upgrade Button Is Non-Functional",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-118": {
    "kind": "live",
@@ -942,7 +942,7 @@
    "owner": "",
    "status": "verified",
    "title": "Separate Scrollbar Recommended for the Left Navigation Menu on the Creations Screen",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-119": {
    "kind": "live",
@@ -950,7 +950,7 @@
    "owner": "",
    "status": "verified",
    "title": "Clip Aspect Ratio Dropdown Defaults to 9:16 While the Content Is Displayed in 16:9",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-120": {
    "kind": "live",
@@ -958,7 +958,7 @@
    "owner": "",
    "status": "verified",
    "title": "Volume Control Is Not Functional in the Recordings Tab Player",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-121": {
    "kind": "live",
@@ -966,7 +966,7 @@
    "owner": "",
    "status": "verified",
    "title": "Copyright Audio Continues Playing After Muting It in the Editor",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-122": {
    "kind": "live",
@@ -974,7 +974,7 @@
    "owner": "",
    "status": "verified",
    "title": "Playback Timing Information Is Missing from the Player in the Recordings Tab",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-123": {
    "kind": "live",
@@ -982,7 +982,7 @@
    "owner": "",
    "status": "verified",
    "title": "Aspect Ratio Displays as 9:16 Instead of the Selected Reframed Ratio After Content Upload",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-124": {
    "kind": "live",
@@ -990,23 +990,23 @@
    "owner": "",
    "status": "verified",
    "title": "Clip Preview Remains in Landscape Mode After Selecting Portrait Aspect Ratio",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-125": {
    "kind": "live",
-   "note": "Dev: fixed | QA: DOne",
+   "note": "Dev: fixed | QA: Done",
    "owner": "",
    "status": "verified",
    "title": "Content Details Page Does Not Open Automatically After Job Completion When the Review Result Button Appears",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-126": {
    "kind": "live",
-   "note": "Dev: fixed | QA: DOne",
+   "note": "Dev: fixed | QA: Done",
    "owner": "",
    "status": "verified",
    "title": "CloudReel and Remove Silence Options Are Not Functional in the Clips Tab",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-127": {
    "kind": "live",
@@ -1014,7 +1014,7 @@
    "owner": "",
    "status": "verified",
    "title": "Clips Are Not Generated Automatically After Reframing Job Completion",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-128": {
    "kind": "live",
@@ -1022,15 +1022,15 @@
    "owner": "",
    "status": "verified",
    "title": "Continue Button Remains Disabled After Providing a Valid URL on the Add Files Screen",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-129": {
    "kind": "live",
-   "note": "Dev: fixed | QA: DOne",
+   "note": "Dev: fixed | QA: Done",
    "owner": "",
    "status": "verified",
    "title": "No Navigation or Next-Step Action Is Provided After Content Upload Completion",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-130": {
    "kind": "live",
@@ -1038,7 +1038,7 @@
    "owner": "",
    "status": "verified",
    "title": "Swap Functionality Is Not Working When Selecting a Frame in the Editor",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-131": {
    "kind": "live",
@@ -1046,7 +1046,7 @@
    "owner": "",
    "status": "open",
    "title": "Editor Preview Does Not Update Based on the Selected Multi-Speaker Layout",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-132": {
    "kind": "live",
@@ -1054,7 +1054,7 @@
    "owner": "",
    "status": "verified",
    "title": "Effects and Color Options Are Missing from Properties When Selecting a Frame",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-133": {
    "kind": "live",
@@ -1062,7 +1062,7 @@
    "owner": "",
    "status": "open",
    "title": "Similar and This Scene Options Are Not Functional in the Editor",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-134": {
    "kind": "live",
@@ -1070,7 +1070,7 @@
    "owner": "",
    "status": "verified",
    "title": "Unable to Replace Layout Frames with External Images or Videos",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-135": {
    "kind": "live",
@@ -1078,7 +1078,7 @@
    "owner": "",
    "status": "verified",
    "title": "Editor UI Options Overlap When Reframe Settings Are Displayed",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-136": {
    "kind": "live",
@@ -1086,7 +1086,7 @@
    "owner": "",
    "status": "verified",
    "title": "Reframe Functionality Is Not Working in the Editor",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-137": {
    "kind": "live",
@@ -1094,7 +1094,7 @@
    "owner": "",
    "status": "verified",
    "title": "Multiple Processing Bars Are Added When Clicking the Processing Bar Element",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-138": {
    "kind": "live",
@@ -1102,7 +1102,7 @@
    "owner": "",
    "status": "verified",
    "title": "Export Popup Closes When Clicking Outside the Modal",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-139": {
    "kind": "live",
@@ -1110,7 +1110,7 @@
    "owner": "",
    "status": "verified",
    "title": "Editor Notifications Cannot Be Dismissed Manually",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-140": {
    "kind": "live",
@@ -1118,7 +1118,7 @@
    "owner": "",
    "status": "verified",
    "title": "Previous “Video Exported” Notification Appears Every Time the User Opens or Resumes Editing",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-141": {
    "kind": "live",
@@ -1126,7 +1126,7 @@
    "owner": "",
    "status": "open",
    "title": "Audio Heading Remains Visible in the Timeline Sidebar After Deleting External Audio",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-142": {
    "kind": "live",
@@ -1134,7 +1134,7 @@
    "owner": "",
    "status": "verified",
    "title": "Solo Option Not Working in the Timeline",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-143": {
    "kind": "live",
@@ -1142,7 +1142,7 @@
    "owner": "",
    "status": "verified",
    "title": "Audio Editing Controls Not Functioning in the Editor",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-144": {
    "kind": "live",
@@ -1150,7 +1150,7 @@
    "owner": "",
    "status": "verified",
    "title": "Incorrect Validation Message Displayed When Inviting a User with Pending Email Verification",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-145": {
    "kind": "live",
@@ -1158,7 +1158,7 @@
    "owner": "",
    "status": "verified",
    "title": "Audio Voice-over Functionality Not Working in the Editor",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-146": {
    "kind": "live",
@@ -1166,7 +1166,7 @@
    "owner": "",
    "status": "open",
    "title": "Audio Enhancement Functionality Not Working in the Editor",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-147": {
    "kind": "live",
@@ -1174,7 +1174,7 @@
    "owner": "",
    "status": "verified",
    "title": "Invite User Popup Closes When Clicking Outside the Dialog",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-148": {
    "kind": "live",
@@ -1182,7 +1182,7 @@
    "owner": "",
    "status": "verified",
    "title": "Incomplete Role List Displayed in the Encoders Invite User Screen",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-149": {
    "kind": "live",
@@ -1190,7 +1190,7 @@
    "owner": "",
    "status": "verified",
    "title": "Incorrect Success message Displayed When Removing Invited Members",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-150": {
    "kind": "live",
@@ -1198,7 +1198,7 @@
    "owner": "",
    "status": "verified",
    "title": "Layers Panel Not Displayed When Selecting the Layers Option",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-151": {
    "kind": "live",
@@ -1206,7 +1206,7 @@
    "owner": "",
    "status": "verified",
    "title": "Layout Priority Toggle Functionality Not Working in the Editor",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-152": {
    "kind": "live",
@@ -1214,7 +1214,7 @@
    "owner": "",
    "status": "verified",
    "title": "Captions Missing from Portions of the Video After Generation\neg contnet id: 01a19b5d-afe2-71ec-afdc-506af36d9e72",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-153": {
    "kind": "live",
@@ -1222,7 +1222,7 @@
    "owner": "",
    "status": "open",
    "title": "Uploaded LUT Files Not Displayed in the Editor Preview",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-154": {
    "kind": "live",
@@ -1230,7 +1230,7 @@
    "owner": "",
    "status": "verified",
    "title": "Color Adjustments in Exported Output Do Not Match the Editor Preview\neg contnet id: 01a19bcf-6004-73df-a224-457aa760327f",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-155": {
    "kind": "live",
@@ -1238,7 +1238,7 @@
    "owner": "",
    "status": "verified",
    "title": "Test Preview Popup Closes When Clicking Outside the Dialog",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-156": {
    "kind": "live",
@@ -1246,7 +1246,7 @@
    "owner": "",
    "status": "verified",
    "title": "HLS Sceneries Applied in Effects & Color Do Not Match the Exported Output",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-157": {
    "kind": "live",
@@ -1254,7 +1254,7 @@
    "owner": "",
    "status": "verified",
    "title": "Unable to Select 1:1 and 3:4 Aspect Ratios During AI Clips Upload",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-158": {
    "kind": "live",
@@ -1262,7 +1262,7 @@
    "owner": "",
    "status": "open",
    "title": "Write Option Incorrectly Displayed in the Creations Tab for AI Captions Content",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-159": {
    "kind": "live",
@@ -1270,7 +1270,7 @@
    "owner": "",
    "status": "verified",
    "title": "Dubbed Clip Plays Only in the Source Language After Download",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-160": {
    "kind": "live",
@@ -1278,7 +1278,7 @@
    "owner": "",
    "status": "open",
    "title": "Missing Name Field Validation in the Editor Export Popup",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-161": {
    "kind": "live",
@@ -1286,7 +1286,7 @@
    "owner": "",
    "status": "verified",
    "title": "Incorrect Folder Icon Displayed Beside the Parent Folder Name in Subfolder View",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-162": {
    "kind": "live",
@@ -1294,7 +1294,7 @@
    "owner": "",
    "status": "verified",
    "title": "Save Template Popup Closes When Clicking Outside the Dialog",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-163": {
    "kind": "live",
@@ -1302,7 +1302,7 @@
    "owner": "",
    "status": "verified",
    "title": "Scene Content Not Added as a Separate Layer in timeline",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-164": {
    "kind": "live",
@@ -1310,7 +1310,7 @@
    "owner": "",
    "status": "open",
    "title": "Template Saved with Intro Duration Included\nRef contnet id: 01a17bba-b8e0-77fb-b368-db77d7e65636",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-165": {
    "kind": "live",
@@ -1318,7 +1318,7 @@
    "owner": "",
    "status": "verified",
    "title": "Content Playback Continues When Selecting Options from the Clip Action Menu",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-166": {
    "kind": "live",
@@ -1326,7 +1326,7 @@
    "owner": "",
    "status": "verified",
    "title": "Clip Duration Not Displayed in the Clips Tab",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-167": {
    "kind": "live",
@@ -1334,7 +1334,7 @@
    "owner": "",
    "status": "verified",
    "title": "Clip Playback Timer Not Updating During Playback",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-168": {
    "kind": "live",
@@ -1342,7 +1342,7 @@
    "owner": "",
    "status": "verified",
    "title": "Audio and Captions Out of Synchronization After Dubbing and Caption Generation\nRef contnet: 01a1af26-15f5-794a-9528-801efc2552d6",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-169": {
    "kind": "live",
@@ -1350,7 +1350,7 @@
    "owner": "",
    "status": "verified",
    "title": "Search Results Not Retrieved When Searching by Content ID",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-170": {
    "kind": "live",
@@ -1358,7 +1358,7 @@
    "owner": "",
    "status": "verified",
    "title": "CloudReel Editor Becomes Unresponsive in Firefox Browser",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-171": {
    "kind": "live",
@@ -1366,7 +1366,7 @@
    "owner": "",
    "status": "open",
    "title": "Unable to Adjust the bands and logo based on layout",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-172": {
    "kind": "live",
@@ -1374,7 +1374,7 @@
    "owner": "",
    "status": "open",
    "title": "Ticker, Lower Third, and Top Bands Do Not Adjust According to the Selected Aspect Ratio",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-173": {
    "kind": "live",
@@ -1382,7 +1382,7 @@
    "owner": "",
    "status": "verified",
    "title": "Source Audio Continues Playing When Dubbed Audio Is Enabled",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-174": {
    "kind": "live",
@@ -1390,7 +1390,7 @@
    "owner": "",
    "status": "verified",
    "title": "Source Audio Continues Playing Despite Muted Status in the Timeline",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-175": {
    "kind": "live",
@@ -1398,7 +1398,7 @@
    "owner": "",
    "status": "verified",
    "title": "Ticker Band Position Differs Between Editor Preview and Exported Output",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-176": {
    "kind": "live",
@@ -1406,7 +1406,7 @@
    "owner": "",
    "status": "verified",
    "title": "Logo Visibility in Exported Output Does Not Match Editor Preview During Playback",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-177": {
    "kind": "live",
@@ -1414,7 +1414,7 @@
    "owner": "",
    "status": "verified",
    "title": "Logo Visibility in Exported Output Does Not Match Editor Preview During Playback",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-178": {
    "kind": "live",
@@ -1422,7 +1422,7 @@
    "owner": "",
    "status": "verified",
    "title": "Participant and Client Names Not Displayed in Portrait Output",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-179": {
    "kind": "live",
@@ -1430,7 +1430,7 @@
    "owner": "",
    "status": "verified",
    "title": "Source Content Displayed Instead of Edited Content When Initiating Reframe",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-180": {
    "kind": "live",
@@ -1438,7 +1438,7 @@
    "owner": "",
    "status": "open",
    "title": "Recording Processing Status Not Displayed Consistently When Host Starts Recording",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-181": {
    "kind": "live",
@@ -1446,7 +1446,7 @@
    "owner": "",
    "status": "open",
    "title": "Master Output Not Saved as a Project After Stopping and Restarting Recording",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-182": {
    "kind": "live",
@@ -1454,7 +1454,7 @@
    "owner": "",
    "status": "fixed",
    "title": "Bonding iOS App Live Stream Not Displayed as a Separate Track",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-183": {
    "kind": "live",
@@ -1462,7 +1462,7 @@
    "owner": "",
    "status": "wontfix",
    "title": "Unable to Edit Date and Time Displayed Beside the Lower Band",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-184": {
    "kind": "live",
@@ -1470,7 +1470,7 @@
    "owner": "",
    "status": "verified",
    "title": "Resizing One Participant's Frame Unexpectedly Changes Other Participants' Frames",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-185": {
    "kind": "live",
@@ -1478,7 +1478,7 @@
    "owner": "",
    "status": "open",
    "title": "Unable to Connect Multiple Devices Through the Bonding App",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-186": {
    "kind": "live",
@@ -1486,7 +1486,7 @@
    "owner": "",
    "status": "verified",
    "title": "Duplicate Date and Time Entries Displayed in Editor Compared to Source",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-187": {
    "kind": "live",
@@ -1494,7 +1494,7 @@
    "owner": "",
    "status": "verified",
    "title": "Multiple clips Play Simultaneously When Switching Playback",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-188": {
    "kind": "live",
@@ -1502,7 +1502,7 @@
    "owner": "",
    "status": "verified",
    "title": "Meeting ID Displayed Instead of User Name in Captions Tab",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-189": {
    "kind": "live",
@@ -1510,7 +1510,7 @@
    "owner": "",
    "status": "verified",
    "title": "Captions Tab Displays Captions for All Studio Content Instead of Selected Recording",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-190": {
    "kind": "live",
@@ -1518,7 +1518,7 @@
    "owner": "",
    "status": "verified",
    "title": "Inaccurate Caption Generation for Recorded Content",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-191": {
    "kind": "live",
@@ -1526,7 +1526,7 @@
    "owner": "",
    "status": "verified",
    "title": "Previous Workspace Content and Details Displayed After Switching Workspaces",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-192": {
    "kind": "live",
@@ -1534,7 +1534,7 @@
    "owner": "",
    "status": "verified",
    "title": "Sign-In Button Displayed After User Is Removed From Workspace",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-193": {
    "kind": "live",
@@ -1542,7 +1542,7 @@
    "owner": "",
    "status": "verified",
    "title": "Text Field Overlaps with Thumbnails in Playground",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-194": {
    "kind": "live",
@@ -1550,7 +1550,7 @@
    "owner": "",
    "status": "verified",
    "title": "Redirected to a New Chat When Clicking \"Use as Video\" on Any Thumbnail",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-195": {
    "kind": "live",
@@ -1558,7 +1558,7 @@
    "owner": "",
    "status": "verified",
    "title": "Thumbnail Preview Closes When Clicking Outside the Preview",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-196": {
    "kind": "live",
@@ -1566,7 +1566,7 @@
    "owner": "",
    "status": "verified",
    "title": "\"Use as Thumbnail\" Button Not Responding in Preview",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-197": {
    "kind": "live",
@@ -1574,7 +1574,7 @@
    "owner": "",
    "status": "in-progress",
    "title": "Caption Generation Not Available for Added video in Timeline",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-198": {
    "kind": "live",
@@ -1582,7 +1582,7 @@
    "owner": "",
    "status": "verified",
    "title": "Top Band Text Overflows Beyond the Top Band Position",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-199": {
    "kind": "live",
@@ -1590,7 +1590,7 @@
    "owner": "",
    "status": "verified",
    "title": "Only empty text box is showing and Live Badge Not Displayed in Editor After Recording Completion",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-200": {
    "kind": "live",
@@ -1598,7 +1598,7 @@
    "owner": "",
    "status": "verified",
    "title": "Breaking News Image Not Displayed in Top Band",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-201": {
    "kind": "live",
@@ -1606,7 +1606,7 @@
    "owner": "",
    "status": "verified",
    "title": "Ticker Band Background Color Applied to Entire Preview Instead of Ticker Band Only",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-202": {
    "kind": "live",
@@ -1614,7 +1614,7 @@
    "owner": "",
    "status": "verified",
    "title": "Ticker Band Position Pointers Displayed Outside the Ticker Band",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-203": {
    "kind": "live",
@@ -1622,7 +1622,7 @@
    "owner": "",
    "status": "verified",
    "title": "Lower Band Text Style and Background Color Differ Between Preview and Output",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-204": {
    "kind": "live",
@@ -1630,7 +1630,7 @@
    "owner": "",
    "status": "verified",
    "title": "Original Band Color showing Instead of Updated Color When only Repositioning the Bands",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-205": {
    "kind": "live",
@@ -1638,7 +1638,7 @@
    "owner": "",
    "status": "verified",
    "title": "Content Not Deleted from Projects Bin",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-206": {
    "kind": "live",
@@ -1646,7 +1646,7 @@
    "owner": "",
    "status": "verified",
    "title": "Transcript Text Not Highlighted in Synchronization with Content Playback",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-207": {
    "kind": "live",
@@ -1654,7 +1654,7 @@
    "owner": "",
    "status": "verified",
    "title": "Initial Transcript Line Not Played in Editor",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-208": {
    "kind": "live",
@@ -1662,7 +1662,7 @@
    "owner": "",
    "status": "verified",
    "title": "Band Background Color Not Displayed When Recording Playback Is Paused",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-209": {
    "kind": "live",
@@ -1670,15 +1670,15 @@
    "owner": "",
    "status": "verified",
    "title": "Master Clip Thumbnail Displayed Instead of Pre/Mid/Post-Roll Content Thumbnails",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-210": {
    "kind": "live",
-   "note": "Dev: Fixed 24 Nov: a mid-roll added to a meeting shown as its cameras now plays its picture with its sound (not frozen), and a roll under the playhead always shows instead of a picked Scenes shot. Expected: add an external mid-roll and play through it; its video plays with its audio, then the recording resumes. Retest on beta. | QA: Reopen\n18 Nov",
+   "note": "Dev: Fixed 24 Nov: a mid-roll added to a meeting shown as its cameras now plays its picture with its sound (not frozen), and a roll under the playhead always shows instead of a picked Scenes shot. Expected: add an external mid-roll and play through it; its video plays with its audio, then the recording resumes. Retest on beta. | QA: Reopen",
    "owner": "",
    "status": "open",
    "title": "Added External Mid-Roll Video Not Displayed During Editor Playback",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-211": {
    "kind": "live",
@@ -1686,7 +1686,7 @@
    "owner": "",
    "status": "fixed",
    "title": "Source Audio Plays Instead of B-Roll Audio During B-Roll Playback",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-212": {
    "kind": "live",
@@ -1694,7 +1694,7 @@
    "owner": "",
    "status": "fixed",
    "title": "B-Roll Content Displayed as Overlay During Playback",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-213": {
    "kind": "live",
@@ -1702,7 +1702,7 @@
    "owner": "",
    "status": "open",
    "title": "Export Fails When Combining Pre-Roll, Mid-Roll, Post-Roll, B-Roll, and Overlay Content",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-214": {
    "kind": "live",
@@ -1710,15 +1710,15 @@
    "owner": "",
    "status": "verified",
    "title": "AI Refine Content Operation Stops After Browser Refresh",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-215": {
    "kind": "live",
-   "note": "Dev: Fixed 24 Nov: splitting a frame of one camera now starts its two halves on the camera's left and right sides, so each person sharing the camera gets their own frame. Expected: on a scene where two people share a camera, split the frame, then crop and move each half on its own. Retest on beta. | QA: Reopn",
+   "note": "Dev: Fixed 24 Nov: splitting a frame of one camera now starts its two halves on the camera's left and right sides, so each person sharing the camera gets their own frame. Expected: on a scene where two people share a camera, split the frame, then crop and move each half on its own. Retest on beta. | QA: Reopen",
    "owner": "",
    "status": "open",
    "title": "Unable to Edit Scene Frames When Two Participants Speak Using the Same Camera",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-216": {
    "kind": "live",
@@ -1726,7 +1726,7 @@
    "owner": "",
    "status": "verified",
    "title": "Source Video Clips Not Merged into a Single Clip When AI Auto Edit Is Disabled",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-217": {
    "kind": "live",
@@ -1734,7 +1734,7 @@
    "owner": "",
    "status": "verified",
    "title": "Names Cannot Be Removed from Recording Content in Editor",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-218": {
    "kind": "live",
@@ -1742,7 +1742,7 @@
    "owner": "",
    "status": "fixed",
    "title": "Unable to Adjust Bands Based on Timeline",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-219": {
    "kind": "live",
@@ -1750,7 +1750,7 @@
    "owner": "",
    "status": "open",
    "title": "Unable to Adjust Caption Position by Selecting Captions in Editor Preview",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-220": {
    "kind": "live",
@@ -1758,7 +1758,7 @@
    "owner": "",
    "status": "verified",
    "title": "Size Adjustment Controls Should Be Available Across All Editor Elements",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-221": {
    "kind": "live",
@@ -1766,7 +1766,7 @@
    "owner": "",
    "status": "open",
    "title": "Adjusted Frame Position Not Reflected in Exported Output",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-222": {
    "kind": "live",
@@ -1774,7 +1774,7 @@
    "owner": "",
    "status": "verified",
    "title": "Ticker Band Does Not Scroll in Exported Output",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-223": {
    "kind": "live",
@@ -1782,7 +1782,7 @@
    "owner": "",
    "status": "open",
    "title": "Audio Plays for a Participant Even When Their transcript Are Disabled",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-224": {
    "kind": "live",
@@ -1790,7 +1790,7 @@
    "owner": "",
    "status": "open",
    "title": "Stabilize and Reverse Effects Not Working on Selected Timeline Clips",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-225": {
    "kind": "live",
@@ -1798,7 +1798,7 @@
    "owner": "",
    "status": "wontfix",
    "title": "Animation Color Customization Option Required",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-226": {
    "kind": "live",
@@ -1806,7 +1806,7 @@
    "owner": "",
    "status": "verified",
    "title": "Unable to Export Clips with Both Speed Adjustments and Transitions Applied",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-227": {
    "kind": "live",
@@ -1814,7 +1814,7 @@
    "owner": "",
    "status": "fixed",
    "title": "Eye Contact Export Fails for Edited Videos with Camera Angles, Studio Programs, or Multiple Recording Parts",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-228": {
    "kind": "live",
@@ -1822,7 +1822,7 @@
    "owner": "",
    "status": "verified",
    "title": "Unable to Unfreeze a Clip After Applying Freeze Frame",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-229": {
    "kind": "live",
@@ -1830,7 +1830,7 @@
    "owner": "",
    "status": "fixed",
    "title": "Live Badge Text Position Differs in Exported Output Compared to Preview",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-230": {
    "kind": "live",
@@ -1838,7 +1838,7 @@
    "owner": "",
    "status": "open",
    "title": "Date and Time Text Font Differs in Exported Output Compared to Preview",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-231": {
    "kind": "live",
@@ -1846,7 +1846,7 @@
    "owner": "",
    "status": "verified",
    "title": "Unable to Reposition Blur Image Across Video Frames",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-232": {
    "kind": "live",
@@ -1854,7 +1854,7 @@
    "owner": "",
    "status": "verified",
    "title": "Remove Background Button Remains Enabled While Background Removal Is Processing",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-233": {
    "kind": "live",
@@ -1862,15 +1862,15 @@
    "owner": "",
    "status": "fixed",
    "title": "Unable to Export Videos with Eye Contact and Background Removal Enabled Together",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-234": {
    "kind": "live",
-   "note": "Dev: Fixed 24 Nov: a Studio participant's window can be cropped from its frame toolbar, and selecting a participant no longer crashes the editor. Expected: select a participant, use Crop in its toolbar; the crop shows in the preview and the export. Retest on beta. | QA: Ropen | Comments: Showing just zom in and zoom out instead of adjusting the particular frame",
+   "note": "Dev: Fixed 24 Nov: a Studio participant's window can be cropped from its frame toolbar, and selecting a participant no longer crashes the editor. Expected: select a participant, use Crop in its toolbar; the crop shows in the preview and the export. Retest on beta. | QA: Reopen | Comments: Showing just zom in and zoom out instead of adjusting the particular frame",
    "owner": "",
    "status": "open",
    "title": "Crop Functionality Not Working for Selected Participants",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-235": {
    "kind": "live",
@@ -1878,7 +1878,7 @@
    "owner": "",
    "status": "open",
    "title": "Participant Animation and Visual Customization Controls Not Working",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-236": {
    "kind": "live",
@@ -1886,7 +1886,7 @@
    "owner": "",
    "status": "verified",
    "title": "Participant Frame Swaps Instead of Moving When Dragging to Reposition",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-237": {
    "kind": "live",
@@ -1894,7 +1894,7 @@
    "owner": "",
    "status": "fixed",
    "title": "Participant Full-Screen Layout Not Reflected in Exported Output",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-238": {
    "kind": "live",
@@ -1902,7 +1902,7 @@
    "owner": "",
    "status": "verified",
    "title": "Unable to Adjust Graphics Bands and all for Pre-Roll, Mid-Roll, and Post-Roll Content",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-239": {
    "kind": "live",
@@ -1910,7 +1910,7 @@
    "owner": "",
    "status": "verified",
    "title": "Downloaded Video Does Not Match Selected Resolution and Frame Rate",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-240": {
    "kind": "live",
@@ -1918,7 +1918,7 @@
    "owner": "",
    "status": "fixed",
    "title": "Unable to Adjust Participant Names in Editor",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-241": {
    "kind": "live",
@@ -1926,7 +1926,7 @@
    "owner": "",
    "status": "verified",
    "title": "Close Orbit Functionality Not Working Across Modules",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-242": {
    "kind": "live",
@@ -1934,7 +1934,7 @@
    "owner": "",
    "status": "verified",
    "title": "Dubbing Progress Bar Position Changes When Updating Properties or Refreshing Browser",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-243": {
    "kind": "live",
@@ -1942,7 +1942,7 @@
    "owner": "",
    "status": "verified",
    "title": "AI Feature Progress Bar Position Changes After Browser Refresh or Tab Switch",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-244": {
    "kind": "live",
@@ -1950,7 +1950,7 @@
    "owner": "",
    "status": "open",
    "title": "Speaker Tracks Not playing Separately After Spotlight Upload",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-245": {
    "kind": "live",
@@ -1958,7 +1958,7 @@
    "owner": "",
    "status": "open",
    "title": "Plans Page Displayed Repeatedly When Opening Different Modules",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-246": {
    "kind": "live",
@@ -1966,7 +1966,7 @@
    "owner": "",
    "status": "open",
    "title": "Brand Kit Cannot Be Edited After Casual Meeting Completion",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-247": {
    "kind": "live",
@@ -1974,7 +1974,7 @@
    "owner": "",
    "status": "open",
    "title": "Ticker Band Cannot Be Edited After Casual Meeting Completion",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-248": {
    "kind": "live",
@@ -1982,7 +1982,7 @@
    "owner": "",
    "status": "open",
    "title": "AI Tools Panel Layout Does Not Match the Design Reference",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-249": {
    "kind": "live",
@@ -1990,7 +1990,7 @@
    "owner": "",
    "status": "fixed",
    "title": "Clicking a Media Asset Adds It to the Timeline Directly",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-250": {
    "kind": "live",
@@ -1998,7 +1998,7 @@
    "owner": "",
    "status": "verified",
    "title": "Left Files Panel Sections Are Open by Default",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-251": {
    "kind": "live",
@@ -2006,7 +2006,7 @@
    "owner": "",
    "status": "verified",
    "title": "Graphics Menu Missing in the Editor for a Studio Recording",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-252": {
    "kind": "live",
@@ -2014,7 +2014,7 @@
    "owner": "",
    "status": "fixed",
    "title": "Studio Layout Option Disabled for a Studio Recording with Studio Layouts",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-253": {
    "kind": "live",
@@ -2022,7 +2022,7 @@
    "owner": "",
    "status": "fixed",
    "title": "Translate Captions Preselects a Language and Enables Translate",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-254": {
    "kind": "live",
@@ -2030,7 +2030,7 @@
    "owner": "",
    "status": "fixed",
    "title": "Graphics Panel Lists Studio Graphics That Never Went on Air",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-255": {
    "kind": "live",
@@ -2038,7 +2038,7 @@
    "owner": "",
    "status": "fixed",
    "title": "Dubbing Preselects a Language and Enables Dub",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-256": {
    "kind": "live",
@@ -2046,7 +2046,7 @@
    "owner": "",
    "status": "fixed",
    "title": "Translate Captions Button Style Differs from the Dub Button",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-257": {
    "kind": "live",
@@ -2054,7 +2054,7 @@
    "owner": "",
    "status": "fixed",
    "title": "Buttons Do Not Show a Pointer Cursor on Hover in the Editor",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-258": {
    "kind": "live",
@@ -2062,7 +2062,7 @@
    "owner": "",
    "status": "open",
    "title": "Freeze Frame Effect Not Working in Preview at Selected Time",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-259": {
    "kind": "live",
@@ -2070,7 +2070,7 @@
    "owner": "",
    "status": "open",
    "title": "Clock Background Changes Not Reflected in Preview",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-260": {
    "kind": "live",
@@ -2078,7 +2078,7 @@
    "owner": "",
    "status": "open",
    "title": "Timeline Seekbar and Transcript Highlighting Not Synchronized During Playback",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-261": {
    "kind": "live",
@@ -2086,7 +2086,7 @@
    "owner": "",
    "status": "fixed",
    "title": "Magic Clips in AI Tools Lists Every Clip in a Small Scrolling Box with No View All",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-262": {
    "kind": "live",
@@ -2094,7 +2094,7 @@
    "owner": "",
    "status": "fixed",
    "title": "B&W and Sepia Looks Do Not Reset or Re-apply After Reset Master Effects",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-263": {
    "kind": "live",
@@ -2102,7 +2102,7 @@
    "owner": "",
    "status": "fixed",
    "title": "Studio Banners and Tickers Missing from the Editor for a Recording",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-264": {
    "kind": "live",
@@ -2110,7 +2110,7 @@
    "owner": "",
    "status": "fixed",
    "title": "Clicking an AI Clip or Magic Clip Acts Directly, with No Add to Timeline Option in Its Menu",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-265": {
    "kind": "live",
@@ -2118,7 +2118,7 @@
    "owner": "",
    "status": "fixed",
    "title": "Dropdown Menus Slide In from the Top-Left Instead of Opening at Their Button",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-266": {
    "kind": "live",
@@ -2126,7 +2126,7 @@
    "owner": "",
    "status": "open",
    "title": "Orbit Not Responding and Displaying \"Context Is Too Large\" Error",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-267": {
    "kind": "live",
@@ -2134,7 +2134,7 @@
    "owner": "",
    "status": "open",
    "title": "Unable to Adjust Bands and Bands Overlap Video Content in Pre-Roll, Mid-Roll, and Post-Roll",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-268": {
    "kind": "live",
@@ -2142,7 +2142,7 @@
    "owner": "",
    "status": "fixed",
    "title": "Onboarding: empty camera dropdown. After choosing Camera as the input, the camera dropdown is empty.",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-269": {
    "kind": "live",
@@ -2150,7 +2150,7 @@
    "owner": "",
    "status": "fixed",
    "title": "Onboarding: input errors. When a Custom input has a problem (e.g. \"Couldn't connect RTMP 1\"), show the error highlighted in red directly under that input, not in grey at the bottom of the page.",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-270": {
    "kind": "live",
@@ -2158,7 +2158,7 @@
    "owner": "",
    "status": "fixed",
    "title": "Dropdown animation. Dropdowns animate in from the top. They should open like a normal dropdown, right under the button.",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-271": {
    "kind": "live",
@@ -2166,7 +2166,7 @@
    "owner": "",
    "status": "fixed",
    "title": "Studio: separate input switch button (UX change). The inputs set up on the onboarding page need their own \"switch input\" button in the Studio, separate from Stop Video.",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-272": {
    "kind": "live",
@@ -2174,7 +2174,7 @@
    "owner": "",
    "status": "fixed",
    "title": "Sources open on Online. Opening Sources → RTMP, SRT or Reporters should show the Online filter by default.",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-273": {
    "kind": "live",
@@ -2182,7 +2182,7 @@
    "owner": "",
    "status": "wontfix",
    "title": "Producer: Preview vs Master fit. Content fit (contain / cover) differs slightly between Preview and Master.",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-274": {
    "kind": "live",
@@ -2190,7 +2190,7 @@
    "owner": "",
    "status": "fixed",
    "title": "Live Dubbing: processing status. While the HLS URL for live dubbing is being created, show a clear \"Processing…\" indicator with a running timer until it's ready.",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-275": {
    "kind": "live",
@@ -2198,7 +2198,7 @@
    "owner": "",
    "status": "fixed",
    "title": "Pool cards: unmuted state. Pool cards show only \"Muted\". They should show both Muted and Unmuted.",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-276": {
    "kind": "live",
@@ -2206,7 +2206,7 @@
    "owner": "",
    "status": "in-progress",
    "title": "Live dubbing: host and HLS not dubbed together. Dubbing runs for only one source at a time (sometimes the HLS, sometimes the host), never both. In the output, one source's audio ends up muted.",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-277": {
    "kind": "live",
@@ -2214,7 +2214,7 @@
    "owner": "",
    "status": "fixed",
    "title": "Live Portrait: captions cut off. Captions are cut off in Live Portrait.",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-278": {
    "kind": "live",
@@ -2222,7 +2222,7 @@
    "owner": "",
    "status": "fixed",
    "title": "Producer → Casual: sources disappear. Switching from Producer to Casual removes all sources from the stage. It should show them full screen or in an auto grid, based on the participants.",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-279": {
    "kind": "live",
@@ -2230,7 +2230,7 @@
    "owner": "",
    "status": "fixed",
    "title": "Subtitles cover the camera menu. The subtitles overlap the camera / input options menu.",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-280": {
    "kind": "live",
@@ -2238,7 +2238,7 @@
    "owner": "",
    "status": "fixed",
    "title": "Credits run out: no message. When credits run out, the HLS keeps looping and there's no clear message in the UI.",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-281": {
    "kind": "live",
@@ -2246,7 +2246,7 @@
    "owner": "",
    "status": "fixed",
    "title": "Onboarding: Recording / VOD missing in the Studio. A Recording or VOD picked as a source on the onboarding page doesn't appear in the Studio's camera / input dropdown.",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-282": {
    "kind": "live",
@@ -2254,7 +2254,7 @@
    "owner": "",
    "status": "fixed",
    "title": "Editor: black thumbnails. Black frames appear in the Editor's video thumbnail timeline.",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "ISS-283": {
    "kind": "live",
@@ -2262,7 +2262,7 @@
    "owner": "",
    "status": "fixed",
    "title": "Editor: HLS audio missing. HLS audio is missing in the Editor.",
-   "updated": "2026-11-28T07:40:45.000Z"
+   "updated": "2026-11-28T07:48:12.000Z"
   },
   "PUB-23": {
    "kind": "finding",

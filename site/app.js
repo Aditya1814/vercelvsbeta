@@ -147,7 +147,7 @@
 
   var TONE = {
     critical: 'crit', blocker: 'crit', fail: 'crit', broken: 'crit', missing: 'crit', 'not possible': 'crit', bad: 'crit', 'vercel only': 'crit', 'not ready': 'crit',
-    high: 'high', major: 'high', partial: 'high', warn: 'high', weak: 'high', blocked: 'high', differs: 'high', 'partly working': 'high', 'partly ready': 'high', 'done with friction': 'high',
+    high: 'high', major: 'high', partial: 'high', warn: 'high', weak: 'high', blocked: 'high', differs: 'high', 'partly working': 'high', 'partly ready': 'high', 'done with friction': 'high', reopen: 'high',
     medium: 'med', minor: 'med', stopped: 'med', 'not run': 'med', 'not-run': 'med', 'not verified': 'med', 'not tested': 'med', p1: 'crit', p2: 'high', p3: 'med',
     pass: 'ok', ok: 'ok', good: 'ok', working: 'ok', both: 'ok', same: 'ok', done: 'ok', ready: 'ok', core: 'brand', important: 'med', 'beta only': 'brand'
   };
@@ -258,7 +258,7 @@
     if (it.kind === 'finding' || it.kind === 'better') return { pill: pill(d.sev), title: d.title, sub: d.module + ' · ' + d.typeLabel };
     if (it.kind === 'defect') return { pill: pill(d.sev) + pill(d.pri), title: d.title, sub: d.module + ' · ' + d.repro };
     if (it.kind === 'case') return { pill: pill(d.statusLabel), title: d.title, sub: d.suite + ' · ' + d.pri };
-    if (it.kind === 'live') return { pill: pill(d.sev), title: d.title, sub: d.module + (d.reporter ? ' · ' + d.reporter : '') };
+    if (it.kind === 'live') return { pill: pill(d.sev) + (d.qaStatus ? pill(d.qaStatus) : ''), title: d.title, sub: d.module + (d.reporter ? ' · ' + d.reporter : '') };
     return { pill: pill(d.outcomeLabel), title: d.statement, sub: d.segment + ' · ' + d.priority };
   }
   var OPEN = {}, SELECTED = {}, SHOWN = [];
@@ -447,7 +447,9 @@
       addBtn: { label: 'Report a bug', run: function () { openNewItemDialog('live'); } },
       filters: [
         { name: 'sev', label: 'Any severity', options: ['High', 'Medium', 'Low'], get: function (d) { return d.sev; } },
-        { name: 'module', label: 'Any module', get: function (d) { return d.module; } }
+        { name: 'module', label: 'Any module', get: function (d) { return d.module; } },
+        { name: 'qaStatus', label: 'Any QA status', options: ['Done', 'Reopen'], get: function (d) { return d.qaStatus; } },
+        { name: 'devStatus', label: 'Any dev status', get: function (d) { return d.devStatus; } }
       ]
     });
   };

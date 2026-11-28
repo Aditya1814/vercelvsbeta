@@ -1183,7 +1183,7 @@ window.DATA=window.DATA||{};window.DATA["live"]=[
   "reporter": "",
   "date": "",
   "devStatus": "fixed",
-  "qaStatus": "done",
+  "qaStatus": "Done",
   "qaNote": "",
   "sheetId": "66"
  },
@@ -2245,7 +2245,7 @@ window.DATA=window.DATA||{};window.DATA["live"]=[
   "reporter": "",
   "date": "",
   "devStatus": "fixed",
-  "qaStatus": "DOne",
+  "qaStatus": "Done",
   "qaNote": "",
   "sheetId": "125"
  },
@@ -2263,7 +2263,7 @@ window.DATA=window.DATA||{};window.DATA["live"]=[
   "reporter": "",
   "date": "",
   "devStatus": "fixed",
-  "qaStatus": "DOne",
+  "qaStatus": "Done",
   "qaNote": "",
   "sheetId": "126"
  },
@@ -2317,7 +2317,7 @@ window.DATA=window.DATA||{};window.DATA["live"]=[
   "reporter": "",
   "date": "",
   "devStatus": "fixed",
-  "qaStatus": "DOne",
+  "qaStatus": "Done",
   "qaNote": "",
   "sheetId": "129"
  },
@@ -3775,7 +3775,7 @@ window.DATA=window.DATA||{};window.DATA["live"]=[
   "reporter": "",
   "date": "",
   "devStatus": "Fixed 24 Nov: a mid-roll added to a meeting shown as its cameras now plays its picture with its sound (not frozen), and a roll under the playhead always shows instead of a picked Scenes shot. Expected: add an external mid-roll and play through it; its video plays with its audio, then the recording resumes. Retest on beta.",
-  "qaStatus": "Reopen\n18 Nov",
+  "qaStatus": "Reopen",
   "qaNote": "",
   "sheetId": "210"
  },
@@ -3865,7 +3865,7 @@ window.DATA=window.DATA||{};window.DATA["live"]=[
   "reporter": "",
   "date": "18 Nov",
   "devStatus": "Fixed 24 Nov: splitting a frame of one camera now starts its two halves on the camera's left and right sides, so each person sharing the camera gets their own frame. Expected: on a scene where two people share a camera, split the frame, then crop and move each half on its own. Retest on beta.",
-  "qaStatus": "Reopn",
+  "qaStatus": "Reopen",
   "qaNote": "",
   "sheetId": "215"
  },
@@ -4207,7 +4207,7 @@ window.DATA=window.DATA||{};window.DATA["live"]=[
   "reporter": "",
   "date": "19 Nov",
   "devStatus": "Fixed 24 Nov: a Studio participant's window can be cropped from its frame toolbar, and selecting a participant no longer crashes the editor. Expected: select a participant, use Crop in its toolbar; the crop shows in the preview and the export. Retest on beta.",
-  "qaStatus": "Ropen",
+  "qaStatus": "Reopen",
   "qaNote": "Showing just zom in and zoom out instead of adjusting the particular frame",
   "sheetId": "234"
  },
