@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Sign in · CloudReel Beta Tracker</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f766e'/%3E%3Cpath d='m9 16.5 4.5 4.5L23 11.5' fill='none' stroke='%23fff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('cloudreel-tracker-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="login-wrap">
+  <form class="login-card" id="loginform" novalidate>
+    <div class="login-brand">
+      <span class="logo" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m6 12.5 4 4 8-9"/></svg></span>
+      <span><b>Beta Tracker</b><small>CloudReel</small></span>
+    </div>
+    <h1>Sign in</h1>
+    <p class="lede">Enter the shared credentials for this tracker.</p>
+    <div id="loginerr" class="login-err" hidden role="alert"></div>
+    <div class="login-field">
+      <label for="lf-user">Username</label>
+      <input type="text" id="lf-user" name="username" autocomplete="username" autocapitalize="off" autocorrect="off" spellcheck="false" required>
+    </div>
+    <div class="login-field">
+      <label for="lf-pass">Password</label>
+      <input type="password" id="lf-pass" name="password" autocomplete="current-password" required>
+    </div>
+    <button type="submit" class="btn primary login-submit" id="loginbtn">Sign in</button>
+  </form>
+</div>
+<script>
+(function () {
+  'use strict';
+  var form = document.getElementById('loginform');
+  var err = document.getElementById('loginerr');
+  var btn = document.getElementById('loginbtn');
+  var params = new URLSearchParams(location.search);
+  var next = params.get('next') || '/site/';
+  if (!/^\/(?!\/)/.test(next)) next = '/site/';
+  form.addEventListener('submit', function (ev) {
+    ev.preventDefault();
+    err.hidden = true;
+    btn.disabled = true; btn.textContent = 'Signing in…';
+    fetch('/api/login', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        username: document.getElementById('lf-user').value,
+        password: document.getElementById('lf-pass').value
+      })
+    }).then(function (r) {
+      if (r.ok) { location.href = next; return; }
+      return r.json().catch(function () { return {}; }).then(function (b) {
+        throw new Error(b.error || 'Incorrect username or password.');
+      });
+    }).catch(function (e) {
+      err.textContent = e.message || 'Could not sign in. Try again.';
+      err.hidden = false;
+      btn.disabled = false; btn.textContent = 'Sign in';
+      document.getElementById('lf-pass').focus();
+    });
+  });
+}());
+</script>
+</body>
+</html>

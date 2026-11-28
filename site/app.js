@@ -44,6 +44,7 @@
     alert: '<path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3M12 9v4M12 17h.01"/>',
     check: '<path d="M20 6 9 17l-5-5"/>',
     plus: '<path d="M12 5v14M5 12h14"/>',
+    signout: '<path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/>',
     chev: '<path d="m6 9 6 6 6-6"/>',
     trash: '<path d="M3 6h18M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>'
   };
@@ -989,6 +990,14 @@
   $('#exp').innerHTML = icon('download') + 'JSON';
   $('#expcsv').innerHTML = icon('download') + 'CSV';
   $('#imp').innerHTML = icon('upload') + 'Import';
+  if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') {
+    $('#signout').hidden = true;
+  } else {
+    $('#signout').innerHTML = icon('signout') + 'Sign out';
+    $('#signout').addEventListener('click', function () {
+      fetch('/api/logout', { method: 'POST' }).catch(function () {}).then(function () { location.href = '/login'; });
+    });
+  }
   $('#exp').addEventListener('click', function () { download('cloudreel-tracking.json', JSON.stringify(state, null, 1), 'application/json'); toast('Exported tracking data'); });
   $('#expcsv').addEventListener('click', function () {
     var q = function (s) { return '"' + String(s == null ? '' : s).replace(/"/g, '""') + '"'; };
