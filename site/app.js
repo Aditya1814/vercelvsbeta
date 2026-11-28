@@ -29,6 +29,7 @@
     qa: '<path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/>',
     better: '<path d="M7 10v12M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13 0 0 1 3 3.88Z"/>',
     live: '<circle cx="12" cy="12" r="10"/><path d="M12 7v5l3 3"/>',
+    prod: '<path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/>',
     reference: '<path d="M22 12h-4l-3 9L9 3l-3 9H2"/>',
     search: '<circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>',
     menu: '<path d="M4 6h16M4 12h16M4 18h16"/>',
@@ -349,9 +350,10 @@
 
   V.dashboard = function () {
     var o = D.overview, q = D.qa.summary;
-    var all = []; Object.keys(KINDS).forEach(function (k) { all = all.concat(KINDS[k].items); });
+    var dashKinds = Object.keys(KINDS).filter(function (k) { return k !== 'live'; });
+    var all = []; dashKinds.forEach(function (k) { all = all.concat(KINDS[k].items); });
     var tot = counts(all), pct = Math.round(100 * tot.closed / (tot.total || 1));
-    var prog = Object.keys(KINDS).map(function (k) {
+    var prog = dashKinds.map(function (k) {
       var c = counts(KINDS[k].items);
       return '<a class="card prog" href="#/' + KINDS[k].route + '"><h3>' + KINDS[k].label + ' <small>' + c.total + ' total</small></h3>' +
         '<div class="big">' + c.closed + ' <small>closed</small></div>' + bar(c) + '<div class="sub">' + c.open + ' open · ' + c['in-progress'] + ' in progress</div></a>';
@@ -363,7 +365,7 @@
         return '<a href="#/' + routeName + '" data-go="' + routeName + '" data-fk="' + fkey + '" data-fv="' + k + '" style="text-decoration:none">' + pill(k) + '</a>' + bar(c) + '<span class="n">' + c.closed + ' / ' + c.total + '</span>';
       }).join('') + '</div></div>';
     }
-    var recent = Object.keys(state.items).filter(function (id) { return ITEMS[id]; }).sort(function (a, b) { return (state.items[b].updated || '').localeCompare(state.items[a].updated || ''); }).slice(0, 6);
+    var recent = Object.keys(state.items).filter(function (id) { return ITEMS[id] && ITEMS[id].kind !== 'live'; }).sort(function (a, b) { return (state.items[b].updated || '').localeCompare(state.items[a].updated || ''); }).slice(0, 6);
     var activity = '<div class="card"><h3>Recent activity</h3>' + (recent.length ? '<ul class="act">' + recent.map(function (id) {
       var e = state.items[id];
       return '<li>' + ref(id) + '<span class="t">' + pill(SLABEL[e.status] || e.status, { verified: 'ok', fixed: 'med', 'in-progress': 'high' }[e.status]) + ' ' + h(e.owner ? e.owner + ' · ' : '') + h(e.title) + '</span><time datetime="' + h(e.updated) + '">' + h(ago(e.updated)) + '</time></li>';
@@ -438,6 +440,10 @@
         { name: 'module', label: 'Any module', get: function (d) { return d.module; } }
       ]
     });
+  };
+  V.prod = function () {
+    $('#main').innerHTML = head('Prod Issues', 'Production issue tracking for the live CloudReel app.') +
+      '<div class="empty"><b>Nothing here yet</b>This will track bugs reported against production once that feed is connected — for now, issues from the beta live under Beta Issues → Live Issues.</div>';
   };
   V.better = function () {
     listView({
@@ -528,8 +534,10 @@
 
   /* ------------------------------------------------------------ nav + routing */
   var NAV = [
-    ['Track'], ['dashboard', 'Dashboard'], ['live', 'Live Issues', 'live'], ['findings', 'Findings', 'finding'], ['defects', 'Defect log', 'defect'], ['cases', 'Test cases', 'case'], ['segments', 'User segments', 'job'],
-    ['Report'], ['modules', 'Module status'], ['journeys', 'Key journeys'], ['flows', 'Tested flows'], ['qa', 'QA report'], ['better', 'Beta is better'], ['reference', 'Reference data']
+    ['Vercel vs Beta'], ['dashboard', 'Dashboard'], ['findings', 'Findings', 'finding'], ['defects', 'Defect log', 'defect'], ['cases', 'Test cases', 'case'], ['segments', 'User segments', 'job'],
+    ['modules', 'Module status'], ['journeys', 'Key journeys'], ['flows', 'Tested flows'], ['qa', 'QA report'], ['better', 'Beta is better'], ['reference', 'Reference data'],
+    ['Beta Issues'], ['live', 'Live Issues', 'live'],
+    ['Prod Issues'], ['prod', 'Prod Issues']
   ];
   var TITLES = {}; NAV.forEach(function (n) { if (n.length > 1) TITLES[n[0]] = n[1]; });
   function parse() {
