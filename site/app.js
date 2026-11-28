@@ -246,10 +246,10 @@
           return '<tr><td class="num">' + h(s.n) + '</td><td><b>' + h(s.step) + '</b><div class="muted">' + h(s.where) + '</div></td><td>' + pill(s.ref.res) + ' ' + link(s.ref.text) + '</td><td>' + pill(s.beta.res) + ' ' + link(s.beta.text) + '</td></tr>';
         }).join('') + '</tbody></table></div>' + shots(d.shots);
     } else if (it.kind === 'live') {
-      out = '<pre tabindex="0">' + h(d.summary) + '</pre>' +
+      out = (d.summary && d.summary !== d.title ? '<pre tabindex="0">' + h(d.summary) + '</pre>' : '') +
         (d.steps && d.steps.length ? '<div class="lbl">Steps to reproduce</div><ol class="steps">' + d.steps.map(function (s) { return '<li>' + link(s) + '</li>'; }).join('') + '</ol>' : '') +
         (d.expected || d.actual ? cmp('Expected', d.expected, 'Actual', d.actual) : '') +
-        kv([['Reported by', d.reporter], ['Date', d.date], ['Dev status', d.devStatus], ['QA status', d.qaStatus], ['QA note', d.qaNote]]) + shots(d.shots);
+        kv([['Reported by', d.reporter], ['Date', d.date], ['Dev status', d.devStatus], ['QA status', d.qaStatus], ['QA note', d.qaNote], ['Sheet #', d.sheetId]]) + shots(d.shots);
     }
     return out + track(id);
   }
@@ -446,7 +446,7 @@
       lede: (D.live || []).length + ' bugs tracked in the team’s live issue sheet. Status starts from the sheet’s Dev/QA status (Verified = QA marked Done, Fixed = developer-fixed but not yet QA-verified) and can be updated here.',
       addBtn: { label: 'Report a bug', run: function () { openNewItemDialog('live'); } },
       filters: [
-        { name: 'sev', label: 'Any severity', options: ['Critical', 'Major', 'Medium', 'Low'], get: function (d) { return d.sev; } },
+        { name: 'sev', label: 'Any severity', options: ['High', 'Medium', 'Low'], get: function (d) { return d.sev; } },
         { name: 'module', label: 'Any module', get: function (d) { return d.module; } }
       ]
     });
@@ -638,7 +638,7 @@
     live: [
       { k: 'summary', label: 'What’s the bug?', type: 'textarea', required: true },
       { k: 'module', label: 'Module / page', type: 'text' },
-      { k: 'sev', label: 'Severity', type: 'select', options: ['Critical', 'Major', 'Medium', 'Low'], def: 'Medium' },
+      { k: 'sev', label: 'Severity', type: 'select', options: ['High', 'Medium', 'Low'], def: 'Medium' },
       { k: 'steps', label: 'Steps to reproduce (one per line)', type: 'textarea' },
       { k: 'expected', label: 'Expected', type: 'text' },
       { k: 'actual', label: 'Actual', type: 'text' },

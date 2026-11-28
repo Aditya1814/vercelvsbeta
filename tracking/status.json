@@ -1,732 +1,2268 @@
 {
  "items": {
-  "CRB-001": {
+  "ISS-001": {
    "kind": "live",
    "note": "Dev: Fixed | QA: Done",
-   "owner": "Viveka",
-   "status": "verified",
-   "title": "Actual Issue: When both Start Date and End Date are cleared using the calendar's Clear option, clicking Create Event displays a...",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-002": {
-   "kind": "live",
-   "note": "Dev: NA",
-   "owner": "Viveka",
-   "status": "open",
-   "title": "Unable to Adjust the Images, in Studio, during LIVE.",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-003": {
-   "kind": "live",
-   "note": "Dev: Fixed | QA: Done",
-   "owner": "Praneeth",
-   "status": "verified",
-   "title": "When we select VOD and upload video content, applying a filter causes the filter to move to the file name.",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-004": {
-   "kind": "live",
-   "note": "Dev: Fixed | QA: Done",
-   "owner": "Praneeth",
-   "status": "verified",
-   "title": "When we select VOD and upload video content, the timer is displayed on the Start Over button.",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-005": {
-   "kind": "live",
-   "note": "Dev: Fixed | QA: Done",
-   "owner": "Praneeth",
-   "status": "verified",
-   "title": "In VOD content, the Preview button is displayed next to the Cancel button.",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-006": {
-   "kind": "live",
-   "note": "Dev: Fixed | QA: Done",
-   "owner": "Praneeth",
-   "status": "verified",
-   "title": "When we mute the audio, the Mute button is not displayed correctly and overlaps with the Preview button.",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-007": {
-   "kind": "live",
-   "note": "Dev: Fixed | QA: Done",
-   "owner": "Praneeth",
-   "status": "verified",
-   "title": "While linking to any social media like youtube it is not working",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-008": {
-   "kind": "live",
-   "note": "Dev: Instagram not availavle | QA: Done",
-   "owner": "Praneeth",
-   "status": "verified",
-   "title": "When the user clicks on the Social option in the Live section and selects Instagram, the application redirects the user to Face...",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-009": {
-   "kind": "live",
-   "note": "",
-   "owner": "Viveka",
-   "status": "open",
-   "title": "In Studio(Live)-Without enabling transition toggle, still the transitions are applying. when clicking on Radio button.",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-010": {
-   "kind": "live",
-   "note": "",
-   "owner": "Praneeth",
-   "status": "open",
-   "title": "While setting the background image in the layout, we are unable to adjust its height and width.",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-011": {
-   "kind": "live",
-   "note": "",
-   "owner": "Praneeth",
-   "status": "open",
-   "title": "After duplicating the source using the Ctrl + D shortcut, clicking the Delete option does not remove the duplicated source.",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-012": {
-   "kind": "live",
-   "note": "",
-   "owner": "Praneeth",
-   "status": "open",
-   "title": "A Back button is required on the Studio page. When users navigate from the Home page to the Studio page, they should be able to...",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-013": {
-   "kind": "live",
-   "note": "",
-   "owner": "Viveka",
-   "status": "open",
-   "title": "The \"Add One\" option is displayed in the Web application's Streams section when a device is connected for broadcasting, but it...",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-014": {
-   "kind": "live",
-   "note": "",
-   "owner": "Viveka",
-   "status": "open",
-   "title": "When a reporter exits the broadcast stream from the mobile app, the corresponding SRT stream continues to appear in the Studio'...",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-015": {
-   "kind": "live",
-   "note": "",
-   "owner": "Praneeth",
-   "status": "open",
-   "title": "when we click on the thumbnail while creating the meeting in studio there is one option like mam need to remove the option in t...",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-016": {
-   "kind": "live",
-   "note": "",
-   "owner": "Parneeth",
-   "status": "open",
-   "title": "After creating the meeting when we click on the delete the delete button is not wokring as expected",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-017": {
-   "kind": "live",
-   "note": "",
-   "owner": "Praneeth",
-   "status": "open",
-   "title": "Hide or disable the Delete option after a live stream is successfully started.",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-018": {
-   "kind": "live",
-   "note": "Dev: Fixed",
-   "owner": "Manikanta",
-   "status": "fixed",
-   "title": "1.In the SRT bonding app, we are facing an audio and video sync issue. The audio plays first, and the video appears after a delay.",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-019": {
-   "kind": "live",
-   "note": "Dev: Fixed",
-   "owner": "Manikanta",
-   "status": "fixed",
-   "title": "2.After starting the SRT live stream, we are still facing a reconnecting issue, even when the device is connected to Wi-Fi.",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-020": {
-   "kind": "live",
-   "note": "Dev: Fixed",
    "owner": "",
-   "status": "fixed",
-   "title": "In IOS bonding app, last 5-6 minutes feed not recorded.",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-021": {
-   "kind": "live",
-   "note": "Dev: Fixed | QA: Done",
-   "owner": "Viveka",
    "status": "verified",
-   "title": "Reporter participant audio is also audible in the recording despite the configuration being restricted to Host and Anchor voices.",
-   "updated": "2026-11-28T06:21:41.000Z"
+   "title": "Command Palette does not open with Ctrl+K",
+   "updated": "2026-11-28T07:40:45.000Z"
   },
-  "CRB-022": {
+  "ISS-002": {
    "kind": "live",
-   "note": "Dev: Fixed | QA: Reopen",
-   "owner": "Viveka",
-   "status": "open",
-   "title": "In Iphone-Join as Reporter, Stay 10min, Phone is getting hot.",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-023": {
-   "kind": "live",
-   "note": "Dev: Fixed - button removed | QA: Done",
-   "owner": "Viveka",
-   "status": "verified",
-   "title": "In Iphone-Settings, +1 Hour is appearing-But there is Functioanlity at all for that.",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-024": {
-   "kind": "live",
-   "note": "Dev: fixed | QA: Done",
-   "owner": "Viveka",
-   "status": "verified",
-   "title": "In Iphone-Changing of Resolution is Effecting Live Session, Record Duration.",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-025": {
-   "kind": "live",
-   "note": "Dev: fixed",
-   "owner": "Viveka",
-   "status": "fixed",
-   "title": "In Iphone- Due to Network change in between the LIVE session, Live Session is Effecting.",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-026": {
-   "kind": "live",
-   "note": "Dev: fixed | QA: Done",
-   "owner": "Viveka",
-   "status": "verified",
-   "title": "Participant when joining from Ios, are not appearing in meeting participants list",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-027": {
-   "kind": "live",
-   "note": "Dev: fixed | QA: Done",
-   "owner": "Viveka",
-   "status": "verified",
-   "title": "When joining through streamer in IOS, Reporter is camera preview is taking more 10min duration.",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-028": {
-   "kind": "live",
-   "note": "",
-   "owner": "Viveka",
-   "status": "open",
-   "title": "Even when is ended, and participant as left, participant is still provided with rejoin meeting button.",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-029": {
-   "kind": "live",
-   "note": "",
-   "owner": "Viveka",
-   "status": "open",
-   "title": "After stopping a live broadcast in the iOS mobile app, the session continues running even after 10–60 seconds; it should pause...",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-030": {
-   "kind": "live",
-   "note": "QA: Need clarification",
-   "owner": "Viveka",
-   "status": "in-progress",
-   "title": "When the torch is enabled during a live broadcast, switching between the front and rear cameras automatically turns off the tor...",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-031": {
-   "kind": "live",
-   "note": "",
-   "owner": "Viveka",
-   "status": "open",
-   "title": "When the torch is enabled during a live broadcast, changing the video resolution (e.g., from 720p to 1080p) turns off the rear...",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-032": {
-   "kind": "live",
-   "note": "Dev: Wi-Fi was good during the test (fast enough for the stream’s bitrate), then mobile data at 0 Mbps in Wi-Fi first is by design. Wi-Fi can carry everything, so nothing spills over. The same goes for Wi-Fi at 0 in Cellular first when mobile data is strong. If you want we will change naming wifi first to wifi only please clarify this.",
-   "owner": "Viveka",
-   "status": "open",
-   "title": "In the iOS Bonding app, the Wi-Fi First and Cellular First connection modes are not functioning as expected. When Wi-Fi First i...",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-033": {
-   "kind": "live",
-   "note": "",
+   "note": "Dev: FIxed | QA: Done",
    "owner": "",
-   "status": "open",
-   "title": "(untitled)",
-   "updated": "2026-11-28T06:21:41.000Z"
+   "status": "verified",
+   "title": "Start Smart Clip Analysis button remains visible while analysis runs",
+   "updated": "2026-11-28T07:40:45.000Z"
   },
-  "CRB-034": {
+  "ISS-003": {
    "kind": "live",
-   "note": "",
+   "note": "Dev: Fixed | QA: Done",
    "owner": "",
-   "status": "open",
-   "title": "(untitled)",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-035": {
-   "kind": "live",
-   "note": "Dev: fixed | QA: Done",
-   "owner": "Praneeth",
    "status": "verified",
-   "title": "When host suddenly stopped the meeting the video is still in the recording state and it should show as uploading state",
-   "updated": "2026-11-28T06:21:41.000Z"
+   "title": "New Project menu differs from design reference",
+   "updated": "2026-11-28T07:40:45.000Z"
   },
-  "CRB-036": {
-   "kind": "live",
-   "note": "Dev: fixed | QA: Done",
-   "owner": "Praneeth",
-   "status": "verified",
-   "title": "When the user starts streaming on an Android mobile device, the camera option is set to the front camera, but the video display...",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-037": {
-   "kind": "live",
-   "note": "Dev: fixed | QA: Done",
-   "owner": "Praneeth",
-   "status": "verified",
-   "title": "before and after started when we change the video option bitreate to 720,1080 ,720p60 and 1080p60 we are getting error message...",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-038": {
-   "kind": "live",
-   "note": "Dev: fixed",
-   "owner": "Praneeth",
-   "status": "fixed",
-   "title": "When switching between the front and back cameras and continuously changing the resolution (720p/1080p) and frame rate (30 FPS/...",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-039": {
-   "kind": "live",
-   "note": "Dev: fixed | QA: Done",
-   "owner": "Praneeth",
-   "status": "verified",
-   "title": "After the broaddcast ended or stopped the user click on the back button it is not working as expected it is not redirecting to...",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-040": {
-   "kind": "live",
-   "note": "Dev: fixed",
-   "owner": "Praneeth",
-   "status": "fixed",
-   "title": "When changing the resolution during a meeting, the following message appears: \"Quality changed. Requested quality is unsupporte...",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-041": {
-   "kind": "live",
-   "note": "Dev: need confirmation on this | QA: Need option to change the network while live broadcast",
-   "owner": "Praneeth",
-   "status": "in-progress",
-   "title": "When the user starts a live stream, they are unable to change the network preference in the settings, such as Balanced, Wi-Fi F...",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-042": {
-   "kind": "live",
-   "note": "Dev: fixed",
-   "owner": "Praneeth",
-   "status": "fixed",
-   "title": "When streaming for more than 10 minutes, the mobile device starts overheating and becomes unresponsive.",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-043": {
-   "kind": "live",
-   "note": "Dev: fixed",
-   "owner": "Praneeth",
-   "status": "fixed",
-   "title": "When connected to a mobile cellular network, after recording a video and changing the resolution settings, the audio is not rec...",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-044": {
-   "kind": "live",
-   "note": "",
-   "owner": "Praneeth",
-   "status": "open",
-   "title": "When changing the live broadcast resolution to 2160p or 4320p during an ongoing broadcast, the selected resolution is not retai...",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-045": {
-   "kind": "live",
-   "note": "Dev: fixed | QA: Reopen\nResoultions are disappearing",
-   "owner": "Praneeth",
-   "status": "open",
-   "title": "The video resolution does not change when the user selects a different resolution on the Go Live page before starting the live...",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-046": {
-   "kind": "live",
-   "note": "Dev: fixed | QA: Done",
-   "owner": "Praneeth",
-   "status": "verified",
-   "title": "while dubing the video to bengali language the video generation is not working throughing error like",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-047": {
-   "kind": "live",
-   "note": "Dev: Fixed",
-   "owner": "Viveka",
-   "status": "fixed",
-   "title": "When clicking on Export All for Tracks, Indivudual tracks are not downloading, instead Overall duration Video is Downloading.",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-048": {
-   "kind": "live",
-   "note": "Dev: fixed | QA: Done",
-   "owner": "Viveka",
-   "status": "verified",
-   "title": "Need Scroller for all the Bands Popup's, as they are adjusting within the Screen Resolution, Apply Changes Button is Hiding.",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-049": {
-   "kind": "live",
-   "note": "Dev: fixed",
-   "owner": "Praneeth",
-   "status": "fixed",
-   "title": "when we uploading 5 videos in the project after one video is uploaded and click on the view video and click back there is no re...",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-050": {
-   "kind": "live",
-   "note": "Dev: Fixed 13 Nov: a sideways trackpad swipe no longer goes Back while the editor is open. Retest after deploy. | QA: Done",
-   "owner": "Viveka",
-   "status": "verified",
-   "title": "In Editor Page, through Laptop cursor pad, if scrolling towards Right side-Page is redirecting to Back.",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-051": {
-   "kind": "live",
-   "note": "Dev: Fixed 18 Nov: Preview Volume only accepts 0 to 100; a minus sign and values over 100 are refused while typing. Retest after deploy. | QA: Reopen | Note: - sign, more than 2 decimals are accepting after point(.), also when removing overal speaker value. after closing. Random value is default setting.",
-   "owner": "Viveka",
-   "status": "open",
-   "title": "Preview Volumn Field is accepting more 100, and also less than 0 values.",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-052": {
-   "kind": "live",
-   "note": "Dev: Needs decision: AI-generated shorts already export one by one. Exporting each hand-split timeline part as its own video is a new option (one export job per part); please confirm before we add it.",
-   "owner": "Viveka",
-   "status": "in-progress",
-   "title": "When downloading video by clips with 9:16 Ratio. Shorts are not downloading individually.",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-053": {
-   "kind": "live",
-   "note": "Dev: Fixed 18 Nov: captions stay on the right words after cuts, including captions written by the Co-Creator and captions on a dub. Retest after deploy. | QA: Done",
-   "owner": "Praneeth",
-   "status": "verified",
-   "title": "CC missmatching for the video while playing",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-054": {
-   "kind": "live",
-   "note": "Dev: Fixed 18 Nov: the dub now follows every cut made after it was added, so it no longer overlaps the main audio. If an unedited video still overlaps, the dub file itself needs checking (backend). Retest after deploy. | QA: Done",
-   "owner": "Praneeth",
-   "status": "verified",
-   "title": "when we dub the video to telugu we are getting overlapping with main audio",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-055": {
-   "kind": "live",
-   "note": "Dev: Fixed 18 Nov: the dub stays in step with the edit and covers the whole video after cuts. If the dub file is shorter than the video, that is backend. Retest after deploy. | QA: Done",
-   "owner": "Praneeth",
-   "status": "verified",
-   "title": "After dubing the video to telugu we are not getting full video",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-056": {
+  "ISS-004": {
    "kind": "live",
    "note": "Dev: Fixed | QA: Done",
-   "owner": "Praneeth",
+   "owner": "",
    "status": "verified",
-   "title": "After cloning I am not able to get the seperate person videos",
-   "updated": "2026-11-28T06:21:41.000Z"
+   "title": "Undo missing after reopening editor",
+   "updated": "2026-11-28T07:40:45.000Z"
   },
-  "CRB-057": {
+  "ISS-005": {
    "kind": "live",
-   "note": "Dev: Fixed 18 Nov: clip downloads now save as .mp4 files named after the clip. Retest after deploy. | QA: Done",
-   "owner": "Praneeth",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
    "status": "verified",
-   "title": "After downloading the video into clips we are getting the download file in file not in mp4 format",
-   "updated": "2026-11-28T06:21:41.000Z"
+   "title": "Edited clip not found in Library after Download",
+   "updated": "2026-11-28T07:40:45.000Z"
   },
-  "CRB-058": {
-   "kind": "live",
-   "note": "Dev: Partly fixed 18 Nov: names stay at the bottom of each window on 9:16, 1:1 and 4:5, in the preview and the export. Please retest the ticker position. Retest after deploy. | QA: Done",
-   "owner": "Praneeth",
-   "status": "verified",
-   "title": "when we switch the video to the 9:16 ,1:1 and 4:5 ratio the names of the person are dispalying in the middle of the screen",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-059": {
-   "kind": "live",
-   "note": "Dev: Fixed 18 Nov: the dub, music and captions now wait while the video is still loading, so they no longer start before the picture. Retest after deploy. | QA: Done",
-   "owner": "Viveka",
-   "status": "verified",
-   "title": "When the Original Video is Dubbed, added Captions--the Transcript and the Audio are going Initially 5-10sec, later the Video is...",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-060": {
-   "kind": "live",
-   "note": "Dev: Fixed 18 Nov: new text is no longer uppercase automatically; an All caps toggle is in the Text panel and the canvas toolbar. Retest after deploy. | QA: Done",
-   "owner": "Praneeth",
-   "status": "verified",
-   "title": "While editing the text in the video, the letters are automatically appearing in uppercase. However, when entering the title, th...",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-061": {
-   "kind": "live",
-   "note": "Dev: Fixed 13 Nov: the timeline now scrolls while a layer is dragged at its left or right edge, so a title can be dragged back to 0:00. Retest after deploy. | QA: Done",
-   "owner": "Praneeth",
-   "status": "verified",
-   "title": "When adding a title or rules to the content while editing in the video timeline, we are unable to move the title bar back to th...",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-062": {
-   "kind": "live",
-   "note": "Dev: Fixed: select the second frame and open its source picker; it lists the project's images and videos too (same fix as Issues #134). Retest after deploy. | QA: Done",
-   "owner": "Praneeth",
-   "status": "verified",
-   "title": "When we select a visual in the editor and choose the second layout option, we are unable to change the second visual to a diffe...",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-063": {
-   "kind": "live",
-   "note": "Dev: Fixed 13 Nov: Space now plays and pauses after clicking Forward 5s (it pressed the button again). Retest after deploy. | QA: Done",
-   "owner": "Praneeth",
-   "status": "verified",
-   "title": "In editor click on the forward button and click space bar the content getting forward and it should work as play and pause",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-064": {
-   "kind": "live",
-   "note": "Dev: Partly fixed 18 Nov: Regenerate now starts a real Magic Clips run instead of showing an earlier result. If a run still produces no clips, the clips service needs checking (backend). Retest after deploy. | QA: Reopen",
-   "owner": "Viveka",
-   "status": "open",
-   "title": "In Editor-AI tools-Magic Clips are not generating",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-065": {
-   "kind": "live",
-   "note": "Dev: Fixed 13 Nov: each video on the editor's start screen has a bin button with a Move to Bin confirmation; restore from the Bin in Projects. Retest after deploy. | QA: Done",
-   "owner": "Praneeth",
-   "status": "verified",
-   "title": "After clicking the editor there is not delete option for the edited videos",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-066": {
-   "kind": "live",
-   "note": "Dev: Fixed 18 Nov: a Cut range button now always shows next to Mark in/out and says which mark is missing (press I and O, then Cut range, or Alt+drag on a clip). Retest after deploy. | QA: Done",
-   "owner": "Praneeth",
-   "status": "verified",
-   "title": "While editing there is no cut for the video option",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-067": {
-   "kind": "live",
-   "note": "Dev: Fixed 18 Nov: the Stock tab now explains to type in Search above to find free stock photos and videos. Retest after deploy. | QA: Done",
-   "owner": "Praneeth",
-   "status": "verified",
-   "title": "In media section while uploading vidoe or image there is one option like stock the option is not working",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-068": {
-   "kind": "live",
-   "note": "",
-   "owner": "Praneeth",
-   "status": "open",
-   "title": "In media section while uploading audio there is one option like stock the option is not working",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-069": {
-   "kind": "live",
-   "note": "Dev: Fixed 18 Nov: Audio Enhance now explains it works on a selected clip and how to add a file through Audio > Library > Upload. Retest after deploy. | QA: Done",
-   "owner": "Praneeth",
-   "status": "verified",
-   "title": "In media section while upload audio there is enhance option there is no way to upload the file",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-070": {
-   "kind": "live",
-   "note": "",
-   "owner": "Praneeth",
-   "status": "open",
-   "title": "While clicking on download there is a post option click on the post and link the youtube account to post the edited video",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-071": {
+  "ISS-006": {
    "kind": "live",
    "note": "Dev: Fixed | QA: Done",
-   "owner": "Praneeth",
+   "owner": "",
    "status": "verified",
-   "title": "In Home page the Growth button is not clickable",
-   "updated": "2026-11-28T06:21:41.000Z"
+   "title": "Long to Shorts does not create clips",
+   "updated": "2026-11-28T07:40:45.000Z"
   },
-  "CRB-072": {
+  "ISS-007": {
    "kind": "live",
    "note": "Dev: Fixed | QA: Done",
-   "owner": "Praneeth",
+   "owner": "",
    "status": "verified",
-   "title": "Beside profile name setting button is not working when we click the setting we are getting the profile selection option",
-   "updated": "2026-11-28T06:21:41.000Z"
+   "title": "Not all speakers appear in Recording tab",
+   "updated": "2026-11-28T07:40:45.000Z"
   },
-  "CRB-073": {
+  "ISS-008": {
+   "kind": "live",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Creations are not generated/displayed in Creations tab",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-009": {
    "kind": "live",
    "note": "Dev: fixed | QA: Done",
-   "owner": "Viveka",
+   "owner": "",
    "status": "verified",
-   "title": "When we navigate to the Home section on the left-side menu, the notification icon is missing, while it is visible in all the ot...",
-   "updated": "2026-11-28T06:21:41.000Z"
+   "title": "Normal content does not appear after removing Favorites filter",
+   "updated": "2026-11-28T07:40:45.000Z"
   },
-  "CRB-074": {
-   "kind": "live",
-   "note": "Dev: fixed",
-   "owner": "Viveka",
-   "status": "fixed",
-   "title": "In the Main Playground page, recently generated images are covering, more than Screen Resolution of Laptop, System. Need Scroll...",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-075": {
-   "kind": "live",
-   "note": "Dev: removed the feature after image generated | QA: Done",
-   "owner": "Praneeth",
-   "status": "verified",
-   "title": "After generating the image click on the use in the video option we are redirecting to the editor page and we are not able to se...",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-076": {
+  "ISS-010": {
    "kind": "live",
    "note": "Dev: fixed | QA: Done",
-   "owner": "Praneeth",
+   "owner": "",
    "status": "verified",
-   "title": "After generating an image, there is no Back option to return to the Playground home page. Please add a Back button so users can...",
-   "updated": "2026-11-28T06:21:41.000Z"
+   "title": "Projects list includes content assigned to folders",
+   "updated": "2026-11-28T07:40:45.000Z"
   },
-  "CRB-077": {
+  "ISS-011": {
    "kind": "live",
    "note": "Dev: fixed | QA: Done",
-   "owner": "Praneeth",
+   "owner": "",
    "status": "verified",
-   "title": "When scrolling in the Playground, the text field is not minimizing properly and overlaps the content.",
-   "updated": "2026-11-28T06:21:41.000Z"
+   "title": "Content-upload screen UI is not displayed properly",
+   "updated": "2026-11-28T07:40:45.000Z"
   },
-  "CRB-078": {
+  "ISS-012": {
    "kind": "live",
-   "note": "Dev: this is a feature ,it is not a bug, will implement this in version 2",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Co-Creator search does not show clips by content name",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-013": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Selected best-clip details missing in Co-Creator",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-014": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "New Folder button displayed twice",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-015": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "1 GB Custom Edit upload remains Processing for over five minutes",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-016": {
+   "kind": "live",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Credits do not update after successful payment until refresh",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-017": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Back from Content Details redirects to Projects instead of Home",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-018": {
+   "kind": "live",
+   "note": "Dev: Fixed 18 Nov: the Orbit panel now has a close (X) button like every other Properties panel; Esc also closes it. Retest after deploy. | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Properties panel has no close option",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-019": {
+   "kind": "live",
+   "note": "Dev: Fixed 18 Nov: Split now splits the clip under the playhead with nothing selected (pre/mid/post-rolls too), and its tooltip says why when it can't. Retest after deploy. | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Split option does not enable until video is selected",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-020": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Clip creation settings missing during upload-based clip creation",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-021": {
+   "kind": "live",
+   "note": "Dev: as per design clips should not generate for captions content | QA: Done",
    "owner": "",
    "status": "wontfix",
-   "title": "The text entered for the second generation is not being applied to the previously generated image.",
-   "updated": "2026-11-28T06:21:41.000Z"
+   "title": "AI Captions content details missing Recording, Clips and Captions tabs",
+   "updated": "2026-11-28T07:40:45.000Z"
   },
-  "CRB-079": {
+  "ISS-022": {
    "kind": "live",
    "note": "Dev: fixed | QA: Done",
-   "owner": "Viveka",
+   "owner": "",
    "status": "verified",
-   "title": "When any condition is failed, w.r.t image, Validation is providing, but when clicking on arrow, the image generation process is...",
-   "updated": "2026-11-28T06:21:41.000Z"
+   "title": "Selected caption style not displayed after content becomes Ready",
+   "updated": "2026-11-28T07:40:45.000Z"
   },
-  "CRB-080": {
-   "kind": "live",
-   "note": "Dev: this is a feature ,it is not a bug, will implement this in version 2",
-   "owner": "Viveka",
-   "status": "wontfix",
-   "title": "Unable to history chat if the Playground, If history is not maintained user will be dissatisfied.",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-081": {
-   "kind": "live",
-   "note": "Dev: this is a feature ,it is not a bug, will implement this in version 2",
-   "owner": "Viveka",
-   "status": "wontfix",
-   "title": "In Playground Chat level- generated img is provided with use in video, other that there, no other place of img is provided with...",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-082": {
-   "kind": "live",
-   "note": "Dev: fixed | QA: Reopen, Image file is not removing from the prompter.",
-   "owner": "Viveka",
-   "status": "open",
-   "title": "In Playground-Upload Media, Video are not removing from the Chat prompter, even after required response is generated.",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-083": {
-   "kind": "live",
-   "note": "",
-   "owner": "Viveka",
-   "status": "open",
-   "title": "Even when the image is less than 1MB, playground is restricting for me to Edit.",
-   "updated": "2026-11-28T06:21:41.000Z"
-  },
-  "CRB-084": {
+  "ISS-023": {
    "kind": "live",
    "note": "Dev: fixed | QA: Done",
-   "owner": "Viveka",
+   "owner": "",
    "status": "verified",
-   "title": "when Video, image is provided, for image creation, the given img is not appearing for the right hand side prompt, that we have...",
-   "updated": "2026-11-28T06:21:41.000Z"
+   "title": "Target-language captions not shown when content is Ready",
+   "updated": "2026-11-28T07:40:45.000Z"
   },
-  "CRB-085": {
+  "ISS-024": {
    "kind": "live",
    "note": "Dev: fixed | QA: Done",
-   "owner": "Viveka",
+   "owner": "",
    "status": "verified",
-   "title": "Download Your Data Status Message Is Still appearing as \"Your data export has started downloading \", even after download is Com...",
-   "updated": "2026-11-28T06:21:41.000Z"
+   "title": "AI dubbing fails during video validation",
+   "updated": "2026-11-28T07:40:45.000Z"
   },
-  "CRB-086": {
+  "ISS-025": {
    "kind": "live",
    "note": "Dev: fixed | QA: Done",
-   "owner": "Viveka",
+   "owner": "",
    "status": "verified",
-   "title": "Downloaded File is in Json Format, Providing Json Form of Data doesn't add value to the Users. Please Do Check.",
-   "updated": "2026-11-28T06:21:41.000Z"
+   "title": "Recording, Clips and Download missing for dubbed content",
+   "updated": "2026-11-28T07:40:45.000Z"
   },
-  "CRB-087": {
+  "ISS-026": {
    "kind": "live",
    "note": "Dev: fixed | QA: Done",
-   "owner": "Viveka",
+   "owner": "",
    "status": "verified",
-   "title": "Unable to Invite New Members – Verified Email Address Validation Error",
-   "updated": "2026-11-28T06:21:41.000Z"
+   "title": "Portrait Pro shows Finished despite portrait derivative error",
+   "updated": "2026-11-28T07:40:45.000Z"
   },
-  "CRB-088": {
+  "ISS-027": {
    "kind": "live",
    "note": "Dev: fixed | QA: Done",
-   "owner": "Viveka",
+   "owner": "",
    "status": "verified",
-   "title": "The Owner option is displayed in the Start From dropdown. Since the logged-in user is already the workspace owner, there is no...",
-   "updated": "2026-11-28T06:21:41.000Z"
+   "title": "Options remain editable while content is processing",
+   "updated": "2026-11-28T07:40:45.000Z"
   },
-  "CRB-089": {
+  "ISS-028": {
    "kind": "live",
-   "note": "",
-   "owner": "Viveka",
-   "status": "open",
-   "title": "When Clicking on Instagram-->+Add Account Page is redirecting to Facebook.",
-   "updated": "2026-11-28T06:21:41.000Z"
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Portrait Pro processing options and caption template not visible",
+   "updated": "2026-11-28T07:40:45.000Z"
   },
-  "CRB-090": {
+  "ISS-029": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Portrait Pro output ratio is 1:1 instead of selected 9:16",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-030": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "AI Writer language selection missing during generation",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-031": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Content Details tab inventory needs complete design comparison",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-032": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Generated portrait content opens in editor with incorrect aspect ratio",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-033": {
    "kind": "live",
    "note": "Dev: Fixed | QA: Done",
-   "owner": "Viveka",
+   "owner": "",
    "status": "verified",
-   "title": "For Youtube-Account is not Linking for the CloudReel.Getting 403 Error",
-   "updated": "2026-11-28T06:21:41.000Z"
+   "title": "Long to Shorts clip switches to 16:9 in full-screen mode",
+   "updated": "2026-11-28T07:40:45.000Z"
   },
-  "CRB-091": {
+  "ISS-034": {
    "kind": "live",
-   "note": "Dev: Under facebook review",
-   "owner": "Viveka",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Growth Plan Subscriber Is Incorrectly Prompted to Upgrade",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-035": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Credits Balance Does Not Update Automatically After Successful Payment",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-036": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Video Upload Accepts Only MP4 Format",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-037": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Incorrect Transcript Language Generated for Hindi Content",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-038": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Clips Are Generated for Dubbed Content Unexpectedly",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-039": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Run Button Remains Enabled Without Selecting a Target Language",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-040": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Back Option Missing on AI Dubbing Screen When Navigated from Content Details",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-041": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Download Functionality Not Working from Content Details Page",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-042": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Source and Dubbed Languages Are Displayed During Dubbing from Content Details",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-043": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Not All Indian Languages Are Available During AI Captions Content Upload",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-044": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Sign-Out Confirmation Popup Is Missing",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-045": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Settings from the Choose Your Plan Popup Redirects to Accounts Instead of Billing & Plans",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-046": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Cancel Plan Option Still Displayed After Subscription Cancellation",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-047": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Previously Generated Dubbed Content Is Not Displayed After Switching the Target Language",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-048": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "SRT File Upload Rejected as Unsupported in AI Writer",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-049": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Sidebar Displays Available Credits Instead of Used and Available Credit Breakdown",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-050": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Credit Usage Percentage Indicator Missing from Sidebar",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-051": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Sidebar Navigation Is Non-Functional on from Content Upload Screen",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-052": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done | Comments: this one comes from third party ones not in our code..",
+   "owner": "",
+   "status": "verified",
+   "title": "Incorrect iOS Version Requirement Message Displayed During Apple Pay Subscription",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-053": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Sign-In Button Remains Disabled When Credentials Are Autofilled by the Browser",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-054": {
+   "kind": "live",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "404 Page Not Found Error After Closing the Plans Popup from the Welcome Email Redirect",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-055": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Updated Email Address Displayed in Settings Despite Logging In with the Old Email Address",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-056": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Change Password Popup Closes When Clicking Outside the Modal",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-057": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Incorrect Error Message Displayed for Invalid Current Password",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-058": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Validation Error Message Does Not Clear When User Starts Editing Fields in Change Password Popup",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-059": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Change Password Accepts the Same Current and New Password Without Validation",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-060": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Delete Account Confirmation Popup Closes When Clicking Outside the Modal",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-061": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done | Comments: Same file is uploading at a time",
+   "owner": "",
+   "status": "verified",
+   "title": "Multiple Content Upload Functionality Is Not Available",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-062": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Deleted Account Email Address Can Still Not Be Used to Log In",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-063": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done | Comments: \"We could not sign you in. Check your email and password. If you deleted your account, you can sign up again with the same email. \" getting incorrect text msg",
+   "owner": "",
+   "status": "verified",
+   "title": "Incorrect or Unclear Error Message Displayed When Logging In with a Deleted Account",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-064": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Create Role Popup Closes When Clicking Outside the Modal",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-065": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Workspace Invitation Link Fails When User Clicks Join Workspace in Invitation Email",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-066": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: done",
+   "owner": "",
+   "status": "verified",
+   "title": "Back Navigation Does Not Return to the Previous Page When Opening the Editor from Command Palette",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-067": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "AI Dubbing Is Accessible Despite View-Only Role Permissions",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-068": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Back Navigation Redirects to Home Instead of Projects When AI Tools Are Inaccessible",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-069": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Workspace and Team Page Does Not Refresh Automatically After Role or Invitation Changes",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-070": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Workspace and Billing Screens Are Accessible in the Editor Despite Missing Role Permissions",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-071": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "AI Writer Is Missing from Command Palette Search Results",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-072": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Rename Popup Closes When Clicking Outside the Modal",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-073": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Notifications Are Not Displayed on the Home Screen",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-074": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Caption Language Search Does Not Display Matching Results When Typing on the Keyboard",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-075": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Content Details Are Not Displayed in Co-Creator Search Results",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-076": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Credits Balance Does Not Update Automatically After Thumbnail or Snap Shorts Creation",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-077": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Source Language Captions Are Generated Again Instead of the Selected Language",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-078": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Add Workspace Option in the Sidebar Is Not Functional",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-079": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Move to Folder Popup Closes When Clicking Outside the Modal",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-080": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Existing Folder Name Is Displayed in the Move to Folder Popup",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-081": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Clip Content Playback Is Cropped at the Edges Depending on Screen Resolution",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-082": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Content Title Is Not Displayed in the Selected Language During Download Processing",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-083": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Save and Cancel Options Are Missing When Renaming a Folder",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-084": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Source Language Is Displayed as the Target Language When Starting a Second Dubbing Operation",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-085": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Delete Project Confirmation Popup Closes When Clicking Outside the Modal",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-086": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Browser Back Navigation Does Not Return to the Previous Page from the Getting Started Screen",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-087": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Content Thumbnails Are Not Displayed in the Bin Tab",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-088": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Transcript Search Fails to Return Matching Results for Keywords Containing Spaces",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-089": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Previously Searched Keywords Persist in the Transcript Search Bar When Opening Different Content in the Editor",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-090": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Source and Dubbed Languages Are Incorrectly Displayed as Languages to Dub in Editor Properties",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-091": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Unable to Mute the Second Content Track in the Editor",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-092": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done | Comments: Dev 13 Nov: template layers are saved from the video's start (intro left out) and applied after the next video's own intro. Branch fix/editor-qa-bugs, retest after deploy.",
+   "owner": "",
+   "status": "verified",
+   "title": "Scene, Logo, and Elements Are Not Saved in the Template from the Editor",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-093": {
+   "kind": "live",
+   "note": "Dev: re fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Transcript Does Not Automatically Scroll to the Active Segment During Editor Preview Playback",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-094": {
+   "kind": "live",
+   "note": "Dev: Fixed 18 Nov: text keeps its place when its rotation, size or style changes, and no longer jumps left when editing starts. Retest after deploy. | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Text Position Changes Unexpectedly When Adjusting Text Field Dimensions in the Editor",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-095": {
+   "kind": "live",
+   "note": "Dev: Fixed 24 Nov: a template's layers keep their timing and motion when it is applied after an intro. Templates saved before 18 Nov still carry the old intro timing, so delete and re-save them first. Expected: re-save the template, apply it to a video with an intro; logo, text and elements start with the footage after the intro, in the same places and timing as saved. Retest on beta. | QA: Reopen | Comments: All are saving but template is applying after preroll because of old template saved with preroll | Dev 13 Nov: fixed (bf43f40). Templates saved before this fix keep the old timing, so re-save them.",
+   "owner": "",
+   "status": "open",
+   "title": "Logo, Content Positions, and Elements Are Not Saved in the Editor Template",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-096": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Exported Content Cannot Be Played from the Downloaded Tab in Projects",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-097": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Text and Elements Are Missing from Exported Content After Applying Editor Changes",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-098": {
+   "kind": "live",
+   "note": "Dev: re fixed | QA: Done | Comments: Dev 13 Nov: not in the video editor. The editor sends the export name with the render job; the Downloads tab in Projects (or the backend) shows the source name.",
+   "owner": "",
+   "status": "verified",
+   "title": "Exported Content Displays the Original Source Name Instead of the Updated Content Name in downloads tab",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-099": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Theme Colors Do Not Update When Changed in the Editor",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-100": {
+   "kind": "live",
+   "note": "Dev: no need",
+   "owner": "",
+   "status": "wontfix",
+   "title": "Corresponding AI Feature Tags Are Not Displayed on Content in Home and Projects Screens",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-101": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Processed Content Does Not Appear Automatically in Projects After Returning from an AI Feature",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-102": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Keyboard Shortcuts Are Not Available for Common Editing Actions in the Editor",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-103": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "No Action Is Performed When Clicking the “Fit the Whole Edit in View” Option",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-104": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Content Title Is Not Displayed Below the Clip When Opened from the Clips Tab",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-105": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Clip Preview Does Not Adjust According to the Clip Aspect Ratio",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-106": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "AI Dub Popup Closes When Clicking Outside the Modal from the Clips Tab",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-107": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Clip Selection Checkboxes Are Displayed in the AI Dub Popup from the Clips Tab",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-108": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Clip Playback Seekbar Is Not Functional",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-109": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Previously Dubbed Languages Are Incorrectly Displayed as Available Target Languages",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-110": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "AI Dubbing Fails to Generate Dubbed Content for Any Input",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-111": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done | Comments: UI changed",
+   "owner": "",
+   "status": "verified",
+   "title": "Co-Creator Does Not Respond to User Queries on the Content Upload Screen",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-112": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Video Details Popup Closes When Clicking Outside the Modal",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-113": {
+   "kind": "live",
+   "note": "Dev: as per design category is not avaiable in design | QA: Done",
+   "owner": "",
+   "status": "wontfix",
+   "title": "Category Information Is Missing from the Video Details Popup",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-114": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Rename Validation Message Is Missing When the file Name Exceeds 64 Characters",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-115": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Overlay Template Upload Fails in the Brand Kits Module",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-116": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Sticker Upload Fails in the Brand Kits Module",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-117": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done | Comments: now it shows coming soon",
+   "owner": "",
+   "status": "verified",
+   "title": "Audio Feature Incorrectly Prompts for a Paid Plan Despite an Active Subscription, and Upgrade Button Is Non-Functional",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-118": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Separate Scrollbar Recommended for the Left Navigation Menu on the Creations Screen",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-119": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Clip Aspect Ratio Dropdown Defaults to 9:16 While the Content Is Displayed in 16:9",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-120": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Volume Control Is Not Functional in the Recordings Tab Player",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-121": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done | Comments: After clicking mute option (audio is not coming) but unable to unmute again | Dev 13 Nov: the flagged-music row now has an Unmute button that restores the muted segments.",
+   "owner": "",
+   "status": "verified",
+   "title": "Copyright Audio Continues Playing After Muting It in the Editor",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-122": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Playback Timing Information Is Missing from the Player in the Recordings Tab",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-123": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Aspect Ratio Displays as 9:16 Instead of the Selected Reframed Ratio After Content Upload",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-124": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Clip Preview Remains in Landscape Mode After Selecting Portrait Aspect Ratio",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-125": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: DOne",
+   "owner": "",
+   "status": "verified",
+   "title": "Content Details Page Does Not Open Automatically After Job Completion When the Review Result Button Appears",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-126": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: DOne",
+   "owner": "",
+   "status": "verified",
+   "title": "CloudReel and Remove Silence Options Are Not Functional in the Clips Tab",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-127": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Clips Are Not Generated Automatically After Reframing Job Completion",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-128": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Continue Button Remains Disabled After Providing a Valid URL on the Add Files Screen",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-129": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: DOne",
+   "owner": "",
+   "status": "verified",
+   "title": "No Navigation or Next-Step Action Is Provided After Content Upload Completion",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-130": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Swap Functionality Is Not Working When Selecting a Frame in the Editor",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-131": {
+   "kind": "live",
+   "note": "Dev: Fixed 24 Nov: on a Studio recording the Scenes lane now splits where the Studio changed layout, so its blocks are the same scenes the canvas edits. Expected: pick a multi-speaker layout on a Scenes lane block; the preview shows that layout for the whole block from its start, and other blocks keep theirs. Retest on beta. | QA: Reopen",
+   "owner": "",
+   "status": "open",
+   "title": "Editor Preview Does Not Update Based on the Selected Multi-Speaker Layout",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-132": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Effects and Color Options Are Missing from Properties When Selecting a Frame",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-133": {
+   "kind": "live",
+   "note": "Dev: Fixed 24 Nov: Similar scenes also works when the editor opens on the intro or outro (it uses the nearest video scene). Expected: change a scene's layout or look, then choose Similar scenes; the scenes led by the same speaker take it at once (Undo reverts), or a message says they already look the same. This scene changes only the current scene. Retest on beta. | QA: Reopen",
+   "owner": "",
+   "status": "open",
+   "title": "Similar and This Scene Options Are Not Functional in the Editor",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-134": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done | Comments: Dev 13 Nov: select a frame and open its source picker: it lists the project's images and videos too. The same fix covers CR-44.",
+   "owner": "",
+   "status": "verified",
+   "title": "Unable to Replace Layout Frames with External Images or Videos",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-135": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Editor UI Options Overlap When Reframe Settings Are Displayed",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-136": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Reframe Functionality Is Not Working in the Editor",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-137": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Multiple Processing Bars Are Added When Clicking the Processing Bar Element",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-138": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Export Popup Closes When Clicking Outside the Modal",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-139": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Editor Notifications Cannot Be Dismissed Manually",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-140": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Previous “Video Exported” Notification Appears Every Time the User Opens or Resumes Editing",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-141": {
+   "kind": "live",
+   "note": "Dev: Fixed 18 Nov: an audio track emptied by deleting or moving its clips is removed, and Layers lists only tracks that have clips. Retest after deploy. | QA: Reopen | Comments: Dev 13 Nov: deleting an audio track's last clip now removes the track and its heading.",
+   "owner": "",
+   "status": "open",
+   "title": "Audio Heading Remains Visible in the Timeline Sidebar After Deleting External Audio",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-142": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done | Comments: Dev 13 Nov: Solo and Mute now also silence the Studio participants' own audio, as the export does.",
+   "owner": "",
+   "status": "verified",
+   "title": "Solo Option Not Working in the Timeline",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-143": {
+   "kind": "live",
+   "note": "Dev: Fixed 24 Nov: on Studio recordings the Enhance EQ (Low/Mid/High) and limiter are now heard in the preview as the sliders move, and changes made with a Clean audio clip selected no longer jump back. Noise Reduction and De-reverb apply in the exported file only, and the panel says so. Expected: play the video and move EQ or limiter; the sound changes at once. Retest on beta. | QA: Done | Comments: Enchance features is not functioning when user reduce/increase",
+   "owner": "",
+   "status": "verified",
+   "title": "Audio Editing Controls Not Functioning in the Editor",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-144": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Incorrect Validation Message Displayed When Inviting a User with Pending Email Verification",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-145": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Audio Voice-over Functionality Not Working in the Editor",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-146": {
+   "kind": "live",
+   "note": "Dev: Fixed 24 Nov: same fix as #143. Expected: EQ and limiter are heard in the preview while playing (also on Studio recordings); Noise Reduction and De-reverb are heard in the exported file; where the preview can't play a setting, the panel says it is applied in the export. Retest on beta. | QA: Reopen | Comments: Enchance features is not functioning when user reduce/increase",
+   "owner": "",
+   "status": "open",
+   "title": "Audio Enhancement Functionality Not Working in the Editor",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-147": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Invite User Popup Closes When Clicking Outside the Dialog",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-148": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Incomplete Role List Displayed in the Encoders Invite User Screen",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-149": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Incorrect Success message Displayed When Removing Invited Members",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-150": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Layers Panel Not Displayed When Selecting the Layers Option",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-151": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Layout Priority Toggle Functionality Not Working in the Editor",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-152": {
+   "kind": "live",
+   "note": "Dev: Fixed 18 Nov: captions now show through the whole video when the transcript has untimed words or overlapping lines. If still missing, the caption data needs checking (backend). Retest after deploy. | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Captions Missing from Portions of the Video After Generation\neg contnet id: 01a19b5d-afe2-71ec-afdc-506af36d9e72",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-153": {
+   "kind": "live",
+   "note": "Dev: Fixed 24 Nov: an uploaded LUT now shows on a Studio recording's cameras in the preview, and if the LUT file can't be loaded the preview says so. LUTs on b-roll are not applied (the panel says so). Note: in the export the LUT applies to the video's own clips; Studio cameras export without it (the export summary says so). Expected: upload a .cube in Visuals and pick it on the main video; the preview colour changes at once and again after reopening. Retest on beta. | QA: Reopen",
+   "owner": "",
+   "status": "open",
+   "title": "Uploaded LUT Files Not Displayed in the Editor Preview",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-154": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Color Adjustments in Exported Output Do Not Match the Editor Preview\neg contnet id: 01a19bcf-6004-73df-a224-457aa760327f",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-155": {
+   "kind": "live",
+   "note": "Dev: Fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Test Preview Popup Closes When Clicking Outside the Dialog",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-156": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "HLS Sceneries Applied in Effects & Color Do Not Match the Exported Output",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-157": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Unable to Select 1:1 and 3:4 Aspect Ratios During AI Clips Upload",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-158": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Reopen",
+   "owner": "",
+   "status": "open",
+   "title": "Write Option Incorrectly Displayed in the Creations Tab for AI Captions Content",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-159": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Dubbed Clip Plays Only in the Source Language After Download",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-160": {
+   "kind": "live",
+   "note": "Dev: Fixed 24 Nov: every export name is now at most 64 characters, including Export all three shapes, scheduled posts, Magic Clips and dubs (long project titles are shortened, empty names become Untitled). Expected: the Name field accepts at most 64 characters with a counter; Start export stays disabled while it is empty. Retest on beta. | QA: Reopen | Comments: showing 300 characters instead of 64 chars",
+   "owner": "",
+   "status": "open",
+   "title": "Missing Name Field Validation in the Editor Export Popup",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-161": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Incorrect Folder Icon Displayed Beside the Parent Folder Name in Subfolder View",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-162": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done | Comments: Dev 13 Nov: stays open on a click outside; Cancel or the X close it. Rechecked on a local build.",
+   "owner": "",
+   "status": "verified",
+   "title": "Save Template Popup Closes When Clicking Outside the Dialog",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-163": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Scene Content Not Added as a Separate Layer in timeline",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-164": {
+   "kind": "live",
+   "note": "Dev: Fixed 24 Nov: a template layer's motion and fades now stay in step when the intro cuts its start, and full-length layers run to the end of the new video. Templates saved before 18 Nov must be re-saved. Expected: save a template with text on one video, apply it to another; text, logo and animations keep the same timing relative to the footage. If text timing still differs, please add the template name and content id. Retest on beta. | QA: Reopen | Comments: Text and all the timing is saving different in template",
+   "owner": "",
+   "status": "open",
+   "title": "Template Saved with Intro Duration Included\nRef contnet id: 01a17bba-b8e0-77fb-b368-db77d7e65636",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-165": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Content Playback Continues When Selecting Options from the Clip Action Menu",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-166": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Clip Duration Not Displayed in the Clips Tab",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-167": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Clip Playback Timer Not Updating During Playback",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-168": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Audio and Captions Out of Synchronization After Dubbing and Caption Generation\nRef contnet: 01a1af26-15f5-794a-9528-801efc2552d6",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-169": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Search Results Not Retrieved When Searching by Content ID",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-170": {
+   "kind": "live",
+   "note": "Dev: Fixed 18 Nov: removed the per-frame work that slowed Firefox (hidden participant cameras keep decoding; paused graded frames stop redrawing). Retest in Firefox after deploy. | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "CloudReel Editor Becomes Unresponsive in Firefox Browser",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-171": {
+   "kind": "live",
+   "note": "Dev: Fixed 24 Nov: the logo, LIVE badge and other Studio graphics keep their own shape on 9:16, 4:5 and 1:1, pinned to the nearer edge, the LIVE text is no longer squeezed, and a moved graphic returns to its size when you switch back to 16:9. Expected: switch the aspect ratio; LIVE badge and logo stay visible and unstretched in the same corner, in the preview and the export. Retest on beta. | QA: Reopen | Comments: Live badge and logo is not showing based on ratio",
+   "owner": "",
+   "status": "open",
+   "title": "Unable to Adjust the bands and logo based on layout",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-172": {
+   "kind": "live",
+   "note": "Dev: Fixed 24 Nov: on 9:16, 1:1 and 4:5 the ticker and lower band stay at the bottom, also when resized from the band toolbar, and participant names stay at the bottom of their frame. Expected: switch to 9:16; the ticker is at the bottom of the screen and each name is under its participant, in the preview and the export. Retest on beta. | QA: Reopen | Comments: Ticker band position is showing middle of the screen instead of bottom and participent names also showing in middle 9instead of bottom of the participant",
+   "owner": "",
+   "status": "open",
+   "title": "Ticker, Lower Third, and Top Bands Do Not Adjust According to the Selected Aspect Ratio",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-173": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done | Comments: Dev 13 Nov: adding a dub mutes the video track, including the Studio participants' audio.",
+   "owner": "",
+   "status": "verified",
+   "title": "Source Audio Continues Playing When Dubbed Audio Is Enabled",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-174": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done | Comments: Dev 13 Nov: a muted video track now also silences the Studio participants' audio.",
+   "owner": "",
+   "status": "verified",
+   "title": "Source Audio Continues Playing Despite Muted Status in the Timeline",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-175": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done | Comments: Dev 13 Nov: same fix as #172; the preview and the export use the same band layout.",
+   "owner": "",
+   "status": "verified",
+   "title": "Ticker Band Position Differs Between Editor Preview and Exported Output",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-176": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Logo Visibility in Exported Output Does Not Match Editor Preview During Playback",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-177": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Logo Visibility in Exported Output Does Not Match Editor Preview During Playback",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-178": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Participant and Client Names Not Displayed in Portrait Output",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-179": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done | Comments: Dev 13 Nov: Reframe now shows only what the edit plays, with the cut parts shaded.",
+   "owner": "",
+   "status": "verified",
+   "title": "Source Content Displayed Instead of Edited Content When Initiating Reframe",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-180": {
+   "kind": "live",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "Recording Processing Status Not Displayed Consistently When Host Starts Recording",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-181": {
+   "kind": "live",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "Master Output Not Saved as a Project After Stopping and Restarting Recording",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-182": {
+   "kind": "live",
+   "note": "Dev: fixed",
+   "owner": "",
+   "status": "fixed",
+   "title": "Bonding iOS App Live Stream Not Displayed as a Separate Track",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-183": {
+   "kind": "live",
+   "note": "Dev: As designed | QA: Done | Comments: Dev 13 Nov: the Studio offers only Style and Position for Clock and Date, and the editor matches it. Use the Graphics panel toggle to hide them.",
+   "owner": "",
+   "status": "wontfix",
+   "title": "Unable to Edit Date and Time Displayed Beside the Lower Band",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-184": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done | Comments: Dev 13 Nov: not the video editor; this is the Studio's live layout editor.",
+   "owner": "",
+   "status": "verified",
+   "title": "Resizing One Participant's Frame Unexpectedly Changes Other Participants' Frames",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-185": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Reopen | Comments: Unable to Go Live\n\nYour plan’s live stream limit has been reached. Please end another active stream or upgrade your plan to continue.\n\nkeep proper error message in both Android and Ios Bonding app",
+   "owner": "",
+   "status": "open",
+   "title": "Unable to Connect Multiple Devices Through the Bonding App",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-186": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done | Comments: Dev 13 Nov: a band that aired more than once was drawn once per airing; it is now drawn once.",
+   "owner": "",
+   "status": "verified",
+   "title": "Duplicate Date and Time Entries Displayed in Editor Compared to Source",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-187": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Multiple clips Play Simultaneously When Switching Playback",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-188": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Meeting ID Displayed Instead of User Name in Captions Tab",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-189": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Captions Tab Displays Captions for All Studio Content Instead of Selected Recording",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-190": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Inaccurate Caption Generation for Recorded Content",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-191": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Previous Workspace Content and Details Displayed After Switching Workspaces",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-192": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Sign-In Button Displayed After User Is Removed From Workspace",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-193": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Text Field Overlaps with Thumbnails in Playground",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-194": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Redirected to a New Chat When Clicking \"Use as Video\" on Any Thumbnail",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-195": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Thumbnail Preview Closes When Clicking Outside the Preview",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-196": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "\"Use as Thumbnail\" Button Not Responding in Preview",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-197": {
+   "kind": "live",
+   "note": "Dev: Needs decision | Comments: Dev 13 Nov: captions can only be generated for the main video today; captions for a video added to the timeline is new work.",
+   "owner": "",
    "status": "in-progress",
-   "title": "For Facebook-It is saying like App is not accessible.",
-   "updated": "2026-11-28T06:21:41.000Z"
+   "title": "Caption Generation Not Available for Added video in Timeline",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-198": {
+   "kind": "live",
+   "note": "Dev: Fixed 18 Nov: top band text now wraps inside the band and is sized to fit, in the preview and the export. Retest after deploy. | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Top Band Text Overflows Beyond the Top Band Position",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-199": {
+   "kind": "live",
+   "note": "Dev: Partly fixed 18 Nov: the LIVE badge now shows the channel's saved badge text. The badge picture not showing was not reproduced: please share steps. Retest after deploy. | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Only empty text box is showing and Live Badge Not Displayed in Editor After Recording Completion",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-200": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Breaking News Image Not Displayed in Top Band",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-201": {
+   "kind": "live",
+   "note": "Dev: Fixed 18 Nov: the ticker's background colour now stays on its strip instead of filling the whole preview. Retest after deploy. | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Ticker Band Background Color Applied to Entire Preview Instead of Ticker Band Only",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-202": {
+   "kind": "live",
+   "note": "Dev: Fixed 18 Nov: the ticker's selection box and handles now stay on its strip instead of spanning the whole preview. Retest after deploy. | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Ticker Band Position Pointers Displayed Outside the Ticker Band",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-203": {
+   "kind": "live",
+   "note": "Dev: Fixed 18 Nov: the export now includes the lower band's video and its text background over the whole text box, as the preview shows. If the export still differs, the renderer's crop support needs checking (backend). Retest after deploy. | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Lower Band Text Style and Background Color Differ Between Preview and Output",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-204": {
+   "kind": "live",
+   "note": "Dev: Fixed 18 Nov: a band keeps its colours, lines and background while it is dragged or resized. Retest after deploy. | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Original Band Color showing Instead of Updated Color When only Repositioning the Bands",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-205": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Content Not Deleted from Projects Bin",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-206": {
+   "kind": "live",
+   "note": "Dev: Fixed 18 Nov: the playhead and the transcript's word highlight keep moving while the picture holds still or an audio file plays. Retest after deploy. | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Transcript Text Not Highlighted in Synchronization with Content Playback",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-207": {
+   "kind": "live",
+   "note": "Dev: Fixed 18 Nov: a Studio recording's first transcript line is no longer dropped when a person's track starts a moment before the video. Retest after deploy. | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Initial Transcript Line Not Played in Editor",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-208": {
+   "kind": "live",
+   "note": "Dev: Fixed 19 Nov: band backgrounds stay drawn when playback is paused; a camera window catching up after a pause no longer hides the bands it only partly covers. Retest after deploy. | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Band Background Color Not Displayed When Recording Playback Is Paused",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-209": {
+   "kind": "live",
+   "note": "Dev: Fixed 18 Nov: pre-, mid- and post-roll clips now show their own thumbnails on the timeline. Retest after deploy. | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Master Clip Thumbnail Displayed Instead of Pre/Mid/Post-Roll Content Thumbnails",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-210": {
+   "kind": "live",
+   "note": "Dev: Fixed 24 Nov: a mid-roll added to a meeting shown as its cameras now plays its picture with its sound (not frozen), and a roll under the playhead always shows instead of a picked Scenes shot. Expected: add an external mid-roll and play through it; its video plays with its audio, then the recording resumes. Retest on beta. | QA: Reopen\n18 Nov",
+   "owner": "",
+   "status": "open",
+   "title": "Added External Mid-Roll Video Not Displayed During Editor Playback",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-211": {
+   "kind": "live",
+   "note": "Dev: Fixed 19 Nov: choose whether a b-roll mutes the source's sound or its own, from the Media menu and the b-roll toolbar, in the preview and the export. Retest after deploy.",
+   "owner": "",
+   "status": "fixed",
+   "title": "Source Audio Plays Instead of B-Roll Audio During B-Roll Playback",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-212": {
+   "kind": "live",
+   "note": "Dev: Fixed 19 Nov: a full-screen b-roll now covers the recording and hides the Studio's graphics while it plays, in the preview and the export. Retest after deploy.",
+   "owner": "",
+   "status": "fixed",
+   "title": "B-Roll Content Displayed as Overlay During Playback",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-213": {
+   "kind": "live",
+   "note": "Dev: Fixed 24 Nov: intros, mid-rolls and outros now always go on the main video's track, even with a b-roll track above it, so they export as rolls instead of overlays. Expected: add a pre-roll, mid-roll, post-roll, b-roll and an overlay; the export completes with each in its place. If it still fails, please add the error shown and the content id. Retest on beta. | QA: Reopen",
+   "owner": "",
+   "status": "open",
+   "title": "Export Fails When Combining Pre-Roll, Mid-Roll, Post-Roll, B-Roll, and Overlay Content",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-214": {
+   "kind": "live",
+   "note": "Dev: Fixed 18 Nov: Refine content runs (Auto edit, pauses, filler words, Find fluff, Magic clips) pick back up after a refresh and show their result. Retest after deploy. | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "AI Refine Content Operation Stops After Browser Refresh",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-215": {
+   "kind": "live",
+   "note": "Dev: Fixed 24 Nov: splitting a frame of one camera now starts its two halves on the camera's left and right sides, so each person sharing the camera gets their own frame. Expected: on a scene where two people share a camera, split the frame, then crop and move each half on its own. Retest on beta. | QA: Reopn",
+   "owner": "",
+   "status": "open",
+   "title": "Unable to Edit Scene Frames When Two Participants Speak Using the Same Camera",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-216": {
+   "kind": "live",
+   "note": "Dev: Fixed 19 Nov: switching Auto edit (or another cutting tool) off joins the video back into one clip; splits made by hand stay. Retest after deploy. | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Source Video Clips Not Merged into a Single Clip When AI Auto Edit Is Disabled",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-217": {
+   "kind": "live",
+   "note": "Dev: Fixed 19 Nov: each person's name label is listed in Layers with a Hide button; a hidden name is removed from the preview and the export. Retest after deploy. | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Names Cannot Be Removed from Recording Content in Editor",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-218": {
+   "kind": "live",
+   "note": "Dev: Fixed 19 Nov: a Studio layers button beside Separate tracks shows each Studio band and graphic as a timeline row. Drag a block to move it, drag its edges to trim it, select it and Split to cut it, and show, hide or reorder it; the preview and the export follow. Retest after deploy.",
+   "owner": "",
+   "status": "fixed",
+   "title": "Unable to Adjust Bands Based on Timeline",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-219": {
+   "kind": "live",
+   "note": "Dev: Fixed 24 Nov: clicking the captions in the preview now selects them with a box and corner handles (a dashed outline shows on hover); drag them to any place, and the export uses the same place. Expected: click the captions in the preview; the box with handles shows; drag them anywhere; Escape or a click elsewhere deselects. Retest on beta. | QA: Reopen | Comments: Pointers is not showing to drag when user select the caption upon editor preview",
+   "owner": "",
+   "status": "open",
+   "title": "Unable to Adjust Caption Position by Selecting Captions in Editor Preview",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-220": {
+   "kind": "live",
+   "note": "Dev: Fixed 24 Nov: one Size control in the toolbar of text, images, stickers, shapes, b-roll, frames and Studio graphics (for text the box and letters scale together). Expected: select any element and change Size in its toolbar; it resizes in the preview and the export. Retest on beta. | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Size Adjustment Controls Should Be Available Across All Editor Elements",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-221": {
+   "kind": "live",
+   "note": "Dev: Fixed 24 Nov: a scene's moved, resized or full-screen frames now export where they were put, also on layout templates (covered by an automated test). Expected: drag or resize a participant frame, export; the file matches the preview. Retest on beta. | QA: Reopen",
+   "owner": "",
+   "status": "open",
+   "title": "Adjusted Frame Position Not Reflected in Exported Output",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-222": {
+   "kind": "live",
+   "note": "Dev: fixed nov 23 | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Ticker Band Does Not Scroll in Exported Output",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-223": {
+   "kind": "live",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "Audio Plays for a Participant Even When Their transcript Are Disabled",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-224": {
+   "kind": "live",
+   "note": "Dev: Fixed 24 Nov: Reverse now plays backwards in the preview, Stabilize is applied in the exported file (the canvas says so), and both export beside transitions. They work on the main video's clips; on b-roll they are disabled with the reason shown. Expected: select a main-video clip, apply Reverse; the preview plays it backwards and the export matches. Retest on beta. | QA: Reopen",
+   "owner": "",
+   "status": "open",
+   "title": "Stabilize and Reverse Effects Not Working on Selected Timeline Clips",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-225": {
+   "kind": "live",
+   "note": "Dev: 24 Nov: needs product decision. This is a new feature (colour options for animations), not a bug. Please confirm which animations need colour options and which colours. | QA: Reopen | Comments: First time animation is working and after from second time onwards it is not working",
+   "owner": "",
+   "status": "wontfix",
+   "title": "Animation Color Customization Option Required",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-226": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Unable to Export Clips with Both Speed Adjustments and Transitions Applied",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-227": {
+   "kind": "live",
+   "note": "Dev: fixed",
+   "owner": "",
+   "status": "fixed",
+   "title": "Eye Contact Export Fails for Edited Videos with Camera Angles, Studio Programs, or Multiple Recording Parts",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-228": {
+   "kind": "live",
+   "note": "Dev: Fixed 24 Nov: Remove freeze frame is in the right-click menu of the frozen hold and of the clip it was applied to; removing it joins the clip again. Expected: apply Freeze frame, right-click the clip, choose Remove freeze frame; the clip plays normally again. Retest on beta. | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Unable to Unfreeze a Clip After Applying Freeze Frame",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-229": {
+   "kind": "live",
+   "note": "Dev: fixed Nov 23",
+   "owner": "",
+   "status": "fixed",
+   "title": "Live Badge Text Position Differs in Exported Output Compared to Preview",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-230": {
+   "kind": "live",
+   "note": "Dev: Fixed 24 Nov: the Studio clock and date now use the same font (Arimo for Arial, in bold as shown) in the preview and the export. Expected: export a video with the date and time; the font matches the preview. Retest on beta. | QA: Reopen",
+   "owner": "",
+   "status": "open",
+   "title": "Date and Time Text Font Differs in Exported Output Compared to Preview",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-231": {
+   "kind": "live",
+   "note": "Dev: Fixed 24 Nov: a blur can be grabbed and moved in the preview from any selection (even after a split), and moving it on a cut clip moves it on every piece. Expected: press the blur in the preview and drag it anywhere; it stays there across the video. Retest on beta. | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Unable to Reposition Blur Image Across Video Frames",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-232": {
+   "kind": "live",
+   "note": "Dev: Fixed 24 Nov: every Remove background control (frame toolbar, Properties, AI Tools) stays locked while a removal runs, also after a page reload (shows Checking until known). Expected: start Remove background; the button and options stay disabled until it completes, then unlock. Retest on beta. | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Remove Background Button Remains Enabled While Background Removal Is Processing",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-233": {
+   "kind": "live",
+   "note": "Dev: fixed",
+   "owner": "",
+   "status": "fixed",
+   "title": "Unable to Export Videos with Eye Contact and Background Removal Enabled Together",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-234": {
+   "kind": "live",
+   "note": "Dev: Fixed 24 Nov: a Studio participant's window can be cropped from its frame toolbar, and selecting a participant no longer crashes the editor. Expected: select a participant, use Crop in its toolbar; the crop shows in the preview and the export. Retest on beta. | QA: Ropen | Comments: Showing just zom in and zoom out instead of adjusting the particular frame",
+   "owner": "",
+   "status": "open",
+   "title": "Crop Functionality Not Working for Selected Participants",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-235": {
+   "kind": "live",
+   "note": "Dev: Fixed 24 Nov: corner radius, shadow, opacity, Zoom & pan and Color adjustments on a participant's frame now show in the preview and the export (Color adjustments grade that person's camera). Animation was not changed in this fix; if it still fails, please note which animation. Expected: change each setting on a selected participant; the preview and the export update. Retest on beta. | QA: Reopen | Comments: In output contnet changes is not reflecting where compare to editor preview",
+   "owner": "",
+   "status": "open",
+   "title": "Participant Animation and Visual Customization Controls Not Working",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-236": {
+   "kind": "live",
+   "note": "Dev: Fixed 24 Nov: dropping a frame near another frame's edge moves it there; it swaps only when dropped on the middle of another frame. Frames that tile the whole canvas still swap, as they have nowhere else to go. Expected: drag a free frame next to another; it moves without swapping. Retest on beta. | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Participant Frame Swaps Instead of Moving When Dragging to Reposition",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-237": {
+   "kind": "live",
+   "note": "Dev: fixed Nov22",
+   "owner": "",
+   "status": "fixed",
+   "title": "Participant Full-Screen Layout Not Reflected in Exported Output",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-238": {
+   "kind": "live",
+   "note": "Dev: Fixed 24 Nov: a Studio band switched on in the Graphics panel now shows over the pre-, mid- and post-rolls, where it can be placed and edited, in the preview and the export. Expected: with the playhead on a roll, switch a band on in Graphics, move and resize it; the export matches. Retest on beta. | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Unable to Adjust Graphics Bands and all for Pre-Roll, Mid-Roll, and Post-Roll Content",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-239": {
+   "kind": "live",
+   "note": "Dev: Fixed 24 Nov: the export uses the picked resolution even when the video's size isn't on record (before it fell back to 640x360), and Download takes the newest export of that name (covered by an automated test). Expected: export at 1080p 30 fps; the downloaded file is 1920x1080 at 30 fps. Retest on beta. | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Downloaded Video Does Not Match Selected Resolution and Frame Rate",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-240": {
+   "kind": "live",
+   "note": "Dev: Fixed 24 Nov: click a participant's name label to open its name, colour, background, font and size controls (also from their frame or the Layers panel); double-click it to rename. Expected: click a name label in the preview; its controls open; changes show in the preview and the export. Retest on beta.",
+   "owner": "",
+   "status": "fixed",
+   "title": "Unable to Adjust Participant Names in Editor",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-241": {
+   "kind": "live",
+   "note": "Dev: fixed | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Close Orbit Functionality Not Working Across Modules",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-242": {
+   "kind": "live",
+   "note": "Dev: Fixed 24 Nov: a running dub keeps its progress bar where it was after changing properties, switching the side menu or reloading the page. Expected: start a dub, change a property or reload; the bar continues from the same percent and never drops back. Retest on beta. | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Dubbing Progress Bar Position Changes When Updating Properties or Refreshing Browser",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-243": {
+   "kind": "live",
+   "note": "Dev: Fixed 24 Nov: running AI jobs and their progress bars are kept after a page reload or a tab switch, and bars never drop back. Expected: start an AI feature, reload or switch tab; progress continues from where it was. Retest on beta. | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "AI Feature Progress Bar Position Changes After Browser Refresh or Tab Switch",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-244": {
+   "kind": "live",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "Speaker Tracks Not playing Separately After Spotlight Upload",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-245": {
+   "kind": "live",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "Plans Page Displayed Repeatedly When Opening Different Modules",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-246": {
+   "kind": "live",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "Brand Kit Cannot Be Edited After Casual Meeting Completion",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-247": {
+   "kind": "live",
+   "note": "Dev: Fixed 26 Nov: graphics from the Studio's new GFX Studio designs (ticker, top band, lower band, logo, date/time, breaking news) are now real bands in the editor: drawn with their own colours, font and lines, listed in Layers and in the Graphics panel, and editable there, in the preview and the export. A recording opened before needs Graphics > Show the Studio's layouts and graphics once (reopening also retries it). Expected: after a Casual meeting, open its recording, select the ticker on the canvas or in Graphics; its lines, colour, font, size and position can be changed. Retest on beta. | QA: Reopen",
+   "owner": "",
+   "status": "open",
+   "title": "Ticker Band Cannot Be Edited After Casual Meeting Completion",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-248": {
+   "kind": "live",
+   "note": "Dev: Fixed 26 Nov: AI Tools now has a tool search, the Clip tools apply to line and Edit, Sound, Look and Create cards, closed by default and kept open once opened; Colour looks are chips. Expected: open AI Tools, type echo in the search: only De-reverb shows. Retest on beta. | QA: Reopen | Comments: 1.Not observed ai b roll in create\n2.",
+   "owner": "",
+   "status": "open",
+   "title": "AI Tools Panel Layout Does Not Match the Design Reference",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-249": {
+   "kind": "live",
+   "note": "Dev: Fixed 26 Nov: a click on any Media card opens its insert menu and adds nothing; stock media is imported only when an option is picked. Dragging onto the timeline still adds it. Expected: click a card, the menu opens and the timeline is unchanged until an option is picked. Retest on beta.",
+   "owner": "",
+   "status": "fixed",
+   "title": "Clicking a Media Asset Adds It to the Timeline Directly",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-250": {
+   "kind": "live",
+   "note": "Dev: Fixed 26 Nov: Source files, Edits, AI Clips and Assets start closed; one the user opens stays open when the panel comes back. The Files panel itself also starts closed. Expected: open the Files panel, all four sections are closed. Retest on beta. | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Left Files Panel Sections Are Open by Default",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-251": {
+   "kind": "live",
+   "note": "Dev: Fixed 26 Nov: Graphics shows for any recording whose Studio put graphics on air. For an edit saved before the Studio's layouts came in, the panel offers Show the Studio's layouts and graphics (one undoable step), and reopening the recording also retries it. Expected: open such a recording, Graphics is in the right menu and the bands show. Retest on beta. | QA: Done",
+   "owner": "",
+   "status": "verified",
+   "title": "Graphics Menu Missing in the Editor for a Studio Recording",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-252": {
+   "kind": "live",
+   "note": "Dev: Fixed 26 Nov: Studio is on whenever the recording's Studio program has layouts; picking it brings the layouts into the edit and puts the scene on them, or says if they can't be read. Reopening the recording also retries bringing them in. Expected: Layout > Studio is enabled and shows the layout as it went out live. Retest on beta.",
+   "owner": "",
+   "status": "fixed",
+   "title": "Studio Layout Option Disabled for a Studio Recording with Studio Layouts",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-253": {
+   "kind": "live",
+   "note": "Dev: Fixed 26 Nov: the picker reads Choose language and Translate is greyed out until a language is picked; its credit price shows once one is. Expected: Translate disabled on open, enabled after picking a language. Retest on beta.",
+   "owner": "",
+   "status": "fixed",
+   "title": "Translate Captions Preselects a Language and Enables Translate",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-254": {
+   "kind": "live",
+   "note": "Dev: Fixed 26 Nov: Graphics shows only for a recording with bands that went on air, and the panel lists only those (a band the user switched on earlier stays until it is switched off); with none it says No graphics went on air in this recording. Orbit is told only of those bands too. Expected: a band that never aired is not listed anywhere. Retest on beta.",
+   "owner": "",
+   "status": "fixed",
+   "title": "Graphics Panel Lists Studio Graphics That Never Went on Air",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-255": {
+   "kind": "live",
+   "note": "Dev: Fixed 26 Nov: the Dubbing picker reads Choose language and Dub is greyed out until a language is picked; its credit price shows once one is. Languages already dubbed are still left out. Expected: Dub disabled on open, enabled after picking a language. Retest on beta.",
+   "owner": "",
+   "status": "fixed",
+   "title": "Dubbing Preselects a Language and Enables Dub",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-256": {
+   "kind": "live",
+   "note": "Dev: Fixed 26 Nov: Translate captions uses the Dub button's filled violet style, faded while no language is picked. Expected: Translate and Dub look the same. Retest on beta.",
+   "owner": "",
+   "status": "fixed",
+   "title": "Translate Captions Button Style Differs from the Dub Button",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-257": {
+   "kind": "live",
+   "note": "Dev: Fixed 26 Nov: every enabled button, tab, menu item, option, switch and dropdown in the editor shows the hand cursor; disabled ones keep not-allowed and drag handles keep their own cursor. Expected: hover any clickable control, the cursor is the hand. Retest on beta.",
+   "owner": "",
+   "status": "fixed",
+   "title": "Buttons Do Not Show a Pointer Cursor on Hover in the Editor",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-258": {
+   "kind": "live",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "Freeze Frame Effect Not Working in Preview at Selected Time",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-259": {
+   "kind": "live",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "Clock Background Changes Not Reflected in Preview",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-260": {
+   "kind": "live",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "Timeline Seekbar and Transcript Highlighting Not Synchronized During Playback",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-261": {
+   "kind": "live",
+   "note": "Dev: Fixed 26 Nov: Magic clips shows the best 3 clips, and View all opens every clip in a popup. Expected: with more than 3 clips, View all opens the popup; clicking a clip plays its start and closes the popup. Retest on beta.",
+   "owner": "",
+   "status": "fixed",
+   "title": "Magic Clips in AI Tools Lists Every Clip in a Small Scrolling Box with No View All",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-262": {
+   "kind": "live",
+   "note": "Dev: Fixed 26 Nov: Reset master effects now clears a B&W or Sepia look, and picking a look always applies it. Shake was retested for This clip and Whole video and resets correctly. Expected: apply, reset and re-apply B&W and Sepia several times in a row; the preview matches each time. Retest on beta.",
+   "owner": "",
+   "status": "fixed",
+   "title": "B&W and Sepia Looks Do Not Reset or Re-apply After Reset Master Effects",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-263": {
+   "kind": "live",
+   "note": "Dev: Fixed 26 Nov: Studio banners and tickers now show in the edit and export, with a Banners tab below Graphics. Expected: in a recording with banners, the Banners tab lists them; tickers scroll at the top or bottom, static banners show as a pill at the bottom; switching one off removes it. Retest on beta.",
+   "owner": "",
+   "status": "fixed",
+   "title": "Studio Banners and Tickers Missing from the Editor for a Recording",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-264": {
+   "kind": "live",
+   "note": "Dev: Fixed 26 Nov: a click on a clip in Files > AI Clips or Magic clips no longer acts; both have the same menu, now with Add to Timeline. Expected: clicking a clip does nothing; the menu's Add to Timeline adds it to the end of the main track, and Undo in the toast removes it. Retest on beta.",
+   "owner": "",
+   "status": "fixed",
+   "title": "Clicking an AI Clip or Magic Clip Acts Directly, with No Add to Timeline Option in Its Menu",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-265": {
+   "kind": "live",
+   "note": "Dev: Fixed 27 Nov: dropdown menus, selects and popovers no longer slide in from the top-left; they open at their button (fixed in the shell and the Studio). Expected: Add input in Custom setup and other menus open in place. Retest on beta after a hard refresh.",
+   "owner": "",
+   "status": "fixed",
+   "title": "Dropdown Menus Slide In from the Top-Left Instead of Opening at Their Button",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-266": {
+   "kind": "live",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "Orbit Not Responding and Displaying \"Context Is Too Large\" Error",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-267": {
+   "kind": "live",
+   "note": "",
+   "owner": "",
+   "status": "open",
+   "title": "Unable to Adjust Bands and Bands Overlap Video Content in Pre-Roll, Mid-Roll, and Post-Roll",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-268": {
+   "kind": "live",
+   "note": "Dev: fixed",
+   "owner": "",
+   "status": "fixed",
+   "title": "Onboarding: empty camera dropdown. After choosing Camera as the input, the camera dropdown is empty.",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-269": {
+   "kind": "live",
+   "note": "Dev: fixed",
+   "owner": "",
+   "status": "fixed",
+   "title": "Onboarding: input errors. When a Custom input has a problem (e.g. \"Couldn't connect RTMP 1\"), show the error highlighted in red directly under that input, not in grey at the bottom of the page.",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-270": {
+   "kind": "live",
+   "note": "Dev: fixed",
+   "owner": "",
+   "status": "fixed",
+   "title": "Dropdown animation. Dropdowns animate in from the top. They should open like a normal dropdown, right under the button.",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-271": {
+   "kind": "live",
+   "note": "Dev: fixed",
+   "owner": "",
+   "status": "fixed",
+   "title": "Studio: separate input switch button (UX change). The inputs set up on the onboarding page need their own \"switch input\" button in the Studio, separate from Stop Video.",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-272": {
+   "kind": "live",
+   "note": "Dev: fixed",
+   "owner": "",
+   "status": "fixed",
+   "title": "Sources open on Online. Opening Sources → RTMP, SRT or Reporters should show the Online filter by default.",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-273": {
+   "kind": "live",
+   "note": "Dev: Not an issue | Comments: Here the 2 layout was pushed in that one source was taken as cover and again selected 1 and 2 in that 2 source has contain while in layout creation we have an option to choose layout,contain and fill",
+   "owner": "",
+   "status": "wontfix",
+   "title": "Producer: Preview vs Master fit. Content fit (contain / cover) differs slightly between Preview and Master.",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-274": {
+   "kind": "live",
+   "note": "Dev: fixed",
+   "owner": "",
+   "status": "fixed",
+   "title": "Live Dubbing: processing status. While the HLS URL for live dubbing is being created, show a clear \"Processing…\" indicator with a running timer until it's ready.",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-275": {
+   "kind": "live",
+   "note": "Dev: fixed",
+   "owner": "",
+   "status": "fixed",
+   "title": "Pool cards: unmuted state. Pool cards show only \"Muted\". They should show both Muted and Unmuted.",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-276": {
+   "kind": "live",
+   "note": "Dev: waiting from sarvam",
+   "owner": "",
+   "status": "in-progress",
+   "title": "Live dubbing: host and HLS not dubbed together. Dubbing runs for only one source at a time (sometimes the HLS, sometimes the host), never both. In the output, one source's audio ends up muted.",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-277": {
+   "kind": "live",
+   "note": "Dev: fixed",
+   "owner": "",
+   "status": "fixed",
+   "title": "Live Portrait: captions cut off. Captions are cut off in Live Portrait.",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-278": {
+   "kind": "live",
+   "note": "Dev: fixed",
+   "owner": "",
+   "status": "fixed",
+   "title": "Producer → Casual: sources disappear. Switching from Producer to Casual removes all sources from the stage. It should show them full screen or in an auto grid, based on the participants.",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-279": {
+   "kind": "live",
+   "note": "Dev: fixed",
+   "owner": "",
+   "status": "fixed",
+   "title": "Subtitles cover the camera menu. The subtitles overlap the camera / input options menu.",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-280": {
+   "kind": "live",
+   "note": "Dev: Fixed",
+   "owner": "",
+   "status": "fixed",
+   "title": "Credits run out: no message. When credits run out, the HLS keeps looping and there's no clear message in the UI.",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-281": {
+   "kind": "live",
+   "note": "Dev: Fixed",
+   "owner": "",
+   "status": "fixed",
+   "title": "Onboarding: Recording / VOD missing in the Studio. A Recording or VOD picked as a source on the onboarding page doesn't appear in the Studio's camera / input dropdown.",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-282": {
+   "kind": "live",
+   "note": "Dev: Fixed",
+   "owner": "",
+   "status": "fixed",
+   "title": "Editor: black thumbnails. Black frames appear in the Editor's video thumbnail timeline.",
+   "updated": "2026-11-28T07:40:45.000Z"
+  },
+  "ISS-283": {
+   "kind": "live",
+   "note": "Dev: Fixed",
+   "owner": "",
+   "status": "fixed",
+   "title": "Editor: HLS audio missing. HLS audio is missing in the Editor.",
+   "updated": "2026-11-28T07:40:45.000Z"
   },
   "PUB-23": {
    "kind": "finding",
