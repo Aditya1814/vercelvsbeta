@@ -319,10 +319,14 @@
         '<button type="button" class="btn ghost" data-clear hidden>Clear filters</button><span class="count" id="count" aria-live="polite"></span>';
     }
     $('#main').innerHTML = head(o.title, o.lede) +
-      (o.addBtn ? '<button type="button" class="btn" id="addbtn" style="margin-bottom:12px">' + icon('plus') + h(o.addBtn.label) + '</button>' : '') +
+      (o.addBtn || o.syncBtn ? '<div style="margin-bottom:12px;display:flex;gap:8px;flex-wrap:wrap">' +
+        (o.addBtn ? '<button type="button" class="btn" id="addbtn">' + icon('plus') + h(o.addBtn.label) + '</button>' : '') +
+        (o.syncBtn ? '<button type="button" class="btn ghost" id="syncbtn">' + icon('download') + h(o.syncBtn.label) + '</button>' : '') +
+        '</div>' : '') +
       '<div class="filters" role="search" aria-label="Filter ' + o.title + '">' + filterBar() + '</div>' +
       (bulk ? '<div class="listhead"><label><input type="checkbox" id="pickall"> Select all shown</label></div>' : '') + '<div class="rows" id="list"></div>';
     if (o.addBtn) $('#addbtn').addEventListener('click', o.addBtn.run);
+    if (o.syncBtn) $('#syncbtn').addEventListener('click', o.syncBtn.run);
     function active() { return Object.keys(fs).some(function (k) { var v = fs[k]; return Array.isArray(v) ? v.length : v; }); }
     function draw() {
       var q = fs.q.trim().toLowerCase();
@@ -513,6 +517,7 @@
       key: 'live', title: 'Live Issues', items: D.live || [],
       lede: (D.live || []).length + ' bugs tracked in the team’s live issue sheet. Status starts from the sheet’s Dev/QA status (Verified = QA marked Done, Fixed = developer-fixed but not yet QA-verified) and can be updated here.',
       addBtn: { label: 'Report a bug', run: function () { openNewItemDialog('live'); } },
+      syncBtn: { label: 'Sync from sheet', run: syncNow },
       filters: [
         { name: 'sev', label: 'Any severity', options: ['High', 'Medium', 'Low'], get: function (d) { return d.sev; } },
         { name: 'module', label: 'Any module', get: function (d) { return d.module; } },
@@ -526,6 +531,7 @@
       key: 'studio', title: 'Studio Issues', items: D.studio || [],
       lede: (D.studio || []).length + ' bugs tracked for the Studio module, from the team’s Studio New UI sheet. Status starts from the sheet’s Dev/QA status and can be updated here.',
       addBtn: { label: 'Report a bug', run: function () { openNewItemDialog('studio'); } },
+      syncBtn: { label: 'Sync from sheet', run: syncNow },
       filters: [
         { name: 'sev', label: 'Any severity', options: ['High', 'Medium', 'Low'], get: function (d) { return d.sev; } },
         { name: 'module', label: 'Any module', get: function (d) { return d.module; } },
@@ -794,7 +800,11 @@
   function hydrateCustom() {
     Object.keys(state.items).forEach(function (id) {
       var e = state.items[id];
-      if (!e || !e.custom || ITEMS[id]) return;
+      if (!e || !e.custom) return;
+      if (ITEMS[id]) {
+        if (e.data) Object.assign(ITEMS[id].d, e.data);
+        return;
+      }
       var d = Object.assign({ id: id }, e.data || {});
       if (e.kind === 'live') D.live.push(d);
       else if (e.kind === 'studio') D.studio.push(d);
@@ -803,6 +813,26 @@
       reg([d], e.kind);
     });
     refreshCaseItems();
+  }
+  var syncing = false;
+  function syncNow() {
+    if (syncing) return;
+    syncing = true;
+    var btn = $('#syncbtn'); if (btn) btn.disabled = true;
+    toast('Syncing from the sheet…');
+    fetch('/api/sync', { method: 'POST' })
+      .then(function (r) { return r.json().then(function (b) { return { ok: r.ok, body: b }; }); })
+      .then(function (res) {
+        if (!res.ok || !res.body.ok) { toast('Sync failed: ' + (res.body && res.body.error || 'unknown error'), true); return; }
+        var r = res.body.result;
+        var parts = Object.keys(r).map(function (k) { return k + ': +' + r[k].added + ' new, ' + r[k].updated + ' updated'; });
+        toast('Synced. ' + parts.join(' · '));
+        return fetch('/api/status').then(function (rr) { return rr.json(); }).then(function (s) {
+          state = s; hydrateCustom(); if (redraw) redraw(); renderNav(); renderStore();
+        });
+      })
+      .catch(function () { toast('Could not reach the sync endpoint.', true); })
+      .then(function () { syncing = false; if (btn) btn.disabled = false; });
   }
   function submitNewItem(kind, fields) {
     var data = {};
